@@ -21,7 +21,11 @@
       "WebFetch(domain:www.discovertuscany.com)",
       "WebFetch(domain:thetuscanwedding.com)",
       "WebFetch(domain:villalefontanelle.com)",
-      "WebFetch(domain:villapozzolo.com)"
+      "WebFetch(domain:villapozzolo.com)",
+      "WebFetch(domain:tenuta-casenuove.com)",
+      "WebFetch(domain:www.castelfalfi.com)",
+      "WebFetch(domain:www.hotelilpellicano.com)",
+      "WebFetch(domain:www.pellicanohotels.com)"
     ],
     "deny": [],
     "ask": []

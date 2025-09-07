@@ -45,7 +45,9 @@ def extract_venue_data(venues):
             'Source': venue.get('source', ''),
             'Website': '',
             'Link': venue.get('link', ''),
-            'Features': ''
+            'Features': '',
+            'Venue Type': venue.get('venue_type', ''),
+            'WhatsApp': ''
         }
         
         # Extract contact information
@@ -54,6 +56,7 @@ def extract_venue_data(venues):
             row['Phone Number'] = contact.get('phone', '')
             row['Email'] = contact.get('email', '')
             row['Website'] = contact.get('website', '')
+            row['WhatsApp'] = contact.get('whatsapp', '')
         
         # Extract capacity information
         if 'capacity' in venue:
@@ -61,6 +64,7 @@ def extract_venue_data(venues):
             if isinstance(capacity, dict):
                 # Handle various capacity fields
                 max_guests = (capacity.get('max_wedding_guests') or 
+                             capacity.get('maximum_guests') or
                              capacity.get('max_guests') or 
                              capacity.get('reception_capacity') or 
                              capacity.get('ceremony_capacity') or
@@ -68,26 +72,24 @@ def extract_venue_data(venues):
                 if max_guests:
                     row['Max Guests'] = str(max_guests)
                 
-                sleeps = (capacity.get('accommodation_sleeps') or 
+                sleeps = (capacity.get('accommodation_guests') or
+                         capacity.get('accommodation_sleeps') or 
                          capacity.get('bedrooms') or
-                         capacity.get('suites'))
+                         capacity.get('suites') or
+                         capacity.get('rooms_suites'))
                 if sleeps:
                     row['Accommodation Sleeps'] = str(sleeps)
         
         # Extract pricing information
         pricing_info = []
         
-        if 'pricing' in venue:
-            pricing = venue['pricing']
-            if isinstance(pricing, dict):
-                for key, value in pricing.items():
-                    pricing_info.append(f'{key}: {value}')
-        
-        if 'pricing_2026' in venue:
-            pricing = venue['pricing_2026']
-            if isinstance(pricing, dict):
-                for key, value in pricing.items():
-                    pricing_info.append(f'{key}: {value}')
+        # Handle various pricing field structures
+        for pricing_field in ['pricing', 'pricing_2026', 'pricing_2026_2027', 'seasonal_pricing']:
+            if pricing_field in venue:
+                pricing = venue[pricing_field]
+                if isinstance(pricing, dict):
+                    for key, value in pricing.items():
+                        pricing_info.append(f'{key}: {value}')
         
         if 'starting_price' in venue:
             pricing_info.append(f'Starting price: {venue["starting_price"]}')
@@ -154,9 +156,14 @@ def main():
         with open(input_file, 'r') as f:
             data = json.load(f)
         
-        # Extract venues list
-        if 'tuscany_wedding_venues' in data and 'comprehensive_venue_list' in data['tuscany_wedding_venues']:
-            venues = data['tuscany_wedding_venues']['comprehensive_venue_list']
+        # Extract venues list - handle both old and new JSON structures
+        if 'tuscany_wedding_venues' in data:
+            if 'comprehensive_venue_database' in data['tuscany_wedding_venues']:
+                venues = data['tuscany_wedding_venues']['comprehensive_venue_database']
+            elif 'comprehensive_venue_list' in data['tuscany_wedding_venues']:
+                venues = data['tuscany_wedding_venues']['comprehensive_venue_list']
+            else:
+                venues = []
         else:
             # Try to handle different JSON structures
             venues = data if isinstance(data, list) else []
