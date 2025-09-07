@@ -25,7 +25,16 @@
       "WebFetch(domain:tenuta-casenuove.com)",
       "WebFetch(domain:www.castelfalfi.com)",
       "WebFetch(domain:www.hotelilpellicano.com)",
-      "WebFetch(domain:www.pellicanohotels.com)"
+      "WebFetch(domain:www.pellicanohotels.com)",
+      "WebSearch",
+      "WebFetch(domain:www.borgobucciano.net)",
+      "WebFetch(domain:5starweddingdirectory.com)",
+      "WebFetch(domain:www.villascorzi.com)",
+      "WebFetch(domain:thehoxton.com)",
+      "WebFetch(domain:www.lafoce.com)",
+      "WebFetch(domain:www.catureglio.com)",
+      "WebFetch(domain:www.comohotels.com)",
+      "WebFetch(domain:www.borgosanfelice.com)"
     ],
     "deny": [],
     "ask": []
