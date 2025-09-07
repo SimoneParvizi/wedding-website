@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.lalista.com)",
+      "WebFetch(domain:www.exclusiveitalyweddings.com)",
+      "WebFetch(domain:www.hitched.co.uk)",
+      "WebFetch(domain:www.weddingvenuesintuscany.com)",
+      "WebFetch(domain:www.weddingwire.com)",
+      "WebFetch(domain:tuscandream.com)",
+      "WebFetch(domain:www.rosewoodhotels.com)",
+      "WebFetch(domain:borgodivino.bio)",
+      "WebFetch(domain:www.villa-cini.com)",
+      "WebFetch(domain:www.montestigliano.com)",
+      "WebFetch(domain:www.secrettuscanyweddings.com)",
+      "WebFetch(domain:stomennano.it)",
+      "Bash(grep:*)",
+      "WebFetch(domain:www.wedinspire.com)",
+      "WebFetch(domain:www.theknot.com)",
+      "WebFetch(domain:www.initalywedding.com)",
+      "WebFetch(domain:wanderlog.com)",
+      "WebFetch(domain:www.discovertuscany.com)",
+      "WebFetch(domain:thetuscanwedding.com)",
+      "WebFetch(domain:villalefontanelle.com)",
+      "WebFetch(domain:villapozzolo.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
