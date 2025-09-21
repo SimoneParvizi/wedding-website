@@ -13,7 +13,7 @@ interface ScrollEffectProps {
 const ScrollEffect: React.FC<ScrollEffectProps> = ({ children }) => {
   useEffect(() => {
     // Initially hide elements
-    gsap.set(".scroll-navigation .navigation", { y: -50, transformOrigin: "top center" })
+    gsap.set(".scroll-navigation .navigation", { y: -100, opacity: 0, transformOrigin: "top center" })
     gsap.set(".hero-text-main", { opacity: 0, y: 30 })
     gsap.set(".hero-text-details", { opacity: 0 })
 
@@ -59,12 +59,29 @@ const ScrollEffect: React.FC<ScrollEffectProps> = ({ children }) => {
       ease: "power1.inOut"
     }, "<")
 
-    // Header shrinking and navbar appearing together (after hero section)
+    // Navbar appearing first
     gsap.timeline({
       scrollTrigger: {
         trigger: ".scroll-after-content",
-        start: "top+=450px center",
-        end: "top+=550px center",
+        start: "top+=500px center",
+        end: "top+=530px center",
+        scrub: 0.3,
+        markers: false
+      }
+    })
+    .to(".scroll-navigation .navigation", {
+      y: 0,
+      opacity: 1,
+      ease: "power1.inOut",
+      transformOrigin: "top center"
+    })
+
+    // Header shrinking after navbar is visible
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: ".scroll-after-content",
+        start: "top+=550px center",
+        end: "top+=650px center",
         scrub: 0.3,
         markers: false
       }
@@ -73,11 +90,6 @@ const ScrollEffect: React.FC<ScrollEffectProps> = ({ children }) => {
       scale: 0.3,
       ease: "power1.inOut"
     })
-    .to(".scroll-navigation .navigation", {
-      y: 0,
-      ease: "power1.inOut",
-      transformOrigin: "top center"
-    }, "<")
 
     // Hide navbar when scrolling back to hero
     gsap.timeline({
@@ -89,7 +101,8 @@ const ScrollEffect: React.FC<ScrollEffectProps> = ({ children }) => {
       }
     })
     .to(".scroll-navigation .navigation", {
-      y: -50,
+      y: -100,
+      opacity: 0,
       ease: "power1.inOut"
     })
 
