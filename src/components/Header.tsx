@@ -4,7 +4,7 @@ import './Header.css'
 const Header: React.FC = () => {
   return (
     <section className="header-section">
-      <h1 className="header-title">Jenny & Jason</h1>
+      <h1 className="header-title">Simone & Vita</h1>
     </section>
   )
 }
