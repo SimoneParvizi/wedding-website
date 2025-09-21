@@ -1,0 +1,31 @@
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  gap: 10px;
+  padding: 280px 0px;
+  width: 100%;
+  height: auto;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url('/assets/hero-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-content {
+  width: 500px;
+  height: auto;
+}
+
+.hero-text {
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+}

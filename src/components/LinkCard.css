@@ -1,0 +1,36 @@
+.link-card {
+  display: block;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.link-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.link-card-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 24px;
+  width: 500px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.link-card-title {
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+  height: auto;
+}
