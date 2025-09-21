@@ -31,35 +31,38 @@
   width: 100%;
   max-width: 1280px;
   height: auto;
+  position: relative;
 }
 
-.logo {
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
-  gap: 30px;
-  height: 25px;
 }
 
-.logo-image {
-  width: 39.97px;
-  height: 33.98px;
-}
-
-.date {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 10%;
-  text-align: center;
+.nav-title {
+  font-family: 'Aboreto', serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.1em;
+  letter-spacing: -2%;
   color: #FFFFFF;
 }
 
 .nav-links {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  gap: 63px;
+  gap: 32px;
+}
+
+.nav-links--left {
+  justify-content: flex-start;
+}
+
+.nav-links--right {
+  justify-content: flex-end;
 }
 
 .nav-link {

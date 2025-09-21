@@ -7,6 +7,13 @@
   padding: 120px 48px 48px;
   width: 100%;
   height: auto;
+  transition: opacity 0.3s ease-in-out, transform 0.1s ease-out;
+  transform-origin: center;
+}
+
+.header-section--hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .header-title {

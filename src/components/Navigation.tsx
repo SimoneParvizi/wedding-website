@@ -18,13 +18,14 @@ const Navigation: React.FC = () => {
   return (
     <nav className={`navigation ${isVisible ? 'navigation--visible' : 'navigation--hidden'}`}>
       <div className="nav-content">
-        <div className="logo">
-          <img src="/logo.svg" alt="S&V" className="logo-image" />
-          <span className="date">September 20th, 2025</span>
-        </div>
-        <div className="nav-links">
+        <div className="nav-links nav-links--left">
           <a href="#home" className="nav-link">Home</a>
           <a href="#story" className="nav-link">OUR STORY</a>
+        </div>
+        <div className="nav-center">
+          <span className="nav-title">Simone & Vita</span>
+        </div>
+        <div className="nav-links nav-links--right">
           <a href="#details" className="nav-link">Details</a>
           <a href="#rsvp" className="nav-link">RSVP</a>
         </div>
