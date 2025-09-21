@@ -20,8 +20,11 @@ const Header: React.FC = () => {
   }, [])
 
   // Calculate scale based on scroll position
-  const maxScroll = window.innerHeight * 0.6 // Start scaling earlier
-  const scale = Math.max(0.3, 1 - (scrollY / maxScroll) * 0.7) // Scale from 1 to 0.3
+  const startShrinking = window.innerHeight * 0.4 // Start shrinking after 40% of viewport
+  const maxScroll = window.innerHeight * 0.75 // End shrinking at 75% of viewport
+  const adjustedScrollY = Math.max(0, scrollY - startShrinking)
+  const scrollRange = maxScroll - startShrinking
+  const scale = Math.max(0.3, 1 - (adjustedScrollY / scrollRange) * 0.7) // Scale from 1 to 0.3
 
   return (
     <section
