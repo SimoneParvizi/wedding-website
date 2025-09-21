@@ -1,0 +1,69 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  gap: 16px;
+  padding: 40px 0px;
+  background-color: #E1DBCB;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 0px 10px;
+}
+
+.footer-icon {
+  width: 61.91px;
+  height: 46.75px;
+}
+
+.footer-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-names {
+  font-family: 'Aboreto', serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.1em;
+  letter-spacing: -3%;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
+
+.footer-message {
+  font-family: 'Geist', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+  max-width: 600px;
+}
+
+.footer-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.footer-date,
+.footer-venue,
+.footer-location {
+  font-family: 'Geist', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
