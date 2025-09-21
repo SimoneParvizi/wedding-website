@@ -8,9 +8,8 @@ const HeroSection: React.FC = () => {
         <p className="hero-text">
           With love and gratitude, we invite you to share in the joy of our wedding day.
           <br /><br />
-          Saturday, September 20, 2025<br />
-          The Golden Elm Manor,<br />
-          St. Augustine, New York
+          Friday, July 3rd, 2026<br />
+          Podere Montale, Tuscany
         </p>
       </div>
     </section>
