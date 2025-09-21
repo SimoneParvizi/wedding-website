@@ -12,14 +12,21 @@ function App() {
   return (
     <div className="app">
       <ScrollEffect>
-        <Navigation />
+        <div className="scroll-navigation">
+          <Navigation />
+        </div>
         <main className="main">
-          <HeroSection />
-          <Header />
-          <LinksSection />
-          <RegistrySection />
+          <div className="scroll-header">
+            <Header />
+          </div>
+          <div className="scroll-rest-content">
+            <LinksSection />
+            <RegistrySection />
+          </div>
         </main>
-        <Footer />
+        <div className="scroll-rest-content">
+          <Footer />
+        </div>
       </ScrollEffect>
     </div>
   )
