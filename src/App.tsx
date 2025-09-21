@@ -11,9 +11,9 @@ function App() {
   return (
     <div className="app">
       <Navigation />
-      <Header />
       <main className="main">
         <HeroSection />
+        <Header />
         <LinksSection />
         <RegistrySection />
       </main>

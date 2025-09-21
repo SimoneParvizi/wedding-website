@@ -1,25 +1,35 @@
 .navigation {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   display: flex;
-  justify-content: stretch;
+  justify-content: center;
   align-items: stretch;
-  gap: 201px;
   padding: 24px 48px;
-  width: 1280px;
+  width: 100%;
   height: auto;
-  background: rgba(68, 66, 62, 0.8);
-  z-index: 10;
+  background: rgba(68, 66, 62, 0.95);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navigation--visible {
+  transform: translateY(0);
+}
+
+.navigation--hidden {
+  transform: translateY(-100%);
 }
 
 .nav-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 574px;
   width: 100%;
+  max-width: 1280px;
   height: auto;
 }
 
