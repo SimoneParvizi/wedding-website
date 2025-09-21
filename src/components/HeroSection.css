@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 280px 0px;
+  padding: 0;
   width: 100%;
-  height: auto;
+  height: 100vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url('/assets/montale_view.png');
@@ -35,6 +35,28 @@
 }
 
 .hero-text {
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+  margin: 0;
+}
+
+.hero-text-main {
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+  margin: 0;
+}
+
+.hero-text-details {
   font-family: 'EB Garamond', serif;
   font-weight: 400;
   font-size: 32px;
