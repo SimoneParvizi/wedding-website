@@ -1,0 +1,140 @@
+.wedding-calendar {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.calendar-title {
+  font-family: 'New Spirit', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #8B7D6B;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.calendar-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 140px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 2px solid #E5D5C3;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(139, 125, 107, 0.1);
+}
+
+.calendar-day:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(139, 125, 107, 0.2);
+}
+
+.calendar-day.wedding-day {
+  background: linear-gradient(135deg, #F4E4BC 0%, #E8D5A6 100%);
+  border: 3px solid #D4AF37;
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+}
+
+.calendar-day.wedding-day:hover {
+  transform: scale(1.15) translateY(-5px);
+}
+
+.day-name {
+  font-family: 'New Spirit', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #8B7D6B;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.date-number {
+  font-family: 'New Spirit', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #5D4E37;
+  margin-bottom: 4px;
+}
+
+.wedding-day .date-number {
+  color: #D4AF37;
+  font-weight: 400;
+}
+
+.month-name {
+  font-family: 'New Spirit', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #8B7D6B;
+  text-transform: capitalize;
+}
+
+.wedding-indicator {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 20px;
+  background: white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .calendar-container {
+    gap: 15px;
+  }
+
+  .calendar-day {
+    width: 100px;
+    height: 120px;
+  }
+
+  .date-number {
+    font-size: 28px;
+  }
+
+  .calendar-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar-container {
+    gap: 10px;
+  }
+
+  .calendar-day {
+    width: 80px;
+    height: 100px;
+  }
+
+  .date-number {
+    font-size: 24px;
+  }
+
+  .day-name, .month-name {
+    font-size: 12px;
+  }
+}

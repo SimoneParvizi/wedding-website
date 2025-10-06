@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'Gegor Black';
+  src: url('/assets/fonts/GegorBlack.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gegor';
+  src: url('/assets/fonts/GegorDemo.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Casta Thin';
+  src: url('/assets/fonts/CastaThin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'New Spirit';
+  src: url('/assets/fonts/NewSpirit.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +33,7 @@
 }
 
 body {
-  font-family: 'EB Garamond', serif;
+  font-family: 'New Spirit', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

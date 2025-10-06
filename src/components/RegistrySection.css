@@ -11,6 +11,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 24px;
 }
 
 .registry-content {
@@ -32,7 +33,7 @@
 }
 
 .registry-title {
-  font-family: 'Aboreto', serif;
+  font-family: 'New Spirit', sans-serif;
   font-weight: 400;
   font-size: 32px;
   line-height: 1.1em;
@@ -69,7 +70,7 @@
 }
 
 .countdown-number {
-  font-family: 'Aboreto', serif;
+  font-family: 'New Spirit', sans-serif;
   font-weight: 400;
   font-size: 48px;
   line-height: 1.1em;
@@ -79,7 +80,7 @@
 }
 
 .countdown-label {
-  font-family: 'Geist', sans-serif;
+  font-family: 'New Spirit', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2em;
@@ -96,14 +97,14 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 25px;
-  width: 511px;
+  padding: 25px 40px;
+  width: auto;
   background-color: #7D7662;
   border-radius: 500px;
   border: none;
   cursor: pointer;
 
-  font-family: 'Geist', sans-serif;
+  font-family: 'New Spirit', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.1em;

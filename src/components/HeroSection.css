@@ -14,20 +14,20 @@
 }
 
 .hero-content {
-  width: 500px;
+  width: 700px;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 .hero-names {
-  font-family: 'Aboreto', serif;
+  font-family: 'New Spirit', sans-serif;
   font-weight: 400;
-  font-size: 48px;
-  line-height: 1.1em;
-  letter-spacing: -3%;
+  font-size: 56px;
+  line-height: 1.3em;
+  letter-spacing: 0.02em;
   text-align: center;
   color: #FFFFFF;
   margin: 0;
@@ -35,10 +35,11 @@
 }
 
 .hero-text {
-  font-family: 'EB Garamond', serif;
+  font-family: 'New Spirit', sans-serif;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 1.2;
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
   text-align: center;
   color: #FFFFFF;
   width: 100%;
@@ -46,10 +47,11 @@
 }
 
 .hero-text-main {
-  font-family: 'EB Garamond', serif;
+  font-family: 'New Spirit', sans-serif;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 1.2;
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
   text-align: center;
   color: #FFFFFF;
   width: 100%;
@@ -57,10 +59,11 @@
 }
 
 .hero-text-details {
-  font-family: 'EB Garamond', serif;
+  font-family: 'New Spirit', sans-serif;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
   text-align: center;
   color: #FFFFFF;
   width: 100%;

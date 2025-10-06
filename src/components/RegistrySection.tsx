@@ -38,7 +38,6 @@ const RegistrySection: React.FC = () => {
     <section className="registry-section">
       <div className="registry-content">
         <div className="registry-headline">
-          <h2 className="registry-title">REGISTRY</h2>
         </div>
         <div className="registry-body">
           <div className="countdown-container">
@@ -61,7 +60,7 @@ const RegistrySection: React.FC = () => {
           </div>
         </div>
         <button className="registry-button">
-          GO TO REGISTRY
+          LET US KNOW IF YOU'RE COMING
         </button>
       </div>
     </section>

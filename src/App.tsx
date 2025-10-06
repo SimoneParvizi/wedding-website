@@ -1,5 +1,4 @@
 import React from 'react'
-import Navigation from './components/Navigation'
 import Header from './components/Header'
 import HeroSection from './components/HeroSection'
 import LinksSection from './components/LinksSection'
@@ -12,9 +11,6 @@ function App() {
   return (
     <div className="app">
       <ScrollEffect>
-        <div className="scroll-navigation">
-          <Navigation />
-        </div>
         <main className="main">
           <div className="scroll-header">
             <Header />

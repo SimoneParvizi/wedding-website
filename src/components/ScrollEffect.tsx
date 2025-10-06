@@ -13,7 +13,6 @@ interface ScrollEffectProps {
 const ScrollEffect: React.FC<ScrollEffectProps> = ({ children }) => {
   useEffect(() => {
     // Initially hide elements
-    gsap.set(".scroll-navigation .navigation", { y: -100, opacity: 0, transformOrigin: "top center" })
     gsap.set(".hero-text-main", { opacity: 0, y: 30 })
     gsap.set(".hero-text-details", { opacity: 0 })
 
@@ -59,52 +58,6 @@ const ScrollEffect: React.FC<ScrollEffectProps> = ({ children }) => {
       ease: "power1.inOut"
     }, "<")
 
-    // Navbar appearing first
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: ".scroll-after-content",
-        start: "top+=500px center",
-        end: "top+=530px center",
-        scrub: 0.3,
-        markers: false
-      }
-    })
-    .to(".scroll-navigation .navigation", {
-      y: 0,
-      opacity: 1,
-      ease: "power1.inOut",
-      transformOrigin: "top center"
-    })
-
-    // Header shrinking after navbar is visible
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: ".scroll-after-content",
-        start: "top+=550px center",
-        end: "top+=650px center",
-        scrub: 0.3,
-        markers: false
-      }
-    })
-    .to(".scroll-header", {
-      scale: 0.3,
-      ease: "power1.inOut"
-    })
-
-    // Hide navbar when scrolling back to hero
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: ".scroll-after-content",
-        start: "top bottom",
-        end: "top center",
-        scrub: 0.3
-      }
-    })
-    .to(".scroll-navigation .navigation", {
-      y: -100,
-      opacity: 0,
-      ease: "power1.inOut"
-    })
 
     return () => {
       ScrollTrigger.getAll().forEach(trigger => trigger.kill())
@@ -130,6 +83,17 @@ const ScrollEffect: React.FC<ScrollEffectProps> = ({ children }) => {
       <div className="scroll-after-content">
         {children}
       </div>
+      <svg style={{ position: 'absolute', width: 0, height: 0 }}>
+        <filter id='noiseFilter'>
+          <feTurbulence
+            type='fractalNoise'
+            baseFrequency='0.9'
+            stitchTiles='stitch'/>
+          <feColorMatrix in="colorNoise" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" />
+          <feComposite operator="in" in2="SourceGraphic" result="monoNoise"/>
+          <feBlend in="SourceGraphic" in2="monoNoise" mode="screen" />
+        </filter>
+      </svg>
     </>
   )
 }
