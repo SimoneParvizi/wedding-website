@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './components/Header'
 import HeroSection from './components/HeroSection'
-import LinksSection from './components/LinksSection'
+import Boerum from './components/Boerum'
 import RegistrySection from './components/RegistrySection'
 import Footer from './components/Footer'
 import ScrollEffect from './components/ScrollEffect'
@@ -16,7 +16,7 @@ function App() {
             <Header />
           </div>
           <div className="scroll-rest-content">
-            <LinksSection />
+            <Boerum />
             <RegistrySection />
           </div>
         </main>

@@ -1,0 +1,356 @@
+/* Main Container */
+.boerum {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, #F5F2EC 0%, #FFFFFF 100%);
+}
+
+.boerum-container {
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boerum-main {
+  width: 1152px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px 32px 0px;
+}
+
+/* Section - Boerum Hill Introduction */
+.boerum-intro {
+  display: flex;
+  flex-direction: row;
+  padding: 16px 0px 48px;
+  gap: 0;
+}
+
+/* Sidebar Navigation */
+.boerum-sidebar {
+  display: flex;
+  flex-direction: column;
+  padding-right: 32px;
+}
+
+.boerum-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.boerum-nav-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.boerum-nav-heading {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.333em;
+  letter-spacing: 0.15em;
+  color: #4A4A4A;
+  margin: 0 0 4px 0;
+  text-align: left;
+}
+
+.boerum-nav-heading--active {
+  color: #6C7A67;
+}
+
+.boerum-nav-link {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 1.5em;
+  color: #BDBAAB;
+  text-decoration: none;
+  margin: 2px 0;
+  text-align: left;
+  transition: color 0.2s ease;
+}
+
+.boerum-nav-link--active {
+  color: #6C7A67;
+}
+
+.boerum-nav-link:hover {
+  color: #4A4A4A;
+}
+
+/* Main Description Area */
+.boerum-description {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  gap: 0;
+  width: 906.67px;
+}
+
+.boerum-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-right: 48px;
+  width: 391.47px;
+}
+
+.boerum-image {
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.boerum-text {
+  display: flex;
+  flex-direction: column;
+  gap: 31.4px;
+  width: 515.2px;
+}
+
+.boerum-heading {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4em;
+  letter-spacing: 0.2em;
+  color: #4A4A4A;
+  margin: 0;
+  text-align: left;
+}
+
+.boerum-paragraph {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-size: 19.2px;
+  line-height: 1.8em;
+  color: #374151;
+  margin: 0;
+  text-align: left;
+}
+
+.boerum-scroll-indicator {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.6px;
+}
+
+.boerum-scroll-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #9CA3AF;
+  border-radius: 50%;
+  padding: 1px;
+}
+
+.boerum-scroll-symbol {
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 1.333em;
+  color: #9CA3AF;
+}
+
+/* Section - Neighborhood amenities and resources */
+.boerum-resources {
+  position: relative;
+  height: 434px;
+  width: 100%;
+}
+
+.boerum-resource-row {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1088px;
+  padding: 25px 16px 24px;
+  border-top: 1px solid #D8D4CA;
+  gap: 183.8px;
+}
+
+.boerum-resource-row:nth-child(1) {
+  top: 48px;
+}
+
+.boerum-resource-row:nth-child(2) {
+  top: 136px;
+  padding: 17px;
+  border: 1px solid #4A4A4A;
+}
+
+.boerum-resource-row:nth-child(3) {
+  top: 209px;
+}
+
+.boerum-resource-row:nth-child(4) {
+  top: 297px;
+  border-bottom: 1px solid #D8D4CA;
+}
+
+.boerum-resource-row--selected {
+  border: 1px solid #4A4A4A;
+}
+
+.boerum-resource-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.556em;
+  letter-spacing: 0.05em;
+  color: #4A4A4A;
+  margin: 0;
+  flex: 1;
+}
+
+.boerum-resource-link {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #4A4A4A;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.boerum-resource-link:hover {
+  opacity: 0.7;
+}
+
+.boerum-resource-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boerum-download-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #4A4A4A;
+}
+
+/* Section - Location and travel times */
+.boerum-location {
+  display: flex;
+  flex-direction: row;
+  padding: 80px 0px;
+}
+
+.boerum-travel-times {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-right: 64px;
+}
+
+.boerum-location-description {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.625em;
+  color: #4A4A4A;
+  margin: 0;
+}
+
+.boerum-travel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.boerum-travel-item {
+  display: flex;
+  flex-direction: row;
+  gap: 3.09px;
+  padding: 5px 0px 2px;
+}
+
+.boerum-travel-item--last {
+  flex-direction: column;
+}
+
+.boerum-travel-time {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #4A4A4A;
+}
+
+.boerum-travel-destination {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.5em;
+  color: #4A4A4A;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1280px) {
+  .boerum-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .boerum-main {
+    width: 100%;
+  }
+
+  .boerum-intro {
+    flex-direction: column;
+  }
+
+  .boerum-sidebar {
+    padding-right: 0;
+    margin-bottom: 32px;
+  }
+
+  .boerum-description {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .boerum-image-wrapper {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 32px;
+  }
+
+  .boerum-text {
+    width: 100%;
+  }
+
+  .boerum-resources {
+    height: auto;
+  }
+
+  .boerum-resource-row {
+    position: relative;
+    width: 100%;
+    top: auto !important;
+  }
+}
