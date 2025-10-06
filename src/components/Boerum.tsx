@@ -72,8 +72,8 @@ const Boerum: React.FC = () => {
               <a href="#shopping-gallery" className="boerum-resource-link">PHOTO GALLERY</a>
             </div>
 
-            {/* Food & Drink - Selected */}
-            <div className="boerum-resource-row boerum-resource-row--selected">
+            {/* Food & Drink */}
+            <div className="boerum-resource-row">
               <h3 className="boerum-resource-title">FOOD & DRINK</h3>
               <a href="#food-tour" className="boerum-resource-link">WALKING TOUR</a>
               <div className="boerum-resource-download">

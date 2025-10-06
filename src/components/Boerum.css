@@ -180,8 +180,11 @@
   align-items: center;
   width: 1088px;
   padding: 25px 16px 24px;
-  border-top: 1px solid #D8D4CA;
+  border: 1px solid transparent;
+  border-top-color: #D8D4CA;
   gap: 183.8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .boerum-resource-row:nth-child(1) {
@@ -190,8 +193,6 @@
 
 .boerum-resource-row:nth-child(2) {
   top: 136px;
-  padding: 17px;
-  border: 1px solid #4A4A4A;
 }
 
 .boerum-resource-row:nth-child(3) {
@@ -204,7 +205,11 @@
 }
 
 .boerum-resource-row--selected {
-  border: 1px solid #4A4A4A;
+  border-color: #4A4A4A;
+}
+
+.boerum-resource-row:hover {
+  border-color: #4A4A4A;
 }
 
 .boerum-resource-title {
