@@ -9,6 +9,7 @@
   height: auto;
   transition: opacity 0.3s ease-in-out, transform 0.1s ease-out;
   transform-origin: center;
+  background: transparent;
 }
 
 .header-section--hidden {
