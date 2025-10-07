@@ -293,7 +293,7 @@
 .boerum-location-description {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.625em;
   color: #4A4A4A;
   margin: 0;
@@ -319,10 +319,23 @@
   flex-direction: column;
 }
 
+.boerum-travel-link {
+  display: flex;
+  flex-direction: row;
+  gap: 3.09px;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+
+.boerum-travel-link:hover {
+  opacity: 0.7;
+}
+
 .boerum-travel-time {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.5em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -332,7 +345,7 @@
 .boerum-travel-destination {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.5em;
   color: #4A4A4A;
 }
