@@ -28,6 +28,7 @@
 .boerum-intro {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   padding: 16px 0px 48px;
   gap: 0;
 }
@@ -213,7 +214,7 @@
 }
 
 .boerum-resource-title {
-  font-family: 'Lato', sans-serif;
+  font-family: 'New Spirit', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.556em;
@@ -225,7 +226,7 @@
 }
 
 .boerum-resource-link {
-  font-family: 'Lato', sans-serif;
+  font-family: 'New Spirit', sans-serif;
   font-weight: 400;
   font-size: 9px;
   line-height: 1.5em;
@@ -253,7 +254,7 @@
 }
 
 .boerum-download-text {
-  font-family: 'Lato', sans-serif;
+  font-family: 'New Spirit', sans-serif;
   font-weight: 400;
   font-size: 9px;
   line-height: 1.5em;
@@ -291,7 +292,7 @@
 }
 
 .boerum-location-description {
-  font-family: 'Lato', sans-serif;
+  font-family: 'New Spirit', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.625em;
@@ -333,8 +334,8 @@
 }
 
 .boerum-travel-time {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-family: 'New Spirit', sans-serif;
+  font-weight: 400;
   font-size: 13px;
   line-height: 1.5em;
   letter-spacing: 0.1em;
@@ -343,7 +344,7 @@
 }
 
 .boerum-travel-destination {
-  font-family: 'Lato', sans-serif;
+  font-family: 'New Spirit', sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 1.5em;

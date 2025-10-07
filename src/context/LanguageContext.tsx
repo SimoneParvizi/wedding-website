@@ -65,7 +65,7 @@ const translations: Record<Language, Record<string, string>> = {
     'boerum.sunday.event': 'Check-out',
     'boerum.heading': 'BOERUM HILL,\nBROOKLYN,\nN.Y.',
     'boerum.description': 'Boerum Hill gives acces to downtown conveniences with all the\ncharm of Brownstone Brooklyn. Offering a variety of favored\neateries, local shops and designer boutiques, the tree-lined streets\nand surrounding parks welcome opportunities for days spent\noutdoors. Cultural landmarks embed history and sophistication\nwithin a modern, thriving community.',
-    'boerum.location.description': 'Cited as the northwest portion of Brooklyn, Boerum Hill is located just outside the\ncommercial thoroughfares of New York City. It is a central hub to many surrounding areas,\nand a distinct section of the city on its own.',
+    'boerum.location.description': 'To give you an idea of the travel times by car, you’ll find them listed below. \nIt might be a bit of a drive, but having you therecha means the world to us',
     'boerum.travel.time1': '2 HRS 50 MINUTES',
     'boerum.travel.destination1': 'from Rome "Fiumicino" Airport',
     'boerum.travel.time2': '2 HRS 10 MINUTES',

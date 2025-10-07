@@ -13,32 +13,6 @@ const Boerum: React.FC = () => {
         <div className="boerum-main">
           {/* Section - Boerum Hill Introduction */}
           <div className="boerum-intro">
-            {/* Sidebar Navigation */}
-            <aside className="boerum-sidebar">
-              <ul className="boerum-nav-list">
-                <li className="boerum-nav-item">
-                  <h3 className="boerum-nav-heading">{t('boerum.thursday')}</h3>
-                  <span className="boerum-nav-link">{t('boerum.thursday.guests')}</span>
-                  <span className="boerum-nav-link">{t('boerum.thursday.time')}</span>
-                </li>
-                <li className="boerum-nav-item">
-                  <h3 className="boerum-nav-heading boerum-nav-heading--active">{t('boerum.friday')}</h3>
-                  <span className="boerum-nav-link boerum-nav-link--active">{t('boerum.friday.guests')}</span>
-                  <span className="boerum-nav-link boerum-nav-link--active">{t('boerum.friday.time')}</span>
-                </li>
-                <li className="boerum-nav-item">
-                  <h3 className="boerum-nav-heading">{t('boerum.saturday')}</h3>
-                  <span className="boerum-nav-link">{t('boerum.saturday.guests')}</span>
-                  <span className="boerum-nav-link">{t('boerum.saturday.time')}</span>
-                </li>
-                <li className="boerum-nav-item">
-                  <h3 className="boerum-nav-heading">{t('boerum.sunday')}</h3>
-                  <span className="boerum-nav-link">{t('boerum.sunday.guests')}</span>
-                  <span className="boerum-nav-link">{t('boerum.sunday.time')}</span>
-                </li>
-              </ul>
-            </aside>
-
             {/* Main Description Area */}
             <div className="boerum-description">
               <div className="boerum-image-wrapper">
