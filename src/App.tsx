@@ -5,11 +5,16 @@ import Boerum from './components/Boerum'
 import RegistrySection from './components/RegistrySection'
 import Footer from './components/Footer'
 import ScrollEffect from './components/ScrollEffect'
+import LanguageToggle from './components/LanguageToggle'
+import { LanguageProvider, useLanguage } from './context/LanguageContext'
 import './App.css'
 
-function App() {
+function AppContent() {
+  const { language, toggleLanguage } = useLanguage()
+
   return (
     <div className="app">
+      <LanguageToggle language={language} onToggle={toggleLanguage} />
       <ScrollEffect>
         <main className="main">
           <div className="scroll-header">
@@ -25,6 +30,14 @@ function App() {
         </div>
       </ScrollEffect>
     </div>
+  )
+}
+
+function App() {
+  return (
+    <LanguageProvider>
+      <AppContent />
+    </LanguageProvider>
   )
 }
 
