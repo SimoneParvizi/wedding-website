@@ -179,10 +179,11 @@
   justify-content: space-between;
   align-items: center;
   width: 1088px;
+  height: 73px;
   padding: 25px 16px 24px;
   border: 1px solid transparent;
   border-top-color: #D8D4CA;
-  gap: 183.8px;
+  gap: 16px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -221,6 +222,7 @@
   color: #4A4A4A;
   margin: 0;
   flex: 1;
+  text-align: center;
 }
 
 .boerum-resource-link {
@@ -233,6 +235,11 @@
   color: #4A4A4A;
   text-decoration: none;
   transition: opacity 0.2s ease;
+  text-align: center;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .boerum-resource-link:hover {
@@ -243,6 +250,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
 }
 
 .boerum-download-text {

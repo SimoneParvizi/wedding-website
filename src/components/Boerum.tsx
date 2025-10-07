@@ -17,24 +17,24 @@ const Boerum: React.FC = () => {
             <aside className="boerum-sidebar">
               <ul className="boerum-nav-list">
                 <li className="boerum-nav-item">
-                  <h3 className="boerum-nav-heading">{t('boerum.shopping')}</h3>
-                  <a href="#shopping-tour" className="boerum-nav-link">{t('boerum.walkingTour')}</a>
-                  <a href="#shopping-gallery" className="boerum-nav-link">{t('boerum.photoGallery')}</a>
+                  <h3 className="boerum-nav-heading">{t('boerum.thursday')}</h3>
+                  <span className="boerum-nav-link">{t('boerum.thursday.guests')}</span>
+                  <span className="boerum-nav-link">{t('boerum.thursday.time')}</span>
                 </li>
                 <li className="boerum-nav-item">
-                  <h3 className="boerum-nav-heading boerum-nav-heading--active">{t('boerum.foodDrink')}</h3>
-                  <a href="#food-tour" className="boerum-nav-link boerum-nav-link--active">{t('boerum.walkingTour')}</a>
-                  <a href="#food-gallery" className="boerum-nav-link boerum-nav-link--active">{t('boerum.photoGallery')}</a>
+                  <h3 className="boerum-nav-heading boerum-nav-heading--active">{t('boerum.friday')}</h3>
+                  <span className="boerum-nav-link boerum-nav-link--active">{t('boerum.friday.guests')}</span>
+                  <span className="boerum-nav-link boerum-nav-link--active">{t('boerum.friday.time')}</span>
                 </li>
                 <li className="boerum-nav-item">
-                  <h3 className="boerum-nav-heading">{t('boerum.culturalLandmarks')}</h3>
-                  <a href="#cultural-tour" className="boerum-nav-link">{t('boerum.walkingTour')}</a>
-                  <a href="#cultural-gallery" className="boerum-nav-link">{t('boerum.photoGallery')}</a>
+                  <h3 className="boerum-nav-heading">{t('boerum.saturday')}</h3>
+                  <span className="boerum-nav-link">{t('boerum.saturday.guests')}</span>
+                  <span className="boerum-nav-link">{t('boerum.saturday.time')}</span>
                 </li>
                 <li className="boerum-nav-item">
-                  <h3 className="boerum-nav-heading">{t('boerum.greenSpace')}</h3>
-                  <a href="#green-tour" className="boerum-nav-link">{t('boerum.walkingTour')}</a>
-                  <a href="#green-gallery" className="boerum-nav-link">{t('boerum.photoGallery')}</a>
+                  <h3 className="boerum-nav-heading">{t('boerum.sunday')}</h3>
+                  <span className="boerum-nav-link">{t('boerum.sunday.guests')}</span>
+                  <span className="boerum-nav-link">{t('boerum.sunday.time')}</span>
                 </li>
               </ul>
             </aside>
@@ -56,46 +56,38 @@ const Boerum: React.FC = () => {
             </div>
           </div>
 
-          {/* Section - Neighborhood amenities and resources */}
+          {/* Section - Wedding Schedule */}
           <div className="boerum-resources">
-            {/* Shopping */}
+            {/* Thursday */}
             <div className="boerum-resource-row">
-              <h3 className="boerum-resource-title">{t('boerum.shopping')}</h3>
-              <a href="#shopping-tour" className="boerum-resource-link">{t('boerum.walkingTour')}</a>
-              <div className="boerum-resource-download">
-                <span className="boerum-download-text">{t('boerum.download')}</span>
-              </div>
-              <a href="#shopping-gallery" className="boerum-resource-link">{t('boerum.photoGallery')}</a>
+              <h3 className="boerum-resource-title">{t('boerum.thursday')}</h3>
+              <span className="boerum-resource-link">{t('boerum.thursday.guests')}</span>
+              <span className="boerum-download-text">{t('boerum.thursday.time')}</span>
+              <span className="boerum-resource-link">{t('boerum.thursday.event')}</span>
             </div>
 
-            {/* Food & Drink */}
+            {/* Friday */}
             <div className="boerum-resource-row">
-              <h3 className="boerum-resource-title">{t('boerum.foodDrink')}</h3>
-              <a href="#food-tour" className="boerum-resource-link">{t('boerum.walkingTour')}</a>
-              <div className="boerum-resource-download">
-                <span className="boerum-download-text">{t('boerum.download')}</span>
-              </div>
-              <a href="#food-gallery" className="boerum-resource-link">{t('boerum.photoGallery')}</a>
+              <h3 className="boerum-resource-title">{t('boerum.friday')}</h3>
+              <span className="boerum-resource-link">{t('boerum.friday.guests')}</span>
+              <span className="boerum-download-text">{t('boerum.friday.time')}</span>
+              <span className="boerum-resource-link">{t('boerum.friday.event')}</span>
             </div>
 
-            {/* Cultural Landmarks */}
+            {/* Saturday */}
             <div className="boerum-resource-row">
-              <h3 className="boerum-resource-title">{t('boerum.culturalLandmarks')}</h3>
-              <a href="#cultural-tour" className="boerum-resource-link">{t('boerum.walkingTour')}</a>
-              <div className="boerum-resource-download">
-                <span className="boerum-download-text">{t('boerum.download')}</span>
-              </div>
-              <a href="#cultural-gallery" className="boerum-resource-link">{t('boerum.photoGallery')}</a>
+              <h3 className="boerum-resource-title">{t('boerum.saturday')}</h3>
+              <span className="boerum-resource-link">{t('boerum.saturday.guests')}</span>
+              <span className="boerum-download-text">{t('boerum.saturday.time')}</span>
+              <span className="boerum-resource-link">{t('boerum.saturday.event')}</span>
             </div>
 
-            {/* Green Space */}
+            {/* Sunday */}
             <div className="boerum-resource-row boerum-resource-row--last">
-              <h3 className="boerum-resource-title">{t('boerum.greenSpace')}</h3>
-              <a href="#green-tour" className="boerum-resource-link">{t('boerum.walkingTour')}</a>
-              <div className="boerum-resource-download">
-                <span className="boerum-download-text">{t('boerum.download')}</span>
-              </div>
-              <a href="#green-gallery" className="boerum-resource-link">{t('boerum.photoGallery')}</a>
+              <h3 className="boerum-resource-title">{t('boerum.sunday')}</h3>
+              <span className="boerum-resource-link">{t('boerum.sunday.guests')}</span>
+              <span className="boerum-download-text">{t('boerum.sunday.time')}</span>
+              <span className="boerum-resource-link">{t('boerum.sunday.event')}</span>
             </div>
           </div>
 
