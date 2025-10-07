@@ -168,7 +168,7 @@
 /* Section - Neighborhood amenities and resources */
 .boerum-resources {
   position: relative;
-  height: 434px;
+  height: 340px;
   width: 100%;
 }
 
@@ -193,15 +193,15 @@
 }
 
 .boerum-resource-row:nth-child(2) {
-  top: 136px;
+  top: 121px;
 }
 
 .boerum-resource-row:nth-child(3) {
-  top: 209px;
+  top: 194px;
 }
 
 .boerum-resource-row:nth-child(4) {
-  top: 297px;
+  top: 267px;
   border-bottom: 1px solid #D8D4CA;
 }
 
