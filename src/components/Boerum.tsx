@@ -60,34 +60,42 @@ const Boerum: React.FC = () => {
           <div className="boerum-resources">
             {/* Thursday */}
             <div className="boerum-resource-row">
-              <h3 className="boerum-resource-title">{t('boerum.thursday')}</h3>
-              <span className="boerum-resource-link">{t('boerum.thursday.guests')}</span>
-              <span className="boerum-download-text">{t('boerum.thursday.time')}</span>
-              <span className="boerum-resource-link">{t('boerum.thursday.event')}</span>
+              <div className="boerum-resource-title">{t('boerum.thursday')}</div>
+              <div className="boerum-resource-link">{t('boerum.thursday.guests')}</div>
+              <div className="boerum-resource-download">
+                <span className="boerum-download-text">{t('boerum.thursday.time')}</span>
+              </div>
+              <div className="boerum-resource-link">{t('boerum.thursday.event')}</div>
             </div>
 
             {/* Friday */}
             <div className="boerum-resource-row">
-              <h3 className="boerum-resource-title">{t('boerum.friday')}</h3>
-              <span className="boerum-resource-link">{t('boerum.friday.guests')}</span>
-              <span className="boerum-download-text">{t('boerum.friday.time')}</span>
-              <span className="boerum-resource-link">{t('boerum.friday.event')}</span>
+              <div className="boerum-resource-title">{t('boerum.friday')}</div>
+              <div className="boerum-resource-link">{t('boerum.friday.guests')}</div>
+              <div className="boerum-resource-download">
+                <span className="boerum-download-text">{t('boerum.friday.time')}</span>
+              </div>
+              <div className="boerum-resource-link">{t('boerum.friday.event')}</div>
             </div>
 
             {/* Saturday */}
             <div className="boerum-resource-row">
-              <h3 className="boerum-resource-title">{t('boerum.saturday')}</h3>
-              <span className="boerum-resource-link">{t('boerum.saturday.guests')}</span>
-              <span className="boerum-download-text">{t('boerum.saturday.time')}</span>
-              <span className="boerum-resource-link">{t('boerum.saturday.event')}</span>
+              <div className="boerum-resource-title">{t('boerum.saturday')}</div>
+              <div className="boerum-resource-link">{t('boerum.saturday.guests')}</div>
+              <div className="boerum-resource-download">
+                <span className="boerum-download-text">{t('boerum.saturday.time')}</span>
+              </div>
+              <div className="boerum-resource-link">{t('boerum.saturday.event')}</div>
             </div>
 
             {/* Sunday */}
             <div className="boerum-resource-row boerum-resource-row--last">
-              <h3 className="boerum-resource-title">{t('boerum.sunday')}</h3>
-              <span className="boerum-resource-link">{t('boerum.sunday.guests')}</span>
-              <span className="boerum-download-text">{t('boerum.sunday.time')}</span>
-              <span className="boerum-resource-link">{t('boerum.sunday.event')}</span>
+              <div className="boerum-resource-title">{t('boerum.sunday')}</div>
+              <div className="boerum-resource-link">{t('boerum.sunday.guests')}</div>
+              <div className="boerum-resource-download">
+                <span className="boerum-download-text">{t('boerum.sunday.time')}</span>
+              </div>
+              <div className="boerum-resource-link">{t('boerum.sunday.event')}</div>
             </div>
           </div>
 
