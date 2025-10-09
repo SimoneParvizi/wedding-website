@@ -103,21 +103,22 @@
   display: flex;
   flex-direction: column;
   padding-right: 48px;
-  width: 391.47px;
+  width: 650px;
 }
 
 .boerum-image-carousel {
   position: relative;
   width: 100%;
-  height: 260px;
+  height: 380px;
 }
 
 .boerum-image {
   width: 100%;
-  height: 260px;
+  height: 380px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .boerum-carousel-arrow {
@@ -429,6 +430,54 @@
   width: 15px;
   height: 15px;
   display: inline-block;
+}
+
+/* Modal styles */
+.boerum-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.boerum-modal-content {
+  position: relative;
+  max-width: 95%;
+  max-height: 95%;
+  cursor: default;
+}
+
+.boerum-modal-image {
+  max-width: 100%;
+  max-height: 95vh;
+  object-fit: contain;
+}
+
+.boerum-modal-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 1;
+  transition: opacity 0.2s ease;
+}
+
+.boerum-modal-close:hover {
+  opacity: 0.7;
 }
 
 /* Responsive adjustments */

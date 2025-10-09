@@ -7,6 +7,7 @@ import { useLanguage } from '../context/LanguageContext'
 const Boerum: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('food-drink')
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0)
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
   const { t } = useLanguage()
 
   const images = [
@@ -17,6 +18,8 @@ const Boerum: React.FC = () => {
     '/assets/slides/5.png',
     '/assets/slides/6.png',
     '/assets/slides/7.png',
+    '/assets/slides/8.png',
+    '/assets/slides/9.png',
   ]
 
   const handlePrevImage = () => {
@@ -25,6 +28,14 @@ const Boerum: React.FC = () => {
 
   const handleNextImage = () => {
     setCurrentImageIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1))
+  }
+
+  const handleImageClick = () => {
+    setIsModalOpen(true)
+  }
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false)
   }
 
   return (
@@ -40,7 +51,7 @@ const Boerum: React.FC = () => {
                   <button className="boerum-carousel-arrow boerum-carousel-arrow-left" onClick={handlePrevImage}>
                     ‹
                   </button>
-                  <div className="boerum-image" style={{ backgroundImage: `url(${images[currentImageIndex]})` }} />
+                  <div className="boerum-image" style={{ backgroundImage: `url(${images[currentImageIndex]})` }} onClick={handleImageClick} />
                   <button className="boerum-carousel-arrow boerum-carousel-arrow-right" onClick={handleNextImage}>
                     ›
                   </button>
@@ -175,6 +186,16 @@ const Boerum: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Modal for zoomed image */}
+      {isModalOpen && (
+        <div className="boerum-modal" onClick={handleCloseModal}>
+          <div className="boerum-modal-content">
+            <button className="boerum-modal-close" onClick={handleCloseModal}>×</button>
+            <img src={images[currentImageIndex]} alt="Zoomed view" className="boerum-modal-image" />
+          </div>
+        </div>
+      )}
     </section>
   )
 }
