@@ -5,7 +5,25 @@ import { useLanguage } from '../context/LanguageContext'
 
 const Boerum: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('food-drink')
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0)
   const { t } = useLanguage()
+
+  const images = [
+    '/assets/brooklyn-street.png',
+    '/assets/watercolor-tuscany.png', // Placeholder 2
+    '/assets/sketch-podere.png', // Placeholder 3
+    '/assets/brooklyn-street.png', // Placeholder 4
+    '/assets/watercolor-tuscany.png', // Placeholder 5
+    '/assets/sketch-podere.png', // Placeholder 6
+  ]
+
+  const handlePrevImage = () => {
+    setCurrentImageIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1))
+  }
+
+  const handleNextImage = () => {
+    setCurrentImageIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1))
+  }
 
   return (
     <section className="boerum">
@@ -16,16 +34,29 @@ const Boerum: React.FC = () => {
             {/* Main Description Area */}
             <div className="boerum-description">
               <div className="boerum-image-wrapper">
-                <div className="boerum-image" style={{ backgroundImage: 'url(/assets/brooklyn-street.png)' }} />
+                <div className="boerum-image-carousel">
+                  <button className="boerum-carousel-arrow boerum-carousel-arrow-left" onClick={handlePrevImage}>
+                    ‹
+                  </button>
+                  <div className="boerum-image" style={{ backgroundImage: `url(${images[currentImageIndex]})` }} />
+                  <button className="boerum-carousel-arrow boerum-carousel-arrow-right" onClick={handleNextImage}>
+                    ›
+                  </button>
+                  <div className="boerum-carousel-indicators">
+                    {images.map((_, index) => (
+                      <button
+                        key={index}
+                        className={`boerum-carousel-dot ${index === currentImageIndex ? 'boerum-carousel-dot--active' : ''}`}
+                        onClick={() => setCurrentImageIndex(index)}
+                        aria-label={`Go to image ${index + 1}`}
+                      />
+                    ))}
+                  </div>
+                </div>
               </div>
               <div className="boerum-text">
                 <h2 className="boerum-heading" dangerouslySetInnerHTML={{ __html: t('boerum.heading').replace(/\n/g, '<br/>') }} />
                 <p className="boerum-paragraph" dangerouslySetInnerHTML={{ __html: t('boerum.description').replace(/\n/g, '<br/>') }} />
-                <div className="boerum-scroll-indicator">
-                  <div className="boerum-scroll-border">
-                    <div className="boerum-scroll-symbol">↓</div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

@@ -106,12 +106,80 @@
   width: 391.47px;
 }
 
+.boerum-image-carousel {
+  position: relative;
+  width: 100%;
+  height: 450px;
+}
+
 .boerum-image {
   width: 100%;
   height: 450px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.boerum-carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #D8D4CA;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  color: #4A4A4A;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.boerum-carousel-arrow:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: #4A4A4A;
+}
+
+.boerum-carousel-arrow-left {
+  left: 10px;
+}
+
+.boerum-carousel-arrow-right {
+  right: 10px;
+}
+
+.boerum-carousel-indicators {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.boerum-carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #D8D4CA;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.boerum-carousel-dot:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.boerum-carousel-dot--active {
+  background: #4A4A4A;
+  border-color: #4A4A4A;
 }
 
 .boerum-text {
@@ -122,8 +190,8 @@
 }
 
 .boerum-heading {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-family: 'New Spirit Bold', sans-serif;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.4em;
   letter-spacing: 0.2em;
@@ -295,7 +363,7 @@
 .boerum-location-description {
   font-family: 'New Spirit', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.625em;
   color: #4A4A4A;
   margin: 0;
@@ -337,19 +405,21 @@
 .boerum-travel-time {
   font-family: 'New Spirit', sans-serif;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.5em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #4A4A4A;
+  white-space: nowrap;
 }
 
 .boerum-travel-destination {
   font-family: 'New Spirit', sans-serif;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.5em;
   color: #4A4A4A;
+  white-space: nowrap;
 }
 
 /* Responsive adjustments */
