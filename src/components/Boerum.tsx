@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Boerum.css'
 import watercolorTuscany from '/assets/watercolor-tuscany.png'
 import openTabIcon from '/assets/transparent_open_tab.png'
@@ -37,6 +37,20 @@ const Boerum: React.FC = () => {
   const handleCloseModal = () => {
     setIsModalOpen(false)
   }
+
+  useEffect(() => {
+    const handleEscapeKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape' && isModalOpen) {
+        handleCloseModal()
+      }
+    }
+
+    document.addEventListener('keydown', handleEscapeKey)
+
+    return () => {
+      document.removeEventListener('keydown', handleEscapeKey)
+    }
+  }, [isModalOpen])
 
   return (
     <section className="boerum">
