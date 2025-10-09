@@ -74,7 +74,7 @@ const ScrollEffect: React.FC<ScrollEffectProps> = ({ children }) => {
         </div>
         <div className="scroll-image-container">
           <img
-            src="/assets/transparent_intro.png"
+            src="/assets/extended_transparent_intro_2.png"
             alt="Main Home"
             className="scroll-image"
           />

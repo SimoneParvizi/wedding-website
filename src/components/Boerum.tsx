@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import './Boerum.css'
-import watercolorTuscany from '/assets/watercolor-tuscany.png'
-import watercolor1 from '/assets/watercolor1_transparent.png'
-import openTabIcon from '/assets/transparent_open_tab.png'
 import { useLanguage } from '../context/LanguageContext'
 
 const Boerum: React.FC = () => {
-  const [selectedCategory, setSelectedCategory] = useState<string>('food-drink')
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0)
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
   const { t } = useLanguage()
@@ -159,7 +155,7 @@ const Boerum: React.FC = () => {
                     <span className="boerum-travel-time">{t('boerum.travel.time1')}</span>
                     <span className="boerum-travel-destination">
                       {t('boerum.travel.destination1')}
-                      <img src={openTabIcon} alt="Open in new tab" className="boerum-external-link-icon" />
+                      <img src="/assets/transparent_open_tab.png" alt="Open in new tab" className="boerum-external-link-icon" />
                     </span>
                   </a>
                 </li>
@@ -173,7 +169,7 @@ const Boerum: React.FC = () => {
                     <span className="boerum-travel-time">{t('boerum.travel.time2')}</span>
                     <span className="boerum-travel-destination">
                       {t('boerum.travel.destination2')}
-                      <img src={openTabIcon} alt="Open in new tab" className="boerum-external-link-icon" />
+                      <img src="/assets/transparent_open_tab.png" alt="Open in new tab" className="boerum-external-link-icon" />
                     </span>
                   </a>
                 </li>
@@ -187,7 +183,7 @@ const Boerum: React.FC = () => {
                     <span className="boerum-travel-time">{t('boerum.travel.time3')}</span>
                     <span className="boerum-travel-destination">
                       {t('boerum.travel.destination3')}
-                      <img src={openTabIcon} alt="Open in new tab" className="boerum-external-link-icon" />
+                      <img src="/assets/transparent_open_tab.png" alt="Open in new tab" className="boerum-external-link-icon" />
                     </span>
                   </a>
                 </li>
@@ -201,14 +197,14 @@ const Boerum: React.FC = () => {
                     <span className="boerum-travel-time">{t('boerum.travel.time4')}</span>
                     <span className="boerum-travel-destination">
                       {t('boerum.travel.destination4')}
-                      <img src={openTabIcon} alt="Open in new tab" className="boerum-external-link-icon" />
+                      <img src="/assets/transparent_open_tab.png" alt="Open in new tab" className="boerum-external-link-icon" />
                     </span>
                   </a>
                 </li>
               </ul>
             </div>
             <div className="boerum-map">
-              <img src={watercolorTuscany} alt="Tuscany map" className="boerum-map-image" />
+              <img src="/assets/watercolor-tuscany.png" alt="Tuscany map" className="boerum-map-image" />
             </div>
           </div>
         </div>
