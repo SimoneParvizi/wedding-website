@@ -65,7 +65,14 @@ const Boerum: React.FC = () => {
                   <button className="boerum-carousel-arrow boerum-carousel-arrow-left" onClick={handlePrevImage}>
                     ‹
                   </button>
-                  <div className="boerum-image" style={{ backgroundImage: `url(${images[currentImageIndex]})` }} onClick={handleImageClick} />
+                  {images.map((image, index) => (
+                    <div
+                      key={index}
+                      className={`boerum-image ${index === currentImageIndex ? 'active' : ''}`}
+                      style={{ backgroundImage: `url(${image})` }}
+                      onClick={handleImageClick}
+                    />
+                  ))}
                   <button className="boerum-carousel-arrow boerum-carousel-arrow-right" onClick={handleNextImage}>
                     ›
                   </button>

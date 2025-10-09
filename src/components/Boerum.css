@@ -110,15 +110,25 @@
   position: relative;
   width: 100%;
   height: 380px;
+  overflow: hidden;
 }
 
 .boerum-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 380px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.boerum-image.active {
+  opacity: 1;
 }
 
 .boerum-carousel-arrow {
