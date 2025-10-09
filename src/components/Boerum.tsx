@@ -10,12 +10,13 @@ const Boerum: React.FC = () => {
   const { t } = useLanguage()
 
   const images = [
-    '/assets/brooklyn-street.png',
-    '/assets/watercolor-tuscany.png', // Placeholder 2
-    '/assets/sketch-podere.png', // Placeholder 3
-    '/assets/brooklyn-street.png', // Placeholder 4
-    '/assets/watercolor-tuscany.png', // Placeholder 5
-    '/assets/sketch-podere.png', // Placeholder 6
+    '/assets/slides/1.png',
+    '/assets/slides/2.png',
+    '/assets/slides/3.png',
+    '/assets/slides/4.png',
+    '/assets/slides/5.png',
+    '/assets/slides/6.png',
+    '/assets/slides/7.png',
   ]
 
   const handlePrevImage = () => {
