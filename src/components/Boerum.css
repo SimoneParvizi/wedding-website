@@ -395,16 +395,16 @@
   gap: 3.09px;
   text-decoration: none;
   color: inherit;
-  transition: opacity 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .boerum-travel-link:hover {
-  opacity: 0.7;
+  text-decoration: underline;
 }
 
 .boerum-travel-time {
   font-family: 'New Spirit', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 15px;
   line-height: 1.5em;
   letter-spacing: 0.1em;
@@ -420,6 +420,15 @@
   line-height: 1.5em;
   color: #4A4A4A;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.boerum-external-link-icon {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
 }
 
 /* Responsive adjustments */
