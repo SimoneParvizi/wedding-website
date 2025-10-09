@@ -7,7 +7,7 @@
   height: 100vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url('/assets/montale_view.png');
+    url('/assets/highres_big_background_optimized.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

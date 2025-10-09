@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Boerum.css'
 import watercolorTuscany from '/assets/watercolor-tuscany.png'
+import watercolor1 from '/assets/watercolor1_transparent.png'
 import openTabIcon from '/assets/transparent_open_tab.png'
 import { useLanguage } from '../context/LanguageContext'
 
@@ -65,14 +66,19 @@ const Boerum: React.FC = () => {
                   <button className="boerum-carousel-arrow boerum-carousel-arrow-left" onClick={handlePrevImage}>
                     ‹
                   </button>
-                  {images.map((image, index) => (
-                    <div
-                      key={index}
-                      className={`boerum-image ${index === currentImageIndex ? 'active' : ''}`}
-                      style={{ backgroundImage: `url(${image})` }}
-                      onClick={handleImageClick}
-                    />
-                  ))}
+                  {images.map((image, index) => {
+                    const isVisible = index === currentImageIndex ||
+                                     index === (currentImageIndex - 1 + images.length) % images.length ||
+                                     index === (currentImageIndex + 1) % images.length
+                    return (
+                      <div
+                        key={index}
+                        className={`boerum-image ${index === currentImageIndex ? 'active' : ''}`}
+                        style={{ backgroundImage: isVisible ? `url(${image})` : 'none' }}
+                        onClick={handleImageClick}
+                      />
+                    )
+                  })}
                   <button className="boerum-carousel-arrow boerum-carousel-arrow-right" onClick={handleNextImage}>
                     ›
                   </button>
