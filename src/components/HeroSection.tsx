@@ -8,8 +8,8 @@ const HeroSection: React.FC = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY
       const windowHeight = window.innerHeight
-      // Calculate progress from 0 to 1 based on first viewport scroll
-      const progress = Math.min(scrollPosition / windowHeight, 1)
+      // Calculate progress, allowing it to go beyond 1 for text fade-in
+      const progress = scrollPosition / windowHeight
       setScrollProgress(progress)
     }
 
@@ -23,14 +23,14 @@ const HeroSection: React.FC = () => {
       <div
         className="hero-background-intro"
         style={{
-          transform: `scale(${1 + scrollProgress * 8})`
+          transform: `scale(${1 + Math.min(scrollProgress, 1) * 8})`
         }}
       />
       <div className="hero-overlay" />
       <div
         className="hero-content"
         style={{
-          opacity: scrollProgress < 0.8 ? 1 : 1 - ((scrollProgress - 0.8) / 0.2)
+          opacity: scrollProgress >= 1 ? Math.min((scrollProgress - 1) / 0.3, 1) : 0
         }}
       >
         <p className="hero-text-main">
