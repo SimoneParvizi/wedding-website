@@ -204,7 +204,7 @@ const Boerum: React.FC = () => {
               </ul>
             </div>
             <div className="boerum-map">
-              <img src="/assets/watercolor-tuscany.png" alt="Tuscany map" className="boerum-map-image" />
+              <img src="/assets/watercolor-tuscany-2.png" alt="Tuscany map" className="boerum-map-image" />
             </div>
           </div>
         </div>
