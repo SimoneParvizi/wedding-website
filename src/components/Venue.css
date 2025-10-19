@@ -22,6 +22,7 @@
   will-change: opacity;
   transform: translateZ(0);
   backface-visibility: hidden;
+  background-color: #d4d4d4;
 }
 
 .venue__bg-image {

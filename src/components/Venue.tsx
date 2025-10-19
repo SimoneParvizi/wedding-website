@@ -5,11 +5,11 @@ export default function Venue() {
     <section className="venue">
       <div className="venue__background">
         <img
-          src="/assets/highres_big_background_optimized.jpg"
+          src="/assets/highres_big_background_web.jpg"
           alt="Venue background"
           className="venue__bg-image"
-          loading="lazy"
-          decoding="async"
+          loading="eager"
+          fetchPriority="high"
         />
       </div>
       <div className="venue__content">
