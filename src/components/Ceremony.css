@@ -258,7 +258,7 @@
 
 .ceremony__timeline-label {
   font-family: 'Publica Sans Round', sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -267,7 +267,7 @@
 
 .ceremony__timeline-value {
   font-family: 'Satoshi', var(--font-medium), sans-serif;
-  font-size: 17.4px;
+  font-size: 30px;
   font-weight: 500;
   line-height: 1.65;
   color: #000000;
