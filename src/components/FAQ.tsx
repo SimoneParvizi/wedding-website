@@ -49,7 +49,7 @@ export default function FAQ() {
         <p className="faq__label">FUN FACT QUIZ</p>
         <h2 className="faq__title">
           HOW MUCH DO YOU KNOW<br />
-          ABOUT DAN AND SOPH?
+          ABOUT SIMONE AND VITA?
         </h2>
         <div className="faq__grid">
           {quizCards.map((card, index) => (

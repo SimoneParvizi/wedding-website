@@ -71,12 +71,11 @@
 }
 
 .faq__card--open .faq__card-icon-line--vertical {
-  opacity: 0;
+  transform: rotate(-45deg);
 }
 
 .faq__card--open .faq__card-icon-line--horizontal {
-  transform: rotate(135deg);
-  background-color: #808080;
+  transform: rotate(-45deg);
 }
 
 /* Card Question */
