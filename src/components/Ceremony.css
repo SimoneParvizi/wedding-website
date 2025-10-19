@@ -213,6 +213,24 @@
   padding-bottom: 0;
 }
 
+.ceremony__timeline-item--schedule {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  position: relative;
+}
+
+.ceremony__timeline-schedule-title {
+  position: absolute;
+  left: calc(-50vw + 600px);
+  top: 0;
+  width: 400px;
+}
+
+.ceremony__timeline-schedule-content {
+  grid-column: 2;
+}
+
 .ceremony__timeline-label {
   font-family: 'Publica Sans Round', sans-serif;
   font-size: 11px;

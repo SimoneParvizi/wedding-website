@@ -159,14 +159,14 @@ export default function Ceremony() {
           </div>
 
           {/* Weekend Schedule */}
-          <div className="ceremony__timeline-item">
-            <div className="ceremony__timeline-left">
+          <div className="ceremony__timeline-item ceremony__timeline-item--schedule">
+            <div className="ceremony__timeline-schedule-title">
               <h3 className="ceremony__timeline-title">WEEKEND SCHEDULE</h3>
               <p className="ceremony__timeline-description">
                 A full weekend celebration in the heart of Tuscany.
               </p>
             </div>
-            <div className="ceremony__timeline-right">
+            <div className="ceremony__timeline-schedule-content">
               <div className="ceremony__timeline-detail ceremony__timeline-detail--day">
                 <span className="ceremony__timeline-label">THURSDAY, JULY 2</span>
                 <div className="ceremony__timeline-subdetail">
