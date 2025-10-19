@@ -195,6 +195,11 @@
   align-items: baseline;
 }
 
+.ceremony__timeline-subdetail .ceremony__timeline-label {
+  min-width: 60px;
+  flex-shrink: 0;
+}
+
 .ceremony__timeline-value-container {
   flex: 1;
 }
