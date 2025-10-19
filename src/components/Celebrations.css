@@ -12,13 +12,30 @@
 }
 
 .celebrations__slides {
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: grab;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.celebrations__slides::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.celebrations__slides:active {
+  cursor: grabbing;
 }
 
 .celebrations__track {
   display: flex;
   align-items: center;
-  animation: slide 20s linear infinite;
+  animation: slide 40s linear infinite;
+}
+
+.celebrations__slides:hover .celebrations__track {
+  animation-play-state: paused;
 }
 
 @keyframes slide {
