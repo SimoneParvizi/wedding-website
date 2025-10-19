@@ -1,12 +1,12 @@
 .faq {
   position: relative;
   z-index: 10;
-  background-color: #FFFFFF;
+  background-color: #000000;
   padding: 184px 20px 64px;
 }
 
 .faq__container {
-  max-width: 1316px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -17,8 +17,7 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-align: center;
-  color: #000000;
-  opacity: 0.6;
+  color: #FFFFFF;
   margin-bottom: 14.8px;
 }
 
@@ -30,7 +29,7 @@
   letter-spacing: -0.96px;
   text-transform: uppercase;
   text-align: center;
-  color: #000000;
+  color: #FFFFFF;
   margin-bottom: 56px;
 }
 
@@ -38,14 +37,14 @@
 .faq__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  gap: 24px;
 }
 
 /* Quiz Card */
 .faq__card {
   position: relative;
-  background-color: #FFFFFF;
-  border: 1px solid #000000;
+  background-color: #000000;
+  border: 1px solid #FFFFFF;
   padding: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -56,18 +55,18 @@
 }
 
 .faq__card--open {
-  background-color: #000000;
+  background-color: #FFFFFF;
   border-bottom-right-radius: 32px;
 }
 
 .faq__card--open .faq__card-question {
-  color: #FFFFFF;
+  color: #000000;
   opacity: 0.6;
 }
 
 .faq__card--open .faq__card-answer {
   opacity: 1;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .faq__card--open .faq__card-icon-line--vertical {
@@ -85,7 +84,7 @@
   font-weight: 500;
   line-height: 22.4px;
   text-transform: uppercase;
-  color: #000000;
+  color: #FFFFFF;
   margin: 0 0 7.4px 0;
   transition: all 0.3s ease;
 }
@@ -96,7 +95,7 @@
   font-size: 17.6px;
   font-weight: 500;
   line-height: 28.8px;
-  color: #000000;
+  color: #FFFFFF;
   margin: 0;
   opacity: 0;
   transition: all 0.3s ease;
