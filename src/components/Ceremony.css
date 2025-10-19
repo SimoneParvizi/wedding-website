@@ -118,6 +118,17 @@
   position: relative;
 }
 
+.ceremony__timeline-item .ceremony__timeline-left {
+  position: absolute;
+  left: calc(-50vw + 600px);
+  top: 0;
+  width: 400px;
+}
+
+.ceremony__timeline-item .ceremony__timeline-right {
+  grid-column: 2;
+}
+
 .ceremony__timeline-item::after {
   content: '';
   position: absolute;
