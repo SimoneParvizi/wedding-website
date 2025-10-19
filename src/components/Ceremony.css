@@ -236,6 +236,9 @@
   left: calc(-50vw + 650px);
   top: 0;
   width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .ceremony__timeline-schedule-content {
