@@ -11,10 +11,11 @@
 }
 
 .faq__label {
-  font-family: 'Inter', var(--font-primary), sans-serif;
-  font-size: 14px;
+  font-family: 'Publica Sans Round', sans-serif;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 19.6px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
   text-align: center;
   color: #000000;
   opacity: 0.6;
@@ -37,7 +38,7 @@
 .faq__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0;
+  gap: 16px;
 }
 
 /* Quiz Card */
@@ -124,7 +125,6 @@
 .faq__card-icon-line--horizontal {
   width: 85px;
   height: 1px;
-  transform: rotate(90deg);
 }
 
 .faq__card-icon-line--vertical {
