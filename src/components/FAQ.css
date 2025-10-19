@@ -2,7 +2,7 @@
   position: relative;
   z-index: 10;
   background-color: #000000;
-  padding: 184px 20px 64px;
+  padding: 184px 20px 120px;
 }
 
 .faq__container {
@@ -37,7 +37,7 @@
 .faq__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: 40px;
 }
 
 /* Quiz Card */
