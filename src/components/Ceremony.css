@@ -7,33 +7,93 @@
 .ceremony__banner {
   background-color: #000000;
   color: #FFFFFF;
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
 .ceremony__banner-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding-left: 40px;
+}
+
+.ceremony__banner-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.ceremony__banner-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ceremony__banner-title {
+  font-family: 'Satoshi', var(--font-medium), sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.ceremony__banner-description {
+  font-family: 'Publica Sans Light', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+.ceremony__banner-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.ceremony__banner-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .ceremony__banner-label {
-  font-family: var(--font-primary);
+  font-family: 'Inter', var(--font-primary), sans-serif;
   font-size: 11px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 20px;
-  opacity: 0.7;
+  color: rgba(255, 255, 255, 0.4);
 }
 
-.ceremony__banner-text {
+.ceremony__banner-value {
   font-family: 'Satoshi', var(--font-medium), sans-serif;
-  font-size: 48px;
+  font-size: 17.4px;
   font-weight: 500;
-  line-height: 1.2;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  margin: 0;
+  line-height: 1.65;
+  color: #FFFFFF;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 768px) {
+  .ceremony__banner {
+    padding: 60px 20px;
+  }
+
+  .ceremony__banner-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .ceremony__banner-title {
+    font-size: 24px;
+  }
+
+  .ceremony__banner-value {
+    font-size: 16px;
+  }
 }
 
 /* Timeline Section - White Background */
@@ -55,7 +115,7 @@
   gap: 80px;
   margin-bottom: 100px;
   padding-bottom: 80px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #000000;
 }
 
 .ceremony__timeline-item:last-child {
@@ -83,9 +143,9 @@
 }
 
 .ceremony__timeline-description {
-  font-family: 'Inter', var(--font-primary), sans-serif;
+  font-family: 'Publica Sans Light', sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.6);
   margin: 0;

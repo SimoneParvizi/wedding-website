@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './FAQ.css';
 
 export default function FAQ() {
-  const [openCard, setOpenCard] = useState<number | null>(2); // Default open card is "Where did we meet?"
+  const [openCard, setOpenCard] = useState<number | null>(null); // No card open by default
 
   const quizCards = [
     {

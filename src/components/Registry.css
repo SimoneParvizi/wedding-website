@@ -1,8 +1,12 @@
 .registry {
   position: relative;
-  z-index: 10;
+  z-index: 2;
   background-color: #F7F7F7;
   padding: 104px 20px;
+  border-radius: 40px 40px 0 0;
+  margin-top: -120px;
+  padding-top: 180px;
+  overflow: hidden;
 }
 
 .registry__container {
@@ -16,7 +20,7 @@
 }
 
 .registry__label {
-  font-family: 'Inter', var(--font-primary), sans-serif;
+  font-family: 'Publica Sans Round', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 19.6px;
@@ -25,7 +29,7 @@
   opacity: 0.6;
   margin: 0;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.2em;
 }
 
 .registry__title {
@@ -47,9 +51,47 @@
   }
 }
 
+.registry__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 40px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.registry__button {
+  font-family: 'Satoshi', var(--font-medium), sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 18px 40px;
+  border-radius: 50px;
+  border: 2px solid #000000;
+  background-color: transparent;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.registry__button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.registry__button--yes {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.registry__button--yes:hover {
+  background-color: transparent;
+  color: #000000;
+}
+
 .registry__image {
-  margin-top: 20px;
-  max-width: 400px;
+  margin-bottom: 20px;
+  max-width: 300px;
   width: 100%;
 }
 
@@ -58,6 +100,18 @@
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .registry__buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .registry__button {
+    flex: 1;
+    max-width: 250px;
+  }
 }
 
 @media (min-width: 768px) {

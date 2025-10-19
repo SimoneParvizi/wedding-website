@@ -14,7 +14,7 @@
 .celebrations__slides {
   overflow-x: auto;
   overflow-y: hidden;
-  cursor: grab;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="20" viewBox="0 0 80 20"><text x="0" y="15" font-family="Arial" font-size="14" fill="black">&lt; scroll &gt;</text></svg>') 40 10, auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -25,17 +25,13 @@
 }
 
 .celebrations__slides:active {
-  cursor: grabbing;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="20" viewBox="0 0 80 20"><text x="0" y="15" font-family="Arial" font-size="14" fill="black">&lt; scroll &gt;</text></svg>') 40 10, auto;
 }
 
 .celebrations__track {
   display: flex;
   align-items: center;
-  animation: slide 40s linear infinite;
-}
-
-.celebrations__slides:hover .celebrations__track {
-  animation-play-state: paused;
+  animation: slide 20s linear infinite;
 }
 
 @keyframes slide {

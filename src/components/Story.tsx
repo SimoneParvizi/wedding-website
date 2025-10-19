@@ -31,7 +31,7 @@ export default function Story() {
       <div className={`story__container ${isVisible ? 'story__container--visible' : ''}`}>
         <h2 className="story__heading">STORY</h2>
         <p className="story__text">
-          AS A PAIR OF MUSIC FANATICS, SIEM AND VITA MET EACH OTHER AT A LOCAL MUSIC FESTIVAL WITH FRIENDS.
+          AS A PAIR OF MUSIC LOVERS, SIEM AND VITA MET EACH OTHER AT A CLUB IN AMSTERDAM.
         </p>
       </div>
     </section>
