@@ -1,49 +1,62 @@
+import { useEffect, useRef, useState } from 'react';
 import './Accommodation.css';
 
 export default function Accommodation() {
-  const hotels = [
+  const accommodationRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (accommodationRef.current) {
+      observer.observe(accommodationRef.current);
+    }
+
+    return () => {
+      if (accommodationRef.current) {
+        observer.unobserve(accommodationRef.current);
+      }
+    };
+  }, []);
+
+  const features = [
     {
-      image: '/assets/slides/4.png',
-      name: 'PREMIER INN BEDFORD TOWN CENTRE',
-      description: '5-10 MINS WALK FROM THE VENUE',
+      image: '/assets/slides/1.png',
+      name: 'POOL',
     },
     {
-      image: '/assets/slides/5.png',
-      name: 'PREMIER INN BEDFORD SOUTH',
-      description: '5-10 MINS DRIVE FROM THE VENUE',
+      image: '/assets/slides/2.png',
+      name: 'WINERY',
     },
   ];
 
   return (
-    <section className="accommodation">
-      <div className="accommodation__container">
-        <div className="accommodation__intro">
-          <h2 className="accommodation__title">
-            THE ROOMS AT DREWFIELD HOUSE ARE RESERVED FOR<br />
-            GUESTS. HOWEVER, IF YOU WANT TO GO TO TOWN THERE<br />
-            ARE SOME ALTERNATIVE ACCOM TYPES TO CHOOSE FROM.<br />
-            AS A LOCAL THERE ARE SOME BEAUTIFUL HOTELS NEARBY
-          </h2>
-        </div>
-        <div className="accommodation__grid">
-          {hotels.map((hotel, index) => (
-            <div key={index} className="accommodation__item">
-              <div className="accommodation__image-wrapper">
-                <img
-                  src={hotel.image}
-                  alt={hotel.name}
-                  className="accommodation__image"
-                />
-              </div>
-              <div className="accommodation__info">
-                <h3 className="accommodation__hotel-name">{hotel.name}</h3>
-                <p className="accommodation__hotel-description">
-                  {hotel.description}
-                </p>
-              </div>
+    <section className="accommodation" ref={accommodationRef}>
+      <div className={`accommodation__container ${isVisible ? 'accommodation__container--visible' : ''}`}>
+        <h2 className="accommodation__heading">ACCOMMODATION</h2>
+        <p className="accommodation__text">
+          THE VENUE HAS A BEAUTIFUL POOL AND WINERY FOR ALL GUESTS TO ENJOY.
+        </p>
+      </div>
+      <div className="accommodation__features">
+        {features.map((feature, index) => (
+          <div key={index} className="accommodation__feature">
+            <div className="accommodation__feature-image">
+              <img
+                src={feature.image}
+                alt={feature.name}
+              />
             </div>
-          ))}
-        </div>
+            <p className="accommodation__feature-name">{feature.name}</p>
+          </div>
+        ))}
       </div>
     </section>
   );

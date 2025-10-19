@@ -1,59 +1,51 @@
 .celebrations {
   position: relative;
   z-index: 10;
+  padding: 120px 20px 120px;
   background-color: var(--color-white);
-  padding: 80px 20px;
 }
 
-.celebrations__container {
-  max-width: 1200px;
+.celebrations__carousel {
+  position: relative;
+  width: 100%;
   margin: 0 auto;
 }
 
-.celebrations__title {
-  font-family: var(--font-medium);
-  font-size: 32px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.celebrations__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-}
-
-.celebrations__item {
-  aspect-ratio: 4 / 3;
+.celebrations__slides {
   overflow: hidden;
-  border-radius: 4px;
 }
 
-.celebrations__image {
+.celebrations__track {
+  display: flex;
+  align-items: center;
+  animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.celebrations__slide {
+  width: 350px;
+  height: 467px;
+  flex-shrink: 0;
+  margin-right: 150px;
+}
+
+.celebrations__slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.celebrations__item:hover .celebrations__image {
-  transform: scale(1.05);
+  display: block;
 }
 
 @media (min-width: 768px) {
   .celebrations {
-    padding: 120px 40px;
-  }
-
-  .celebrations__title {
-    font-size: 48px;
-  }
-
-  .celebrations__grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    padding: 160px 40px 160px;
   }
 }

@@ -1,31 +1,34 @@
 import './Celebrations.css';
 
 export default function Celebrations() {
+  const photos = [
+    '/assets/slides/1.png',
+    '/assets/slides/2.png',
+    '/assets/slides/3.png',
+    '/assets/slides/4.png',
+    '/assets/slides/5.png',
+    '/assets/slides/6.png',
+    '/assets/slides/7.png',
+    '/assets/slides/8.png',
+    '/assets/slides/9.png',
+  ];
+
+  // Duplicate photos for seamless loop
+  const duplicatedPhotos = [...photos, ...photos];
+
   return (
     <section className="celebrations">
-      <div className="celebrations__container">
-        <h2 className="celebrations__title">CELEBRATIONS</h2>
-        <div className="celebrations__grid">
-          <div className="celebrations__item">
-            <img
-              src="/assets/slides/6.png"
-              alt="Celebration moment 1"
-              className="celebrations__image"
-            />
-          </div>
-          <div className="celebrations__item">
-            <img
-              src="/assets/slides/7.png"
-              alt="Celebration moment 2"
-              className="celebrations__image"
-            />
-          </div>
-          <div className="celebrations__item">
-            <img
-              src="/assets/slides/8.png"
-              alt="Celebration moment 3"
-              className="celebrations__image"
-            />
+      <div className="celebrations__carousel">
+        <div className="celebrations__slides">
+          <div className="celebrations__track">
+            {duplicatedPhotos.map((photo, index) => (
+              <div key={index} className="celebrations__slide">
+                <img
+                  src={photo}
+                  alt={`Celebration ${index % photos.length + 1}`}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
