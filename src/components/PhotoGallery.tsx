@@ -2,10 +2,15 @@ import './PhotoGallery.css';
 
 export default function PhotoGallery() {
   const photos = [
-    '/assets/slides/2.png',
-    '/assets/slides/3.png',
-    '/assets/slides/4.png',
-    '/assets/slides/5.png',
+    '/assets/slides-us/club.JPG',
+    '/assets/slides-us/loveland.JPG',
+    '/assets/slides-us/dancing.JPG',
+    '/assets/slides-us/porto.jpg',
+    '/assets/slides-us/pescara.JPG',
+    '/assets/slides-us/boat.jpg',
+    '/assets/slides-us/kiss.jpg',
+    '/assets/slides-us/bm.jpeg',
+    '/assets/slides-us/africa-car.jpg',
   ];
 
   // Duplicate photos for seamless loop
@@ -18,7 +23,11 @@ export default function PhotoGallery() {
           <div className="photo-gallery__track">
             {duplicatedPhotos.map((photo, index) => (
               <div key={index} className="photo-gallery__slide">
-                <img src={photo} alt={`Gallery ${index % photos.length + 1}`} />
+                <img
+                  src={photo}
+                  alt={`Gallery ${index % photos.length + 1}`}
+                  className={photo.includes('africa-car.jpg') ? 'photo-gallery__slide--rotate' : ''}
+                />
               </div>
             ))}
           </div>

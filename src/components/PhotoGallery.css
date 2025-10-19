@@ -32,15 +32,26 @@
 
 .photo-gallery__slide {
   width: 350px;
+  height: 467px;
   flex-shrink: 0;
   margin-right: 150px;
 }
 
 .photo-gallery__slide img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   display: block;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.photo-gallery__slide img:hover {
+  filter: grayscale(0%);
+}
+
+.photo-gallery__slide--rotate {
+  transform: rotate(90deg);
 }
 
 
