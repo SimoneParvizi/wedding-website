@@ -1,20 +1,6 @@
 .app {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   min-height: 100vh;
-  margin: 0;
-  background: transparent;
-  position: relative;
-  overflow-y: auto;
-}
-
-
-.main {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-  z-index: 1;
 }

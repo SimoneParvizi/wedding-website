@@ -1,25 +1,4 @@
 @font-face {
-  font-family: 'Gegor Black';
-  src: url('/assets/fonts/GegorBlack.otf') format('opentype');
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gegor';
-  src: url('/assets/fonts/GegorDemo.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Casta Thin';
-  src: url('/assets/fonts/CastaThin.otf') format('opentype');
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'New Spirit';
   src: url('/assets/fonts/NewSpirit.otf') format('opentype');
   font-weight: 400;
@@ -34,10 +13,45 @@
 }
 
 @font-face {
+  font-family: 'New Spirit Medium';
+  src: url('/assets/fonts/NewSpiritMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'New Spirit Semi Bold';
+  src: url('/assets/fonts/NewSpiritSemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'New Spirit Bold';
   src: url('/assets/fonts/NewSpiritBold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'New Spirit Condensed';
+  src: url('/assets/fonts/NewSpiritCondensed.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Publica Sans Round';
+  src: url('/assets/fonts/publica-sans/PublicaSans-Light.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Publica Sans Round';
+  src: url('/assets/fonts/publica-sans/PublicaSans-LightItalic.otf/usa') format('opentype');
+  font-weight: 400;
+  font-style: italic;
 }
 
 * {
@@ -46,35 +60,69 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-mine-shaft: #2B2B2B;
+  --color-iron: #DFDFE2;
+  --color-gray: #808080;
+  --color-wild-sand: #F7F7F7;
+
+  --font-primary: 'New Spirit', serif;
+  --font-medium: 'New Spirit Medium', serif;
+  --font-semi-bold: 'New Spirit Semi Bold', serif;
+  --font-bold: 'New Spirit Bold', serif;
+  --font-light: 'New Spirit Light', serif;
+  --font-condensed: 'New Spirit Condensed', serif;
+}
+
 html {
-  background: #faf6f0;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'New Spirit', sans-serif;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-black);
+  background-color: var(--color-white);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #faf6f0;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  width: 100%;
   overflow-x: hidden;
 }
 
-body::before {
-  position: fixed;
-  left: 0;
-  top: 0;
-  content: '';
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  background-image:
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  background-color: #8C8C8C;
-  opacity: 20%;
-  pointer-events: none;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-medium);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: opacity 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.7;
 }
 
 #root {

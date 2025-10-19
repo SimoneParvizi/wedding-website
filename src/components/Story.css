@@ -1,0 +1,28 @@
+.story {
+  padding: 80px 20px;
+  background-color: var(--color-white);
+}
+
+.story__container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.story__text {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-black);
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px) {
+  .story {
+    padding: 120px 40px;
+  }
+
+  .story__text {
+    font-size: 16px;
+  }
+}
