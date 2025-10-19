@@ -1,8 +1,33 @@
+import { useEffect, useRef, useState } from 'react';
 import './Venue.css';
 
 export default function Venue() {
+  const venueRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (venueRef.current) {
+      observer.observe(venueRef.current);
+    }
+
+    return () => {
+      if (venueRef.current) {
+        observer.unobserve(venueRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section className="venue">
+    <section className="venue" ref={venueRef}>
       <div className="venue__background">
         <img
           src="/assets/highres_big_background_web.jpg"
@@ -12,7 +37,7 @@ export default function Venue() {
           fetchPriority="high"
         />
       </div>
-      <div className="venue__content">
+      <div className={`venue__content ${isVisible ? 'venue__content--visible' : ''}`}>
         <p className="venue__join">JOIN US</p>
         <h2 className="venue__title">
           PODERE<br />
@@ -21,8 +46,8 @@ export default function Venue() {
         </h2>
         <div className="venue__details">
           <p className="venue__address">
-            SEGGIANO<br />
-            GROSSETO<br />
+            SEGGIANO,<br />
+            GROSSETO,<br />
             TUSCANY, ITALY
           </p>
         </div>

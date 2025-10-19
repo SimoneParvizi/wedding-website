@@ -44,6 +44,12 @@
   color: var(--color-black);
   max-width: 1200px;
   width: 100%;
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+.venue__content--visible {
+  opacity: 1;
 }
 
 .venue__join {
@@ -71,8 +77,8 @@
 
 .venue__address {
   font-family: 'Publica Sans Ultra Light', sans-serif;
-  font-size: 14px;
-  line-height: 1.8;
+  font-size: 28px;
+  line-height: 1.1;
   letter-spacing: 0.05em;
 }
 
@@ -91,7 +97,7 @@
   }
 
   .venue__address {
-    font-size: 16px;
+    font-size: 40px;
   }
 }
 
