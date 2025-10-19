@@ -23,7 +23,6 @@
   color: #FFFFFF;
   text-transform: uppercase;
   mix-blend-mode: difference;
-  transition: color 0.3s ease;
 }
 
 .header--dark .header__left,
