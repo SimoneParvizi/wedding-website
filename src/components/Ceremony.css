@@ -115,11 +115,25 @@
   gap: 80px;
   margin-bottom: 100px;
   padding-bottom: 80px;
-  border-bottom: 1px solid #000000;
+  position: relative;
+}
+
+.ceremony__timeline-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 1px;
+  background-color: #000000;
+}
+
+.ceremony__timeline-item:last-child::after {
+  display: none;
 }
 
 .ceremony__timeline-item:last-child {
-  border-bottom: none;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -164,13 +178,48 @@
   gap: 8px;
 }
 
+.ceremony__timeline-subdetail {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+}
+
+.ceremony__timeline-value-container {
+  flex: 1;
+}
+
+.ceremony__timeline-detail--day {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.ceremony__timeline-detail--day::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  right: -100vw;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.ceremony__timeline-detail--day:last-child::after {
+  display: none;
+}
+
+.ceremony__timeline-detail--day:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 .ceremony__timeline-label {
-  font-family: 'Inter', var(--font-primary), sans-serif;
+  font-family: 'Publica Sans Round', sans-serif;
   font-size: 11px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .ceremony__timeline-value {

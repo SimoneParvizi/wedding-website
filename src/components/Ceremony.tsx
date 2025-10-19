@@ -157,6 +157,102 @@ export default function Ceremony() {
               </div>
             </div>
           </div>
+
+          {/* Weekend Schedule */}
+          <div className="ceremony__timeline-item">
+            <div className="ceremony__timeline-left">
+              <h3 className="ceremony__timeline-title">WEEKEND SCHEDULE</h3>
+              <p className="ceremony__timeline-description">
+                A full weekend celebration in the heart of Tuscany.
+              </p>
+            </div>
+            <div className="ceremony__timeline-right">
+              <div className="ceremony__timeline-detail ceremony__timeline-detail--day">
+                <span className="ceremony__timeline-label">THURSDAY, JULY 2</span>
+                <div className="ceremony__timeline-subdetail">
+                  <span className="ceremony__timeline-label">WHO</span>
+                  <div className="ceremony__timeline-value-container">
+                    <span className="ceremony__timeline-value">Intimate Family & Friends</span>
+                  </div>
+                </div>
+                <div className="ceremony__timeline-subdetail">
+                  <span className="ceremony__timeline-label">WHEN</span>
+                  <div className="ceremony__timeline-value-container">
+                    <span className="ceremony__timeline-value">Check-in is available from 3:00 PM.</span>
+                  </div>
+                </div>
+                <div className="ceremony__timeline-subdetail">
+                  <span className="ceremony__timeline-label">WHAT</span>
+                  <div className="ceremony__timeline-value-container">
+                    <span className="ceremony__timeline-value">Later in the day, we'll enjoy a wine tasting to unwind, catch up, and get into the Tuscan spirit.</span>
+                  </div>
+                </div>
+              </div>
+              <div className="ceremony__timeline-detail ceremony__timeline-detail--day">
+                <span className="ceremony__timeline-label">FRIDAY, JULY 3</span>
+                <div className="ceremony__timeline-subdetail">
+                  <span className="ceremony__timeline-label">WHO</span>
+                  <div className="ceremony__timeline-value-container">
+                    <span className="ceremony__timeline-value">Arrival Day & Aperitivo</span>
+                  </div>
+                </div>
+                <div className="ceremony__timeline-subdetail">
+                  <span className="ceremony__timeline-label">WHEN</span>
+                  <div className="ceremony__timeline-value-container">
+                    <span className="ceremony__timeline-value">Check-in opens again from 3:00 PM for all other guests.</span>
+                  </div>
+                </div>
+                <div className="ceremony__timeline-subdetail">
+                  <span className="ceremony__timeline-label">WHAT</span>
+                  <div className="ceremony__timeline-value-container">
+                    <span className="ceremony__timeline-value">From 6:00 PM, we'll gather for an aperitivo to officially kick off the weekend. We'll try not to make it too late ;)!</span>
+                  </div>
+                </div>
+              </div>
+              <div className="ceremony__timeline-detail ceremony__timeline-detail--day">
+                <span className="ceremony__timeline-label">SATURDAY, JULY 4</span>
+                <div className="ceremony__timeline-subdetail">
+                  <span className="ceremony__timeline-label">WHO</span>
+                  <div className="ceremony__timeline-value-container">
+                    <span className="ceremony__timeline-value">The Big Day</span>
+                  </div>
+                </div>
+                <div className="ceremony__timeline-subdetail">
+                  <span className="ceremony__timeline-label">WHEN</span>
+                  <div className="ceremony__timeline-value-container">
+                    <span className="ceremony__timeline-value">Breakfast will be served from [time] to [time]. The ceremony begins at [time].</span>
+                  </div>
+                </div>
+                <div className="ceremony__timeline-subdetail">
+                  <span className="ceremony__timeline-label">WHAT</span>
+                  <div className="ceremony__timeline-value-container">
+                    <span className="ceremony__timeline-value">Followed by a toast, delicious food, drinks, and a festive dinner. Afterwards, we'll open the dance floor and celebrate late into the Tuscan night.</span>
+                  </div>
+                </div>
+              </div>
+              <div className="ceremony__timeline-detail ceremony__timeline-detail--day">
+                <span className="ceremony__timeline-label">SUNDAY, JULY 5</span>
+                <div className="ceremony__timeline-subdetail">
+                  <span className="ceremony__timeline-label">WHO</span>
+                  <div className="ceremony__timeline-value-container">
+                    <span className="ceremony__timeline-value">Goodbye Breakfast</span>
+                  </div>
+                </div>
+                <div className="ceremony__timeline-subdetail">
+                  <span className="ceremony__timeline-label">WHEN</span>
+                  <div className="ceremony__timeline-value-container">
+                    <span className="ceremony__timeline-value">At 10:00 AM, we'll have a farewell breakfast before checking out and saying our goodbyes.</span>
+                  </div>
+                </div>
+                <div className="ceremony__timeline-subdetail">
+                  <span className="ceremony__timeline-label">WHAT</span>
+                  <div className="ceremony__timeline-value-container">
+                    <span className="ceremony__timeline-value">One last coffee, croissant, and memory of an unforgettable weekend.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

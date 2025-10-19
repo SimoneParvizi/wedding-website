@@ -40,7 +40,7 @@ export default function Accommodation() {
   return (
     <section className="accommodation" ref={accommodationRef}>
       <div className={`accommodation__container ${isVisible ? 'accommodation__container--visible' : ''}`}>
-        <h2 className="accommodation__heading">ACCOMMODATION</h2>
+        <h2 className="accommodation__heading">ACCOMMODATION'S PERKS</h2>
         <p className="accommodation__text">
           THE VENUE HAS A BEAUTIFUL POOL AND WINERY FOR ALL GUESTS TO ENJOY.
         </p>
