@@ -1,3 +1,4 @@
+import Header from './components/Header';
 import Hero from './components/Hero';
 import Story from './components/Story';
 import PhotoGallery from './components/PhotoGallery';
@@ -12,6 +13,7 @@ import './App.css';
 function App() {
   return (
     <div className="app">
+      <Header />
       <Hero />
       <Story />
       <PhotoGallery />
