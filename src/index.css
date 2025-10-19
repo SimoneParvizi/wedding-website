@@ -54,6 +54,20 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'Publica Sans Medium';
+  src: url('/assets/fonts/publica-sans/PublicaSans-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Publica Sans Light';
+  src: url('/assets/fonts/publica-sans/PublicaSans-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
