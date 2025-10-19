@@ -6,36 +6,36 @@ export default function FAQ() {
 
   const quizCards = [
     {
-      question: 'WHO IS MARVO?',
-      answer: 'Marvo is our pet dog! He is named after our love for Marvel movies.',
-    },
-    {
-      question: 'WHO ARE OUR FAVOURITE BAND?',
-      answer: 'Our favourite band are the Foo Fighters, more importantly our favourite album is "The Colour and Shape"',
-    },
-    {
       question: 'WHERE DID WE MEET?',
-      answer: 'We met at Creamfields in 2015, waiting in the queue to buy some loaded fries from the burger shack.',
+      answer: 'We met at Shelter in 2022, a techno club in Amsterdam.',
     },
     {
-      question: 'WHERE IS OUR DREAM HOUSE?',
-      answer: 'Our dream house is in Newton-Le-Willows.',
-    },
-    {
-      question: 'WHAT CAR DO WE DRIVE?',
-      answer: 'Volkswagen T-Roc is our beloved family car. We call her Trisha.',
-    },
-    {
-      question: "WHAT'S OUR GO-TO TAKEAWAY?",
+      question: "WHAT'S OUR FAVOURITE ITALIAN DISH?",
       answer: 'Pizza Pizza Pizza!',
     },
     {
+      question: "WHAT'S OUR FAVOURITE DUTCH DISH?",
+      answer: 'Pizza Pizza Pizza!',
+    },
+    {
+      question: 'WHAT CAR DO WE DRIVE?',
+      answer: "SIKE! We don't have a car."
+    },
+    {
+      question: 'HOW MANY KIDS WOULD WE LIKE TO HAVE?',
+      answer: 'Five',
+    },
+    {
+      question: 'WHAT WOULD BE OUR DREAM HOUSE?',
+      answer: 'A farm house in Italy',
+    },
+    {
       question: 'WHAT DO WE DO FOR JOBS?',
-      answer: 'Dan is a professional musician, and Soph is a school teacher.',
+      answer: 'Siem is a software engineer, and Vita is a Marketing Manager.',
     },
     {
       question: 'WHERE DID WE GET THIS AWESOME SITE?',
-      answer: 'Simon Fairhurst, an award winning web designer made it for us in Framer!',
+      answer: 'Simone did it ;)',
     },
   ];
 

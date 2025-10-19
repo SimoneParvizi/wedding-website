@@ -8,14 +8,20 @@ export default function Header() {
     const handleScroll = () => {
       const storySection = document.querySelector('.story');
       const photoGallerySection = document.querySelector('.photo-gallery');
+      const ceremonySection = document.querySelector('.ceremony');
+      const accommodationSection = document.querySelector('.accommodation');
 
-      if (storySection && photoGallerySection) {
+      if (storySection && photoGallerySection && ceremonySection && accommodationSection) {
         const storyRect = storySection.getBoundingClientRect();
         const photoRect = photoGallerySection.getBoundingClientRect();
+        const ceremonyRect = ceremonySection.getBoundingClientRect();
+        const accommodationRect = accommodationSection.getBoundingClientRect();
 
-        // Check if header is over story or photo-gallery sections
+        // Check if header is over white sections
         const isOverWhiteSection = (storyRect.top < 50 && storyRect.bottom > 0) ||
-                                   (photoRect.top < 50 && photoRect.bottom > 0);
+                                   (photoRect.top < 50 && photoRect.bottom > 0) ||
+                                   (ceremonyRect.top < 50 && ceremonyRect.bottom > 0) ||
+                                   (accommodationRect.top < 50 && accommodationRect.bottom > 0);
 
         setIsDark(isOverWhiteSection);
       }

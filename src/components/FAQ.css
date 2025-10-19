@@ -2,7 +2,7 @@
   position: relative;
   z-index: 10;
   background-color: #000000;
-  padding: 184px 20px 120px;
+  padding: 184px 20px 200px;
 }
 
 .faq__container {
@@ -12,7 +12,7 @@
 
 .faq__label {
   font-family: 'Publica Sans Round', sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.2em;
   text-transform: uppercase;
