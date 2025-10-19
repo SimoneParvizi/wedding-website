@@ -3,6 +3,7 @@ import './Hero.css';
 
 export default function Hero() {
   const contentRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,6 +14,12 @@ export default function Hero() {
         const textOffset = scrolled * 0.8;
         contentRef.current.style.transform = `translateY(${textOffset}px)`;
       }
+
+      if (imageRef.current) {
+        // Background image scrolls up (parallax effect)
+        const imageOffset = scrolled * -0.3;
+        imageRef.current.style.transform = `translateY(${imageOffset}px)`;
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -22,7 +29,7 @@ export default function Hero() {
   return (
     <>
       <section className="hero">
-        <div className="hero__image-container">
+        <div className="hero__image-container" ref={imageRef}>
           <img
             src="/assets/hero.jpg"
             alt="Simone & Vita"
