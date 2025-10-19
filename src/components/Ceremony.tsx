@@ -163,7 +163,8 @@ export default function Ceremony() {
             <div className="ceremony__timeline-schedule-title">
               <h3 className="ceremony__timeline-title">WEEKEND SCHEDULE</h3>
               <p className="ceremony__timeline-description">
-                A full weekend celebration in the heart of Tuscany.
+                There will be plenty of food, snacks, drinks, and water available throughout the weekend. If you have any special requests or dietary needs, please let us know in advance so we can accommodate them.
+                \nIf you’d like to pick up something yourself, the nearest supermarket is in Seggiano, about [xx] km from Podere Montale.
               </p>
             </div>
             <div className="ceremony__timeline-schedule-content">

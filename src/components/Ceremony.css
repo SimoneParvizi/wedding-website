@@ -120,7 +120,7 @@
 
 .ceremony__timeline-item .ceremony__timeline-left {
   position: absolute;
-  left: calc(-50vw + 600px);
+  left: calc(-50vw + 650px);
   top: 0;
   width: 400px;
 }
@@ -233,7 +233,7 @@
 
 .ceremony__timeline-schedule-title {
   position: absolute;
-  left: calc(-50vw + 600px);
+  left: calc(-50vw + 650px);
   top: 0;
   width: 400px;
 }
