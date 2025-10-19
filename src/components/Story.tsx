@@ -29,9 +29,11 @@ export default function Story() {
   return (
     <section className="story" ref={storyRef}>
       <div className={`story__container ${isVisible ? 'story__container--visible' : ''}`}>
-        <h2 className="story__heading">STORY</h2>
+        <h2 className="story__heading">DEAR FRIENDS AND FAMILY</h2>
         <p className="story__text">
-          AS A PAIR OF MUSIC LOVERS, SIEM AND VITA MET EACH OTHER AT A CLUB IN AMSTERDAM.
+          We are beyond excited to celebrate this special adventure in Tuscany with all of you.
+          <br />
+          <br /> We can’t wait to raise a glass together under the Italian sun, surrounded by vineyards, olive trees, and lots of love and laughter.
         </p>
       </div>
     </section>

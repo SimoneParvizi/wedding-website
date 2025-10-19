@@ -174,7 +174,7 @@ export default function Ceremony() {
                 <div className="ceremony__timeline-subdetail">
                   <span className="ceremony__timeline-label">WHO</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">Intimate Family & Friends</span>
+                    <span className="ceremony__timeline-value">Intimate Family</span>
                   </div>
                 </div>
                 <div className="ceremony__timeline-subdetail">
@@ -207,7 +207,7 @@ export default function Ceremony() {
                 <div className="ceremony__timeline-subdetail">
                   <span className="ceremony__timeline-label">WHAT</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">From 6:00 PM, we'll gather for an aperitivo to officially kick off the weekend. We'll try not to make it too late ;)!</span>
+                    <span className="ceremony__timeline-value">From 6:00 PM, we'll gather for an aperitivo to officially kick off the weekend.</span>
                   </div>
                 </div>
               </div>
