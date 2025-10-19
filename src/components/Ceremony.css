@@ -235,10 +235,20 @@
   position: absolute;
   left: calc(-50vw + 650px);
   top: 0;
-  width: 400px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.ceremony__timeline-schedule-title .ceremony__timeline-title {
+  font-size: 56px;
+  line-height: 1.1;
+}
+
+.ceremony__timeline-schedule-title .ceremony__timeline-description {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .ceremony__timeline-schedule-content {
