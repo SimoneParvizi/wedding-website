@@ -30,7 +30,8 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: brightness(0.8);
+  filter: brightness(1.3) contrast(0.9);
+  opacity: 0.7;
   transform: translateZ(0);
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
@@ -45,11 +46,20 @@
   width: 100%;
 }
 
+.venue__join {
+  font-family: 'Publica Sans Ultra Light', sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
 .venue__title {
-  font-family: var(--font-medium);
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 1;
+  font-family: 'Publica Sans Ultra Light', sans-serif;
+  font-size: 120px;
+  font-weight: 100;
+  line-height: 0.95;
   text-transform: uppercase;
   letter-spacing: -0.02em;
   margin-bottom: 40px;
@@ -60,7 +70,7 @@
 }
 
 .venue__address {
-  font-family: var(--font-primary);
+  font-family: 'Publica Sans Ultra Light', sans-serif;
   font-size: 14px;
   line-height: 1.8;
   letter-spacing: 0.05em;
@@ -72,8 +82,12 @@
     padding: 120px 40px;
   }
 
+  .venue__join {
+    font-size: 16px;
+  }
+
   .venue__title {
-    font-size: 80px;
+    font-size: 160px;
   }
 
   .venue__address {
@@ -87,6 +101,6 @@
   }
 
   .venue__title {
-    font-size: 120px;
+    font-size: 200px;
   }
 }

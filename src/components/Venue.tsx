@@ -13,15 +13,17 @@ export default function Venue() {
         />
       </div>
       <div className="venue__content">
+        <p className="venue__join">JOIN US</p>
         <h2 className="venue__title">
-          DREWFIELD<br />HOUSE<br />18.09.2027
+          PODERE<br />
+          MONTALE<br />
+          03.07.2026
         </h2>
         <div className="venue__details">
           <p className="venue__address">
-            GREAT TEWS PLACE<br />
-            CHAWTON, BEDFORD<br />
-            UNITED KINGDOM<br />
-            BEDFORDXXXXX@GMAIL.COM
+            SEGGIANO<br />
+            GROSSETO<br />
+            TUSCANY, ITALY
           </p>
         </div>
       </div>
