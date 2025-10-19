@@ -8,14 +8,21 @@ export default function PhotoGallery() {
     '/assets/slides/5.png',
   ];
 
+  // Duplicate photos for seamless loop
+  const duplicatedPhotos = [...photos, ...photos];
+
   return (
     <section className="photo-gallery">
-      <div className="photo-gallery__container">
-        {photos.map((photo, index) => (
-          <div key={index} className="photo-gallery__item">
-            <img src={photo} alt={`Gallery ${index + 1}`} />
+      <div className="photo-gallery__carousel">
+        <div className="photo-gallery__slides">
+          <div className="photo-gallery__track">
+            {duplicatedPhotos.map((photo, index) => (
+              <div key={index} className="photo-gallery__slide">
+                <img src={photo} alt={`Gallery ${index % photos.length + 1}`} />
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </section>
   );

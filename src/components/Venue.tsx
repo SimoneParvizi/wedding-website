@@ -8,6 +8,8 @@ export default function Venue() {
           src="/assets/highres_big_background_optimized.jpg"
           alt="Venue background"
           className="venue__bg-image"
+          loading="lazy"
+          decoding="async"
         />
       </div>
       <div className="venue__content">

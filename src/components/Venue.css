@@ -9,6 +9,7 @@
   overflow: hidden;
   padding: 80px 20px;
   background-color: var(--color-white);
+  content-visibility: auto;
 }
 
 .venue__background {
@@ -18,6 +19,9 @@
   width: 100%;
   height: 100%;
   z-index: 0;
+  will-change: opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .venue__bg-image {
@@ -26,6 +30,9 @@
   object-fit: cover;
   object-position: center;
   filter: brightness(0.8);
+  transform: translateZ(0);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .venue__content {
