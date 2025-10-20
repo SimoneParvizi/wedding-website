@@ -1,3 +1,65 @@
+.gifting {
+  position: relative;
+  z-index: 10;
+  background-color: #FFFFFF;
+  padding: 300px 20px 500px;
+}
+
+.gifting__container {
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.gifting__label {
+  font-family: 'Inter', var(--font-primary), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  position: relative;
+  z-index: 3;
+}
+
+.gifting__text {
+  font-family: 'Satoshi', var(--font-medium), sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 57.6px;
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
+  color: #000000;
+  max-width: 1316px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.gifting__image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 441px;
+  height: 854px;
+  opacity: 0.65;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.gifting__image img {
+  position: absolute;
+  left: -95.38%;
+  width: 290.76%;
+  height: 100%;
+  max-width: none;
+}
+
 .faq {
   position: relative;
   z-index: 10;

@@ -44,9 +44,23 @@ export default function FAQ() {
   };
 
   return (
-    <section className="faq">
-      <div className="faq__container">
-        <p className="faq__label">FUN FACT QUIZ</p>
+    <>
+      <section className="gifting">
+        <div className="gifting__container">
+          <p className="gifting__label">DON'T FORGET TO BRING</p>
+          <h2 className="gifting__text">
+            Sunscreen, Mosquito repellent, Swimwear and towel, A light sweater or scarf for the evenings. <br /> <br /> Make
+            sure to bring everything your kids might need, it can get quite warm in July. We’ll make sure
+            there’s plenty of shade and activities to keep them happy and comfortable.
+          </h2>
+          <div className="gifting__image">
+            <img src="/assets/hero-background.jpg" alt="Background illustration" />
+          </div>
+        </div>
+      </section>
+      <section className="faq">
+        <div className="faq__container">
+          <p className="faq__label">FUN FACT QUIZ</p>
         <h2 className="faq__title">
           HOW MUCH DO YOU KNOW<br />
           ABOUT SIMONE AND VITA?
@@ -69,5 +83,6 @@ export default function FAQ() {
         </div>
       </div>
     </section>
+    </>
   );
 }
