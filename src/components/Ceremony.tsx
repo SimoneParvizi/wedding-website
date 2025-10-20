@@ -3,39 +3,11 @@ import './Ceremony.css';
 export default function Ceremony() {
   return (
     <section className="ceremony">
-      {/* Arrival Banner */}
-      <div className="ceremony__banner">
-        <div className="ceremony__banner-container">
-          <div className="ceremony__banner-layout">
-            <div className="ceremony__banner-left">
-              <h3 className="ceremony__banner-title">ARRIVAL</h3>
-              <p className="ceremony__banner-description">
-                Join us in celebrating this love and partnership of Simone and Vita. A seating plan will be displayed at reception for arrivals, please make sure you know your seating plan before entering the ceremony room.
-              </p>
-            </div>
-            <div className="ceremony__banner-right">
-              <div className="ceremony__banner-detail">
-                <span className="ceremony__banner-label">TIME</span>
-                <span className="ceremony__banner-value">11:30 - 12:45</span>
-              </div>
-              <div className="ceremony__banner-detail">
-                <span className="ceremony__banner-label">WHERE</span>
-                <span className="ceremony__banner-value">RECEPTION AREA</span>
-              </div>
-              <div className="ceremony__banner-detail">
-                <span className="ceremony__banner-label">PARKING</span>
-                <span className="ceremony__banner-value">FREE VALET ON ARRIVAL</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Timeline Section */}
       <div className="ceremony__timeline-section">
         <div className="ceremony__container">
           {/* Reception */}
-          <div className="ceremony__timeline-item">
+          <div className="ceremony__timeline-item ceremony__timeline-item--reception">
             <div className="ceremony__timeline-left">
               <h3 className="ceremony__timeline-title">RECEPTION</h3>
               <p className="ceremony__timeline-description">

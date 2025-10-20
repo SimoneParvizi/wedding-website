@@ -149,6 +149,43 @@
   padding-bottom: 0;
 }
 
+.ceremony__timeline-item--reception {
+  position: relative;
+  z-index: 1;
+}
+
+.ceremony__timeline-item--reception::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: calc(100% + 80px);
+  background-color: #000000;
+  z-index: -1;
+}
+
+.ceremony__timeline-item--reception .ceremony__timeline-title {
+  color: #FFFFFF;
+}
+
+.ceremony__timeline-item--reception .ceremony__timeline-description {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.ceremony__timeline-item--reception .ceremony__timeline-label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ceremony__timeline-item--reception .ceremony__timeline-value {
+  color: #FFFFFF;
+}
+
+.ceremony__timeline-item--reception::after {
+  background-color: #FFFFFF;
+}
+
 /* Left Side - Title and Description */
 .ceremony__timeline-left {
   display: flex;
