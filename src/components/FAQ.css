@@ -13,7 +13,7 @@
 }
 
 .gifting__label {
-  font-family: 'Inter', var(--font-primary), sans-serif;
+  font-family: 'Publica Sans Round', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 19.6px;
@@ -21,7 +21,7 @@
   text-align: center;
   margin-bottom: 16px;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   position: relative;
   z-index: 3;
 }
@@ -114,6 +114,14 @@
   min-height: 312px;
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.faq__card--visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease, background-color 0.3s ease, border-bottom-right-radius 0.3s ease;
 }
 
 .faq__card--open {

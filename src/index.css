@@ -1,46 +1,4 @@
 @font-face {
-  font-family: 'New Spirit';
-  src: url('/assets/fonts/NewSpirit.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'New Spirit Light';
-  src: url('/assets/fonts/NewSpiritLight.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'New Spirit Medium';
-  src: url('/assets/fonts/NewSpiritMedium.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'New Spirit Semi Bold';
-  src: url('/assets/fonts/NewSpiritSemiBold.otf') format('opentype');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'New Spirit Bold';
-  src: url('/assets/fonts/NewSpiritBold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'New Spirit Condensed';
-  src: url('/assets/fonts/NewSpiritCondensed.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Publica Sans Round';
   src: url('/assets/fonts/publica-sans/PublicaSans-UltraLight.otf') format('opentype');
   font-weight: 400;
@@ -50,6 +8,13 @@
 @font-face {
   font-family: 'Publica Sans Round';
   src: url('/assets/fonts/publica-sans/PublicaSans-UntraLightItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Publica Sans Thin';
+  src: url('/assets/fonts/publica-sans/PublicaSans-ThinItalic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
 }
@@ -142,4 +107,9 @@ button:hover {
 #root {
   width: 100%;
   min-height: 100vh;
+}
+
+.cursive {
+  font-family: 'Publica Sans Thin', sans-serif;
+  font-style: italic;
 }

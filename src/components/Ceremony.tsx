@@ -1,6 +1,63 @@
+import { useState, useEffect, useRef } from 'react';
 import './Ceremony.css';
 
 export default function Ceremony() {
+  const [visibleSections, setVisibleSections] = useState<Record<string, Set<number>>>({
+    reception: new Set(),
+    ceremony: new Set(),
+    meal: new Set(),
+    celebrations: new Set(),
+    schedule: new Set(),
+  });
+
+  const receptionRef = useRef<HTMLDivElement>(null);
+  const ceremonyRef = useRef<HTMLDivElement>(null);
+  const mealRef = useRef<HTMLDivElement>(null);
+  const celebrationsRef = useRef<HTMLDivElement>(null);
+  const scheduleRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const createObserver = (ref: React.RefObject<HTMLDivElement>, sectionName: string, detailCount: number) => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Animate details one by one with staggered delays
+              Array.from({ length: detailCount }).forEach((_, index) => {
+                setTimeout(() => {
+                  setVisibleSections((prev) => ({
+                    ...prev,
+                    [sectionName]: new Set([...prev[sectionName], index]),
+                  }));
+                }, index * 200); // 200ms delay between each detail
+              });
+              observer.disconnect(); // Stop observing after animation starts
+            }
+          });
+        },
+        {
+          threshold: 0.3, // Trigger when 30% of the section is visible
+        }
+      );
+
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+
+      return observer;
+    };
+
+    const observers = [
+      createObserver(receptionRef, 'reception', 3),
+      createObserver(ceremonyRef, 'ceremony', 4),
+      createObserver(mealRef, 'meal', 4),
+      createObserver(celebrationsRef, 'celebrations', 5),
+      createObserver(scheduleRef, 'schedule', 4),
+    ];
+
+    return () => observers.forEach((observer) => observer.disconnect());
+  }, []);
+
   return (
     <section className="ceremony">
       {/* Timeline Section */}
@@ -14,16 +71,16 @@ export default function Ceremony() {
                 Join us in celebrating this love and partnership of Dan and Soph. A seating plan will be displayed at reception for arrivals, please make sure you know your cleGshetel seating plan before entering the ceremony room.
               </p>
             </div>
-            <div className="ceremony__timeline-right">
-              <div className="ceremony__timeline-detail">
+            <div className="ceremony__timeline-right" ref={receptionRef}>
+              <div className={`ceremony__timeline-detail ${visibleSections.reception.has(0) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">TIME</span>
                 <span className="ceremony__timeline-value">11:30 - 12:45</span>
               </div>
-              <div className="ceremony__timeline-detail">
+              <div className={`ceremony__timeline-detail ${visibleSections.reception.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">WHERE</span>
                 <span className="ceremony__timeline-value">RECEPTION AREA</span>
               </div>
-              <div className="ceremony__timeline-detail">
+              <div className={`ceremony__timeline-detail ${visibleSections.reception.has(2) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">PARKING</span>
                 <span className="ceremony__timeline-value">FREE VALET ON ARRIVAL</span>
               </div>
@@ -38,20 +95,20 @@ export default function Ceremony() {
                 Join us in celebrating this love and partnership of Dan and Soph. A seating plan will be displayed at reception for arrivals, please make sure you know your cleGshetel seating plan before entering the ceremony room.
               </p>
             </div>
-            <div className="ceremony__timeline-right">
-              <div className="ceremony__timeline-detail">
+            <div className="ceremony__timeline-right" ref={ceremonyRef}>
+              <div className={`ceremony__timeline-detail ${visibleSections.ceremony.has(0) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">TIME</span>
                 <span className="ceremony__timeline-value">13:00 - 14:00</span>
               </div>
-              <div className="ceremony__timeline-detail">
+              <div className={`ceremony__timeline-detail ${visibleSections.ceremony.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">WHERE</span>
                 <span className="ceremony__timeline-value">CEREMONY ROOM</span>
               </div>
-              <div className="ceremony__timeline-detail">
+              <div className={`ceremony__timeline-detail ${visibleSections.ceremony.has(2) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">SEATING</span>
                 <span className="ceremony__timeline-value">PLAN WILL BE DISPLAYED ON ARRIVAL</span>
               </div>
-              <div className="ceremony__timeline-detail">
+              <div className={`ceremony__timeline-detail ${visibleSections.ceremony.has(3) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">PHOTOGRAPHY</span>
                 <span className="ceremony__timeline-value">
                   PLEASE DO NOT SHARE ANY PHOTOS OF THE HAPPY COUPLE ON SOCIAL MEDIA UNTIL THEY POST A PHOTO THEMSELVES.
@@ -68,20 +125,20 @@ export default function Ceremony() {
                 Everyone will be seated at [Time of] the sitting tables in the Drewsfield Restaurant. Your seat option will have been discussed with you by the Bride and Groom before the day eve.
               </p>
             </div>
-            <div className="ceremony__timeline-right">
-              <div className="ceremony__timeline-detail">
+            <div className="ceremony__timeline-right" ref={mealRef}>
+              <div className={`ceremony__timeline-detail ${visibleSections.meal.has(0) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">TIME</span>
                 <span className="ceremony__timeline-value">16:00 - 18:30</span>
               </div>
-              <div className="ceremony__timeline-detail">
+              <div className={`ceremony__timeline-detail ${visibleSections.meal.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">WHERE</span>
                 <span className="ceremony__timeline-value">DREWSFIELD RESTAURANT</span>
               </div>
-              <div className="ceremony__timeline-detail">
+              <div className={`ceremony__timeline-detail ${visibleSections.meal.has(2) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">SEATING</span>
                 <span className="ceremony__timeline-value">NAMES WILL BE DISPLAYED ON EACH CHAIR.</span>
               </div>
-              <div className="ceremony__timeline-detail">
+              <div className={`ceremony__timeline-detail ${visibleSections.meal.has(3) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">DIETARIES</span>
                 <span className="ceremony__timeline-value">
                   MEAL OPTIONS WILL BE DISCUSSED WITH YOU BY THE BRIDE AND GROOM BEFORE THE DAY.
@@ -98,27 +155,27 @@ export default function Ceremony() {
                 Grab a few drinks and celebrate the marriage of Dan and Soph, we will have a live band all throughout the day who will be doing a performance in the evening party. Songs are available on request.
               </p>
             </div>
-            <div className="ceremony__timeline-right">
-              <div className="ceremony__timeline-detail">
+            <div className="ceremony__timeline-right" ref={celebrationsRef}>
+              <div className={`ceremony__timeline-detail ${visibleSections.celebrations.has(0) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">TIME</span>
                 <span className="ceremony__timeline-value">17:00 - LATE</span>
               </div>
-              <div className="ceremony__timeline-detail">
+              <div className={`ceremony__timeline-detail ${visibleSections.celebrations.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">WHERE</span>
                 <span className="ceremony__timeline-value">EVENT HALL</span>
               </div>
-              <div className="ceremony__timeline-detail">
+              <div className={`ceremony__timeline-detail ${visibleSections.celebrations.has(2) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">MUSIC</span>
                 <span className="ceremony__timeline-value">BANDO!2 - ROCK, JAZZ, COUNTRY AND SOUL PLUS DJ PIRATE.</span>
               </div>
-              <div className="ceremony__timeline-detail">
+              <div className={`ceremony__timeline-detail ${visibleSections.celebrations.has(3) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">DRINKS</span>
                 <span className="ceremony__timeline-value">
                   2 X INDOOR BARS<br />
                   1 X OUTDOOR GIN BAR
                 </span>
               </div>
-              <div className="ceremony__timeline-detail">
+              <div className={`ceremony__timeline-detail ${visibleSections.celebrations.has(4) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">FOOD</span>
                 <span className="ceremony__timeline-value">
                   STREET FOOD BUFFET<br />
@@ -140,8 +197,8 @@ export default function Ceremony() {
                 If you'd like to pick up something yourself, the nearest supermarket is in Seggiano, about [xx] km from Podere Montale.
               </p>
             </div>
-            <div className="ceremony__timeline-schedule-content">
-              <div className="ceremony__timeline-detail ceremony__timeline-detail--day">
+            <div className="ceremony__timeline-schedule-content" ref={scheduleRef}>
+              <div className={`ceremony__timeline-detail ceremony__timeline-detail--day ${visibleSections.schedule.has(0) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">THURSDAY, JULY 2</span>
                 <div className="ceremony__timeline-subdetail">
                   <span className="ceremony__timeline-label">WHO</span>
@@ -162,7 +219,7 @@ export default function Ceremony() {
                   </div>
                 </div>
               </div>
-              <div className="ceremony__timeline-detail ceremony__timeline-detail--day">
+              <div className={`ceremony__timeline-detail ceremony__timeline-detail--day ${visibleSections.schedule.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">FRIDAY, JULY 3</span>
                 <div className="ceremony__timeline-subdetail">
                   <span className="ceremony__timeline-label">WHO</span>
@@ -183,7 +240,7 @@ export default function Ceremony() {
                   </div>
                 </div>
               </div>
-              <div className="ceremony__timeline-detail ceremony__timeline-detail--day">
+              <div className={`ceremony__timeline-detail ceremony__timeline-detail--day ${visibleSections.schedule.has(2) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">SATURDAY, JULY 4</span>
                 <div className="ceremony__timeline-subdetail">
                   <span className="ceremony__timeline-label">WHO</span>
@@ -204,7 +261,7 @@ export default function Ceremony() {
                   </div>
                 </div>
               </div>
-              <div className="ceremony__timeline-detail ceremony__timeline-detail--day">
+              <div className={`ceremony__timeline-detail ceremony__timeline-detail--day ${visibleSections.schedule.has(3) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">SUNDAY, JULY 5</span>
                 <div className="ceremony__timeline-subdetail">
                   <span className="ceremony__timeline-label">WHO</span>

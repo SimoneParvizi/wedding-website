@@ -1,0 +1,252 @@
+.rsvp-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+  animation: modalFadeIn 0.3s ease-out;
+  backdrop-filter: blur(4px);
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.rsvp-modal__content {
+  background-color: #FFFFFF;
+  border-radius: 0;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 48px 32px;
+  animation: modalSlideUp 0.4s ease-out;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes modalSlideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .rsvp-modal__content {
+    padding: 64px 56px;
+  }
+}
+
+/* Close Button */
+.rsvp-modal__close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  z-index: 10;
+}
+
+.rsvp-modal__close:hover {
+  transform: rotate(90deg);
+  opacity: 1;
+}
+
+.rsvp-modal__close-line {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  transition: background-color 0.3s ease;
+}
+
+.rsvp-modal__close-line--1 {
+  transform: rotate(45deg);
+}
+
+.rsvp-modal__close-line--2 {
+  transform: rotate(-45deg);
+}
+
+/* Header */
+.rsvp-modal__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.rsvp-modal__label {
+  font-family: 'Publica Sans Round', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.6px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+@media (min-width: 768px) {
+  .rsvp-modal__label {
+    font-size: 14px;
+  }
+}
+
+.rsvp-modal__title {
+  font-family: 'Satoshi', var(--font-medium), sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .rsvp-modal__title {
+    font-size: 36px;
+    letter-spacing: -0.72px;
+  }
+}
+
+/* Form */
+.rsvp-modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.rsvp-modal__form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rsvp-modal__label-text {
+  font-family: 'Publica Sans Round', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .rsvp-modal__label-text {
+    font-size: 12px;
+  }
+}
+
+.rsvp-modal__input,
+.rsvp-modal__textarea {
+  font-family: 'Publica Sans Light', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 14px 16px;
+  border: 1px solid #DFDFE2;
+  border-radius: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.rsvp-modal__input:focus,
+.rsvp-modal__textarea:focus {
+  border-color: #000000;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.rsvp-modal__input::placeholder,
+.rsvp-modal__textarea::placeholder {
+  color: #808080;
+}
+
+.rsvp-modal__textarea {
+  resize: none;
+  min-height: 80px;
+}
+
+.rsvp-modal__submit {
+  font-family: 'Satoshi', var(--font-medium), sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 16px 40px;
+  border-radius: 0;
+  border: 2px solid #000000;
+  background-color: #000000;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+  .rsvp-modal__submit {
+    font-size: 16px;
+    padding: 18px 48px;
+  }
+}
+
+.rsvp-modal__submit:hover {
+  background-color: transparent;
+  color: #000000;
+  opacity: 1;
+}
+
+.rsvp-modal__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.rsvp-modal__submit:disabled:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+/* Scrollbar styling for modal content */
+.rsvp-modal__content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.rsvp-modal__content::-webkit-scrollbar-track {
+  background: #F7F7F7;
+  border-radius: 4px;
+}
+
+.rsvp-modal__content::-webkit-scrollbar-thumb {
+  background: #DFDFE2;
+  border-radius: 4px;
+}
+
+.rsvp-modal__content::-webkit-scrollbar-thumb:hover {
+  background: #808080;
+}

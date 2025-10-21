@@ -42,7 +42,7 @@ export default function Accommodation() {
       <div className={`accommodation__container ${isVisible ? 'accommodation__container--visible' : ''}`}>
         <h2 className="accommodation__heading">PERKS</h2>
         <p className="accommodation__text">
-          THE VENUE HAS A BEAUTIFUL POOL AND WINERY FOR ALL GUESTS TO ENJOY.
+          THE VENUE HAS A BEAUTIFUL <span className="cursive">POOL</span> AND <span className="cursive">WINERY</span> FOR ALL GUESTS TO ENJOY.
         </p>
       </div>
       <div className="accommodation__features">

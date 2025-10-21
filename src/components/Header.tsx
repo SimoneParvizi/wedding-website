@@ -9,18 +9,42 @@ export default function Header() {
       const headerRect = document.querySelector('.header')?.getBoundingClientRect();
       if (!headerRect) return;
 
+      // Check if we're over the black reception section
+      // Note: The reception section has a ::before pseudo-element that extends 80px above it
+      const receptionSection = document.querySelector('.ceremony__timeline-item--reception');
+      let isOverReception = false;
+      if (receptionSection) {
+        const rect = receptionSection.getBoundingClientRect();
+        // Check from 80px above the section to account for the black ::before pseudo-element
+        if (rect.top - 80 < 50 && rect.bottom > 0) {
+          isOverReception = true;
+        }
+      }
+
+      // If over reception (black background), header should be white (isDark = false)
+      if (isOverReception) {
+        setIsDark(false);
+        return;
+      }
+
       // Get all sections
+      const venueSection = document.querySelector('.venue');
       const storySection = document.querySelector('.story');
       const photoGallerySection = document.querySelector('.photo-gallery');
       const ceremonySection = document.querySelector('.ceremony');
       const accommodationSection = document.querySelector('.accommodation');
+      const giftingSection = document.querySelector('.gifting');
 
       // Get individual images in celebrations carousel
       const celebrationImages = document.querySelectorAll('.celebrations__slide');
 
       let isOverWhiteSection = false;
 
-      // Check white background sections
+      // Check white background sections (header should be black/dark)
+      if (venueSection) {
+        const rect = venueSection.getBoundingClientRect();
+        if (rect.top < 50 && rect.bottom > 0) isOverWhiteSection = true;
+      }
       if (storySection) {
         const rect = storySection.getBoundingClientRect();
         if (rect.top < 50 && rect.bottom > 0) isOverWhiteSection = true;
@@ -35,6 +59,10 @@ export default function Header() {
       }
       if (accommodationSection) {
         const rect = accommodationSection.getBoundingClientRect();
+        if (rect.top < 50 && rect.bottom > 0) isOverWhiteSection = true;
+      }
+      if (giftingSection) {
+        const rect = giftingSection.getBoundingClientRect();
         if (rect.top < 50 && rect.bottom > 0) isOverWhiteSection = true;
       }
 
