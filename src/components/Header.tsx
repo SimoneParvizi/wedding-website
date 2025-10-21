@@ -34,11 +34,19 @@ export default function Header() {
       const ceremonySection = document.querySelector('.ceremony');
       const accommodationSection = document.querySelector('.accommodation');
       const giftingSection = document.querySelector('.gifting');
+      const celebrationsSection = document.querySelector('.celebrations');
 
       // Get individual images in celebrations carousel
       const celebrationImages = document.querySelectorAll('.celebrations__slide');
 
       let isOverWhiteSection = false;
+      let isOverCelebrations = false;
+
+      // Check if over celebrations section (should stay white)
+      if (celebrationsSection) {
+        const rect = celebrationsSection.getBoundingClientRect();
+        if (rect.top < 50 && rect.bottom > 0) isOverCelebrations = true;
+      }
 
       // Check white background sections (header should be black/dark)
       if (venueSection) {
@@ -78,11 +86,12 @@ export default function Header() {
         }
       });
 
+      // If over celebrations section (white padding or images), should stay white
       // If over an image, should NOT be dark (stay white)
-      // If over white section but NOT over image, should be dark (turn black)
+      // If over white section but NOT over image/celebrations, should be dark (turn black)
       // Otherwise, stay white
-      if (isOverImage) {
-        setIsDark(false); // Over image = white text
+      if (isOverCelebrations || isOverImage) {
+        setIsDark(false); // Over celebrations/image = white text
       } else {
         setIsDark(isOverWhiteSection); // Over white section = black text
       }
