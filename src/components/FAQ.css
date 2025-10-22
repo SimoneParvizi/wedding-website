@@ -218,7 +218,14 @@
   }
 
   .gifting__image {
-    display: none !important;
+    width: 250px;
+    height: 484px;
+    opacity: 0.4;
+  }
+
+  .gifting__image img {
+    left: -50%;
+    width: 200%;
   }
 
   .faq {
