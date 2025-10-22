@@ -3,12 +3,14 @@
   z-index: 10;
   padding: 120px 20px 120px;
   background-color: var(--color-white);
+  overflow: hidden;
 }
 
 .celebrations__carousel {
   position: relative;
   width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .celebrations__slides {

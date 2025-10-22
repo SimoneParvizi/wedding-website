@@ -10,9 +10,6 @@ export default function Hero() {
     // Use matchMedia to match the CSS media query exactly
     const isMobile = window.matchMedia('(max-width: 767px)').matches;
 
-    // Debug: log to console
-    console.log('Hero mounted - isMobile:', isMobile, 'width:', window.innerWidth, 'matchMedia:', window.matchMedia('(max-width: 767px)').matches);
-
     let ticking = false;
 
     const updateTransforms = () => {

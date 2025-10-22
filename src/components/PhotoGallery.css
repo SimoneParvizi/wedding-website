@@ -3,12 +3,14 @@
   z-index: 10;
   padding: 0 20px 120px;
   background-color: var(--color-white);
+  overflow: hidden;
 }
 
 .photo-gallery__carousel {
   position: relative;
   width: 100%;
   margin: 250px auto 200px;
+  overflow: hidden;
 }
 
 .photo-gallery__slides {

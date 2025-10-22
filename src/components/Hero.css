@@ -91,6 +91,7 @@
 @media (max-width: 767px) {
   .hero {
     position: relative !important;
+    background-color: #FFFFFF !important;
   }
 
   .hero__content {
