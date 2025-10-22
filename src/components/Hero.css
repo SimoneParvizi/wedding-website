@@ -91,17 +91,14 @@
 @media (max-width: 767px) {
   .hero {
     position: relative !important;
-    top: auto !important;
   }
 
   .hero__content {
-    position: relative !important;
-    transform: none !important;
+    will-change: transform;
   }
 
   .hero__image-container {
-    position: absolute !important;
-    transform: none !important;
+    will-change: transform;
   }
 
   .hero-spacer {

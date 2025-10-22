@@ -13,37 +13,22 @@ export default function Hero() {
     // Debug: log to console
     console.log('Hero mounted - isMobile:', isMobile, 'width:', window.innerWidth, 'matchMedia:', window.matchMedia('(max-width: 767px)').matches);
 
-    // Skip parallax effect on mobile - clear any transforms
-    if (isMobile) {
-      console.log('Mobile detected - disabling parallax');
-      if (heroRef.current) {
-        heroRef.current.style.position = 'relative';
-      }
-      if (contentRef.current) {
-        contentRef.current.style.transform = '';
-        contentRef.current.style.position = 'relative';
-      }
-      if (imageRef.current) {
-        imageRef.current.style.transform = '';
-        imageRef.current.style.position = 'absolute';
-      }
-      return;
-    }
-
     let ticking = false;
 
     const updateTransforms = () => {
       const scrolled = window.scrollY;
 
       if (contentRef.current) {
-        // Text scrolls away slower
-        const textOffset = scrolled * 0.8;
+        // On mobile, text scrolls away faster (normal scroll speed)
+        // On desktop, text scrolls away slower (0.8x speed)
+        const textOffset = isMobile ? scrolled * 1 : scrolled * 0.8;
         contentRef.current.style.transform = `translateY(${textOffset}px)`;
       }
 
       if (imageRef.current) {
-        // Background image scrolls up (parallax effect)
-        const imageOffset = scrolled * -0.3;
+        // Background image stays fixed (no parallax on mobile)
+        // On desktop, background scrolls up (parallax effect)
+        const imageOffset = isMobile ? 0 : scrolled * -0.3;
         imageRef.current.style.transform = `translateY(${imageOffset}px)`;
       }
 
@@ -57,7 +42,7 @@ export default function Hero() {
       }
     };
 
-    // Desktop: just use scroll
+    // Use scroll event for both mobile and desktop
     window.addEventListener('scroll', requestTick, { passive: true });
     updateTransforms();
 
