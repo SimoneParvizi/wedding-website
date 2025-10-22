@@ -4,9 +4,35 @@ import './Hero.css';
 export default function Hero() {
   const contentRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
+  const heroRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleScroll = () => {
+    // Use matchMedia to match the CSS media query exactly
+    const isMobile = window.matchMedia('(max-width: 767px)').matches;
+
+    // Debug: log to console
+    console.log('Hero mounted - isMobile:', isMobile, 'width:', window.innerWidth, 'matchMedia:', window.matchMedia('(max-width: 767px)').matches);
+
+    // Skip parallax effect on mobile - clear any transforms
+    if (isMobile) {
+      console.log('Mobile detected - disabling parallax');
+      if (heroRef.current) {
+        heroRef.current.style.position = 'relative';
+      }
+      if (contentRef.current) {
+        contentRef.current.style.transform = '';
+        contentRef.current.style.position = 'relative';
+      }
+      if (imageRef.current) {
+        imageRef.current.style.transform = '';
+        imageRef.current.style.position = 'absolute';
+      }
+      return;
+    }
+
+    let ticking = false;
+
+    const updateTransforms = () => {
       const scrolled = window.scrollY;
 
       if (contentRef.current) {
@@ -20,15 +46,27 @@ export default function Hero() {
         const imageOffset = scrolled * -0.3;
         imageRef.current.style.transform = `translateY(${imageOffset}px)`;
       }
+
+      ticking = false;
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const requestTick = () => {
+      if (!ticking) {
+        requestAnimationFrame(updateTransforms);
+        ticking = true;
+      }
+    };
+
+    // Desktop: just use scroll
+    window.addEventListener('scroll', requestTick, { passive: true });
+    updateTransforms();
+
+    return () => window.removeEventListener('scroll', requestTick);
   }, []);
 
   return (
     <>
-      <section className="hero">
+      <section className="hero" ref={heroRef}>
         <div className="hero__image-container" ref={imageRef}>
           <img
             src="/assets/hero.jpg"
