@@ -369,6 +369,43 @@
     padding-bottom: 60px;
   }
 
+  .ceremony__timeline-item .ceremony__timeline-left {
+    position: static !important;
+    width: 100% !important;
+    left: auto !important;
+  }
+
+  .ceremony__timeline-item .ceremony__timeline-right {
+    grid-column: 1 !important;
+  }
+
+  .ceremony__timeline-item::after {
+    width: calc(100% + 40px) !important;
+  }
+
+  .ceremony__timeline-schedule-title {
+    position: static !important;
+    width: 100% !important;
+    left: auto !important;
+  }
+
+  .ceremony__timeline-schedule-title .ceremony__timeline-title {
+    font-size: 32px !important;
+    white-space: normal !important;
+  }
+
+  .ceremony__timeline-item--schedule {
+    grid-template-columns: 1fr !important;
+  }
+
+  .ceremony__timeline-schedule-content {
+    grid-column: 1 !important;
+  }
+
+  .ceremony__timeline-detail--day::after {
+    right: -20px !important;
+  }
+
   .ceremony__timeline-title {
     font-size: 24px;
   }

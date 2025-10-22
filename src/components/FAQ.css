@@ -208,6 +208,19 @@
 }
 
 @media (max-width: 768px) {
+  .gifting {
+    padding: 120px 20px 200px;
+  }
+
+  .gifting__text {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .gifting__image {
+    display: none !important;
+  }
+
   .faq {
     padding: 120px 20px 40px;
   }
