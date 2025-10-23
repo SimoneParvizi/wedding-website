@@ -84,11 +84,52 @@
   gap: 20px;
 }
 
+.accommodation__feature-carousel {
+  position: relative;
+}
+
 .accommodation__feature-image {
   width: 100%;
   aspect-ratio: 4 / 3;
   overflow: hidden;
   border-radius: 4px;
+}
+
+.accommodation__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accommodation__arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+.accommodation__arrow:hover {
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+
+.accommodation__arrow--left {
+  left: 15px;
+}
+
+.accommodation__arrow--right {
+  right: 15px;
 }
 
 .accommodation__feature-image img {

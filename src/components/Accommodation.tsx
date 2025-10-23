@@ -4,6 +4,8 @@ import './Accommodation.css';
 export default function Accommodation() {
   const accommodationRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [currentPoolIndex, setCurrentPoolIndex] = useState(0);
+  const [currentWineryIndex, setCurrentWineryIndex] = useState(0);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -26,16 +28,33 @@ export default function Accommodation() {
     };
   }, []);
 
-  const features = [
-    {
-      image: '/assets/slides/1.png',
-      name: 'POOL',
-    },
-    {
-      image: '/assets/slides/2.png',
-      name: 'WINERY',
-    },
+  const poolImages = [
+    '/assets/pool/pool-1.jpg',
+    '/assets/pool/pool-2.jpg',
+    '/assets/pool/pool-3.png',
   ];
+
+  const wineryImages = [
+    '/assets/winery/winery-1.png',
+    '/assets/winery/winery-2.png',
+    '/assets/winery/winery-3.png',
+  ];
+
+  const nextPoolImage = () => {
+    setCurrentPoolIndex((prev) => (prev + 1) % poolImages.length);
+  };
+
+  const prevPoolImage = () => {
+    setCurrentPoolIndex((prev) => (prev - 1 + poolImages.length) % poolImages.length);
+  };
+
+  const nextWineryImage = () => {
+    setCurrentWineryIndex((prev) => (prev + 1) % wineryImages.length);
+  };
+
+  const prevWineryImage = () => {
+    setCurrentWineryIndex((prev) => (prev - 1 + wineryImages.length) % wineryImages.length);
+  };
 
   return (
     <section className="accommodation" ref={accommodationRef}>
@@ -46,17 +65,45 @@ export default function Accommodation() {
         </p>
       </div>
       <div className="accommodation__features">
-        {features.map((feature, index) => (
-          <div key={index} className="accommodation__feature">
+        {/* Pool */}
+        <div className="accommodation__feature">
+          <div className="accommodation__feature-carousel">
+            <button className="accommodation__arrow accommodation__arrow--left" onClick={prevPoolImage}>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M12 4L6 10L12 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
             <div className="accommodation__feature-image">
-              <img
-                src={feature.image}
-                alt={feature.name}
-              />
+              <img src={poolImages[currentPoolIndex]} alt="POOL" />
             </div>
-            <p className="accommodation__feature-name">{feature.name}</p>
+            <button className="accommodation__arrow accommodation__arrow--right" onClick={nextPoolImage}>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M8 4L14 10L8 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
           </div>
-        ))}
+          <p className="accommodation__feature-name">POOL</p>
+        </div>
+
+        {/* Winery */}
+        <div className="accommodation__feature">
+          <div className="accommodation__feature-carousel">
+            <button className="accommodation__arrow accommodation__arrow--left" onClick={prevWineryImage}>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M12 4L6 10L12 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+            <div className="accommodation__feature-image">
+              <img src={wineryImages[currentWineryIndex]} alt="WINERY" />
+            </div>
+            <button className="accommodation__arrow accommodation__arrow--right" onClick={nextWineryImage}>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M8 4L14 10L8 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <p className="accommodation__feature-name">WINERY</p>
+        </div>
       </div>
     </section>
   );
