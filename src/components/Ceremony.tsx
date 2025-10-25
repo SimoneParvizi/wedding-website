@@ -102,12 +102,12 @@ export default function Ceremony() {
               </div>
               <div className={`ceremony__timeline-detail ${visibleSections.ceremony.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">BUS</span>
-                <span className="ceremony__timeline-value">A BUS CAN BE MADE AVAILABLE FROM BOTH ROME AND FLORENCE. PLEASE LET US KNOW IF YOU'D LIKE TO MAKE USE OF IT.</span>
+                <span className="ceremony__timeline-value">A BUS CAN BE MADE AVAILABLE FROM BOTH ROME AND FLORENCE. PLEASE LET US KNOW IF YOU'D LIKE TO MAKE USE OF IT</span>
               </div>
               <div className={`ceremony__timeline-detail ${visibleSections.ceremony.has(2) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">CAR</span>
                 <span className="ceremony__timeline-value">
-                  IF YOU'D PREFER TO MAKE A LONGER TRIP OUT OF IT, WE RECOMMEND RENTING A CAR AND EXPLORING THE SURROUNDINGS. AT THE VENUE THERE ARE PARKING SLOTS AVAILABLE.
+                  IF YOU'D PREFER TO MAKE A LONGER TRIP OUT OF IT, WE RECOMMEND RENTING A CAR AND EXPLORING THE SURROUNDINGS. AT THE VENUE THERE ARE PARKING SLOTS AVAILABLE
                 </span>
               </div>
             </div>
@@ -116,7 +116,7 @@ export default function Ceremony() {
           {/* Meal */}
           <div className="ceremony__timeline-item">
             <div className="ceremony__timeline-schedule-title">
-              <h3 className="ceremony__timeline-title">ACCOMODATION</h3>
+              <h3 className="ceremony__timeline-title">ACCOMMODATION</h3>
               <p className="ceremony__timeline-description">
                 We will be staying at Podere Montale, surrounded by olive trees and vineyards. We chose a place that represents us, since we love nature and we think will allow
                 us to forgot about the rest and fully enjoy the wedding day.
@@ -124,8 +124,8 @@ export default function Ceremony() {
             </div>
             <div className="ceremony__timeline-right" ref={mealRef}>
               <div className={`ceremony__timeline-detail ${visibleSections.meal.has(0) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">NUMBER OF ROOMS</span>
-                <span className="ceremony__timeline-value">THERE ARE IN TOTAL xx ROOMS.</span>
+                {/*<span className="ceremony__timeline-label">NUMBER OF ROOMS</span>*/}
+                {/*<span className="ceremony__timeline-value">THERE ARE IN TOTAL xx ROOMS</span>*/}
               </div>
               {/*<div className={`ceremony__timeline-detail ${visibleSections.meal.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>*/}
               {/*  <span className="ceremony__timeline-label">WHERE</span>*/}
@@ -134,7 +134,7 @@ export default function Ceremony() {
               <div className={`ceremony__timeline-detail ${visibleSections.meal.has(3) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">LATEST UPDATE</span>
                 <span className="ceremony__timeline-value">
-                  WE WILL LATE YOU KNOW IN JUNE THE DISPOSITIONS OF THE ROOMS.
+                  WE WILL LATE YOU KNOW IN JUNE THE DISPOSITIONS OF THE ROOMS
                 </span>
               </div>
             </div>
@@ -162,13 +162,13 @@ export default function Ceremony() {
                 <div className="ceremony__timeline-subdetail">
                   <span className="ceremony__timeline-label">WHEN</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">CHECK-IN IS AVAILABLE FROM 3:00 PM.</span>
+                    <span className="ceremony__timeline-value">CHECK-IN IS AVAILABLE FROM 3:00 PM</span>
                   </div>
                 </div>
                 <div className="ceremony__timeline-subdetail">
                   <span className="ceremony__timeline-label">WHAT</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">LATER IN THE DAY, WE'LL ENJOY A WINE TASTING TO UNFOLD, CATCH UP, AND KNOW EACH OTHER BETTER.</span>
+                    <span className="ceremony__timeline-value">LATER IN THE DAY, WE'LL ENJOY A WINE TASTING TO UNFOLD, CATCH UP, AND KNOW EACH OTHER BETTER</span>
                   </div>
                 </div>
               </div>
@@ -183,13 +183,13 @@ export default function Ceremony() {
                 <div className="ceremony__timeline-subdetail">
                   <span className="ceremony__timeline-label">WHEN</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">CHECK-IN OPENS AGAIN FROM 3:00 PM FOR ALL OTHER GUESTS.</span>
+                    <span className="ceremony__timeline-value">CHECK-IN OPENS AGAIN FROM 3:00 PM FOR ALL OTHER GUESTS</span>
                   </div>
                 </div>
                 <div className="ceremony__timeline-subdetail">
                   <span className="ceremony__timeline-label">DETAILS</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">FROM 6:00 PM, WE'LL START WITH AN APERITVO TO OFFICIALLY START THE WEEKEND.</span>
+                    <span className="ceremony__timeline-value">FROM 6:00 PM, WE'LL START WITH AN APERITVO TO OFFICIALLY START THE WEEKEND</span>
                   </div>
                 </div>
               </div>
@@ -204,13 +204,14 @@ export default function Ceremony() {
                 <div className="ceremony__timeline-subdetail">
                   <span className="ceremony__timeline-label">WHEN</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">- BREAKFAST IS SERVED FROM 9:00 TO 10:30. <br/> - THE CERIMONY WILL START AT 16 <br/> - DINNER STARTS BEING SERVED AT 19:00 </span>
+                    <span className="ceremony__timeline-value">- THE BREAKFAST TIMING IS STILL "TBD" <br/> - THE CERIMONY STARTING TIME IS "TBD" <br/> - DINNER STARTS BEING SERVED "TBD" </span>
                   </div>
+                  ""
                 </div>
                 <div className="ceremony__timeline-subdetail">
                   <span className="ceremony__timeline-label">DETAILS</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">THE CEREMONY IS FOLLOWED BY A TOAST, DELICIOUS FOOD, DRINKS AND THE DINNER. THEN, WE WILL OPEN THE DANCE FLOOR AND CELEBRATE LATE INTO THE NIGHT.</span>
+                    <span className="ceremony__timeline-value">THE CEREMONY IS FOLLOWED BY A TOAST, DELICIOUS FOOD, DRINKS AND THE DINNER. THEN, WE WILL OPEN THE DANCE FLOOR AND CELEBRATE LATE INTO THE NIGHT</span>
                   </div>
                 </div>
               </div>
@@ -231,7 +232,7 @@ export default function Ceremony() {
                 <div className="ceremony__timeline-subdetail">
                   <span className="ceremony__timeline-label">DETAILS</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">WE'LL HAVE A FAREWELL BREAKFAST BEFORE CHECKING-OUT AND SAYING OUR GOODBYES.</span>
+                    <span className="ceremony__timeline-value">WE'LL HAVE A FAREWELL BREAKFAST BEFORE CHECKING-OUT AND SAYING OUR GOODBYES</span>
                   </div>
                 </div>
               </div>

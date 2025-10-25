@@ -16,28 +16,28 @@ export default function FAQ() {
       answer: 'Austin Powers.',
     },
     {
-      question: "",
-      answer: '',
+      question: "WHERE DID THEY MEET?",
+      answer: "In the basem of A'DAM tower in Amsterdam: club Shelter",
     },
     {
       question: 'WHAT CAR DO WE DRIVE?',
       answer: "Depends on the Uber driver."
     },
     {
-      question: '',
-      answer: '',
+      question: 'WHAT DID THEY EAT THE FIRST NIGHT AFTER GETTING THE KEYS OF THEIR CURRENT APARTMENT?',
+      answer: 'They improvised a carbonara, and eat it while seating on the floor (since there was no furniture at all).',
     },
     {
-      question: '',
-      answer: '',
+      question: "WHAT'S ONE RITUAL THAT THEY HAVE AT THE END OF SUMMER?",
+      answer: 'They celebrate the birth and funeral of it.',
     },
     {
-      question: '',
-      answer: '',
+      question: "HOW MANY TIMES DOES SIMONE INTERRUPT A MOVIE/CONVERSATION TO SPIT A RANDOM FACT ABOUT ANCIENT/SCIENTIFIC THINGS?",
+      answer: 'Vita lost count....',
     },
     {
-      question: '',
-      answer: '',
+      question: 'WHAT IS THE "ANTIKYTHERA"?',
+      answer: "It's an ancient Greek artifact, often called the world's first computer, used to predict astronomical positions and eclipses.",
     },
   ];
 
@@ -83,7 +83,7 @@ export default function FAQ() {
             there's <span className="cursive">plenty of shade</span> and activities to keep them happy and comfortable.
           </h2>
           <div className="gifting__image">
-            <img src="/assets/hero-background.jpg" alt="Background illustration" />
+            <img src="/assets/ywllow-flowers.JPG" alt="Background illustration" />
           </div>
         </div>
       </section>
