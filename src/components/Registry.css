@@ -39,6 +39,52 @@
   }
 }
 
+.registry__sublabel {
+  font-family: 'Publica Sans Light', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4;
+  text-align: center;
+  color: #000000;
+  opacity: 0.8;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@media (min-width: 768px) {
+  .registry__sublabel {
+    font-size: 16px;
+  }
+}
+
+.registry__email {
+  font-family: 'Publica Sans Light Italic', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.4;
+  text-align: center;
+  color: #000000;
+  opacity: 0.7;
+  margin: 16px 0 0 0;
+}
+
+.registry__email a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.registry__email a:hover {
+  opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+  .registry__email {
+    font-size: 16px;
+  }
+}
+
 .registry__title {
   font-family: 'Satoshi', var(--font-medium), sans-serif;
   font-size: 48px;

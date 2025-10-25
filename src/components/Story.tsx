@@ -31,9 +31,7 @@ export default function Story() {
       <div className={`story__container ${isVisible ? 'story__container--visible' : ''}`}>
         <h2 className="story__heading">DEAR FRIENDS AND FAMILY</h2>
         <p className="story__text">
-          We are beyond excited to celebrate this special adventure in Tuscany with all of you.
-          <br />
-          <br /> We can’t wait to raise a glass together under the Italian sun, surrounded by vineyards, olive trees, and lots of love and laughter.
+          YOU PRESENCE AT OUR WEDDING IS THE <span className="cursive">GREATEST</span> GIFT OF ALL. THERE IS NOTHING BETTER THAN ENJOYING THE ITALIAN SUN, SURROUNDED BY VINEYARDS AND THE WONDERFUL COMPANY OF THOSE <span className="cursive">DEAREST</span> TO US.
         </p>
       </div>
     </section>

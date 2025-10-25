@@ -30,8 +30,8 @@ export default function Accommodation() {
 
   const poolImages = [
     '/assets/pool/pool-1.jpg',
-    '/assets/pool/pool-2.jpg',
-    '/assets/pool/pool-3.png',
+    '/assets/pool/pool-2.png',
+    '/assets/pool/pool-3.jpg',
   ];
 
   const wineryImages = [

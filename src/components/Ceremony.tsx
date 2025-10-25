@@ -65,53 +65,49 @@ export default function Ceremony() {
         <div className="ceremony__container">
           {/* Reception */}
           <div className="ceremony__timeline-item ceremony__timeline-item--reception">
-            <div className="ceremony__timeline-left">
-              <h3 className="ceremony__timeline-title">RECEPTION</h3>
+            <div className="ceremony__timeline-schedule-title">
+              <h3 className="ceremony__timeline-title">ARRIVING BY PLANE</h3>
               <p className="ceremony__timeline-description">
-                Join us in celebrating this love and partnership of Dan and Soph. A seating plan will be displayed at reception for arrivals, please make sure you know your cleGshetel seating plan before entering the ceremony room.
+              For whoever decide to come by plane, we're happy to <strong>reimburse €100</strong> per person for flights if desired.
               </p>
             </div>
             <div className="ceremony__timeline-right" ref={receptionRef}>
               <div className={`ceremony__timeline-detail ${visibleSections.reception.has(0) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">TIME</span>
-                <span className="ceremony__timeline-value">11:30 - 12:45</span>
+                <span className="ceremony__timeline-label">AIRPORTS IN TUSCANY</span>
+                <span className="ceremony__timeline-value"> - FLORENCE  AIRPORT "AMERIGO VESPUCCI" <br /> - PISA AIRPORT "GALILEO GALILEI"</span>
               </div>
               <div className={`ceremony__timeline-detail ${visibleSections.reception.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">WHERE</span>
-                <span className="ceremony__timeline-value">RECEPTION AREA</span>
+                <span className="ceremony__timeline-label">AIRPORTS IN LAZIO</span>
+                <span className="ceremony__timeline-value">- ROME FIUMICINO AIRPORT "LEONARDO DA VINCI" <br />- ROME CIAMPINO AIRPORT "G.B. PASTINE"</span>
               </div>
               <div className={`ceremony__timeline-detail ${visibleSections.reception.has(2) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">PARKING</span>
-                <span className="ceremony__timeline-value">FREE VALET ON ARRIVAL</span>
+                <span className="ceremony__timeline-label">VOUCHER VALUE</span>
+                <span className="ceremony__timeline-value">100 EUROS</span>
               </div>
             </div>
           </div>
 
           {/* Ceremony */}
           <div className="ceremony__timeline-item">
-            <div className="ceremony__timeline-left">
-              <h3 className="ceremony__timeline-title">CEREMONY</h3>
+            <div className="ceremony__timeline-schedule-title">
+              <h3 className="ceremony__timeline-title">TRANSFER</h3>
               <p className="ceremony__timeline-description">
-                Join us in celebrating this love and partnership of Dan and Soph. A seating plan will be displayed at reception for arrivals, please make sure you know your cleGshetel seating plan before entering the ceremony room.
+                We're here to help you get to the venue. Choose between organized transport or the freedom of a road trip.
               </p>
             </div>
             <div className="ceremony__timeline-right" ref={ceremonyRef}>
               <div className={`ceremony__timeline-detail ${visibleSections.ceremony.has(0) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">TIME</span>
-                <span className="ceremony__timeline-value">13:00 - 14:00</span>
+                <span className="ceremony__timeline-label">TRIP DURATION</span>
+                <span className="ceremony__timeline-value">- 2 HRS 50 MIN FROM ROME FIUMICINO (193KM) <br/> - 2 HRS 35 MIN FROM ROME CIAMPINO (219KM)<br/> - 2 HRS 15 MIN FROM FLORENCE (147KM) <br/> - 2 HRS 25 MIN FROM PISA (216KM) </span>
               </div>
               <div className={`ceremony__timeline-detail ${visibleSections.ceremony.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">WHERE</span>
-                <span className="ceremony__timeline-value">CEREMONY ROOM</span>
+                <span className="ceremony__timeline-label">BUS</span>
+                <span className="ceremony__timeline-value">A BUS CAN BE MADE AVAILABLE FROM BOTH ROME AND FLORENCE. PLEASE LET US KNOW IF YOU'D LIKE TO MAKE USE OF IT.</span>
               </div>
               <div className={`ceremony__timeline-detail ${visibleSections.ceremony.has(2) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">SEATING</span>
-                <span className="ceremony__timeline-value">PLAN WILL BE DISPLAYED ON ARRIVAL</span>
-              </div>
-              <div className={`ceremony__timeline-detail ${visibleSections.ceremony.has(3) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">PHOTOGRAPHY</span>
+                <span className="ceremony__timeline-label">CAR</span>
                 <span className="ceremony__timeline-value">
-                  PLEASE DO NOT SHARE ANY PHOTOS OF THE HAPPY COUPLE ON SOCIAL MEDIA UNTIL THEY POST A PHOTO THEMSELVES.
+                  IF YOU'D PREFER TO MAKE A LONGER TRIP OUT OF IT, WE RECOMMEND RENTING A CAR AND EXPLORING THE SURROUNDINGS. AT THE VENUE THERE ARE PARKING SLOTS AVAILABLE.
                 </span>
               </div>
             </div>
@@ -119,69 +115,26 @@ export default function Ceremony() {
 
           {/* Meal */}
           <div className="ceremony__timeline-item">
-            <div className="ceremony__timeline-left">
-              <h3 className="ceremony__timeline-title">MEAL</h3>
+            <div className="ceremony__timeline-schedule-title">
+              <h3 className="ceremony__timeline-title">ACCOMODATION</h3>
               <p className="ceremony__timeline-description">
-                Everyone will be seated at [Time of] the sitting tables in the Drewsfield Restaurant. Your seat option will have been discussed with you by the Bride and Groom before the day eve.
+                We will be staying at Podere Montale, surrounded by olive trees and vineyards. We chose a place that represents us, since we love nature and we think will allow
+                us to forgot about the rest and fully enjoy the wedding day.
               </p>
             </div>
             <div className="ceremony__timeline-right" ref={mealRef}>
               <div className={`ceremony__timeline-detail ${visibleSections.meal.has(0) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">TIME</span>
-                <span className="ceremony__timeline-value">16:00 - 18:30</span>
+                <span className="ceremony__timeline-label">NUMBER OF ROOMS</span>
+                <span className="ceremony__timeline-value">THERE ARE IN TOTAL xx ROOMS.</span>
               </div>
-              <div className={`ceremony__timeline-detail ${visibleSections.meal.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">WHERE</span>
-                <span className="ceremony__timeline-value">DREWSFIELD RESTAURANT</span>
-              </div>
-              <div className={`ceremony__timeline-detail ${visibleSections.meal.has(2) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">SEATING</span>
-                <span className="ceremony__timeline-value">NAMES WILL BE DISPLAYED ON EACH CHAIR.</span>
-              </div>
+              {/*<div className={`ceremony__timeline-detail ${visibleSections.meal.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>*/}
+              {/*  <span className="ceremony__timeline-label">WHERE</span>*/}
+              {/*  <span className="ceremony__timeline-value">DREWSFIELD RESTAURANT</span>*/}
+              {/*</div>*/}
               <div className={`ceremony__timeline-detail ${visibleSections.meal.has(3) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">DIETARIES</span>
+                <span className="ceremony__timeline-label">LATEST UPDATE</span>
                 <span className="ceremony__timeline-value">
-                  MEAL OPTIONS WILL BE DISCUSSED WITH YOU BY THE BRIDE AND GROOM BEFORE THE DAY.
-                </span>
-              </div>
-            </div>
-          </div>
-
-          {/* Celebrations */}
-          <div className="ceremony__timeline-item">
-            <div className="ceremony__timeline-left">
-              <h3 className="ceremony__timeline-title">CELEBRATIONS</h3>
-              <p className="ceremony__timeline-description">
-                Grab a few drinks and celebrate the marriage of Dan and Soph, we will have a live band all throughout the day who will be doing a performance in the evening party. Songs are available on request.
-              </p>
-            </div>
-            <div className="ceremony__timeline-right" ref={celebrationsRef}>
-              <div className={`ceremony__timeline-detail ${visibleSections.celebrations.has(0) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">TIME</span>
-                <span className="ceremony__timeline-value">17:00 - LATE</span>
-              </div>
-              <div className={`ceremony__timeline-detail ${visibleSections.celebrations.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">WHERE</span>
-                <span className="ceremony__timeline-value">EVENT HALL</span>
-              </div>
-              <div className={`ceremony__timeline-detail ${visibleSections.celebrations.has(2) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">MUSIC</span>
-                <span className="ceremony__timeline-value">BANDO!2 - ROCK, JAZZ, COUNTRY AND SOUL PLUS DJ PIRATE.</span>
-              </div>
-              <div className={`ceremony__timeline-detail ${visibleSections.celebrations.has(3) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">DRINKS</span>
-                <span className="ceremony__timeline-value">
-                  2 X INDOOR BARS<br />
-                  1 X OUTDOOR GIN BAR
-                </span>
-              </div>
-              <div className={`ceremony__timeline-detail ${visibleSections.celebrations.has(4) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">FOOD</span>
-                <span className="ceremony__timeline-value">
-                  STREET FOOD BUFFET<br />
-                  WOODFIRED PIZZAS<br />
-                  FISH & CHIPS<br />
-                  SWEET STALL
+                  WE WILL LATE YOU KNOW IN JUNE THE DISPOSITIONS OF THE ROOMS.
                 </span>
               </div>
             </div>
@@ -194,7 +147,7 @@ export default function Ceremony() {
               <p className="ceremony__timeline-description">
                 There will be plenty of food, snacks, drinks, and water available throughout the weekend. If you have any special requests or dietary needs, please let us know in advance so we can accommodate them.<br />
                 <br />
-                If you'd like to pick up something yourself, the nearest supermarket is in Seggiano, about [xx] km from Podere Montale.
+                If you'd like to pick up something yourself, the nearest supermarket is in Castel del Pano, a small village about 12km from Podere Montale.
               </p>
             </div>
             <div className="ceremony__timeline-schedule-content" ref={scheduleRef}>
@@ -203,82 +156,82 @@ export default function Ceremony() {
                 <div className="ceremony__timeline-subdetail">
                   <span className="ceremony__timeline-label">WHO</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">Intimate Family</span>
+                    <span className="ceremony__timeline-value">INTIMATE FAMILY</span>
                   </div>
                 </div>
                 <div className="ceremony__timeline-subdetail">
                   <span className="ceremony__timeline-label">WHEN</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">Check-in is available from 3:00 PM.</span>
+                    <span className="ceremony__timeline-value">CHECK-IN IS AVAILABLE FROM 3:00 PM.</span>
                   </div>
                 </div>
                 <div className="ceremony__timeline-subdetail">
                   <span className="ceremony__timeline-label">WHAT</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">Later in the day, we'll enjoy a wine tasting to unwind, catch up, and get into the Tuscan spirit.</span>
+                    <span className="ceremony__timeline-value">LATER IN THE DAY, WE'LL ENJOY A WINE TASTING TO UNFOLD, CATCH UP, AND KNOW EACH OTHER BETTER.</span>
                   </div>
                 </div>
               </div>
               <div className={`ceremony__timeline-detail ceremony__timeline-detail--day ${visibleSections.schedule.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">FRIDAY, JULY 3</span>
                 <div className="ceremony__timeline-subdetail">
-                  <span className="ceremony__timeline-label">WHO</span>
+                  <span className="ceremony__timeline-label">WHAT</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">Arrival Day & Aperitivo</span>
+                    <span className="ceremony__timeline-value">ARRIVAL DAY & APERITIVO</span>
                   </div>
                 </div>
                 <div className="ceremony__timeline-subdetail">
                   <span className="ceremony__timeline-label">WHEN</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">Check-in opens again from 3:00 PM for all other guests.</span>
+                    <span className="ceremony__timeline-value">CHECK-IN OPENS AGAIN FROM 3:00 PM FOR ALL OTHER GUESTS.</span>
                   </div>
                 </div>
                 <div className="ceremony__timeline-subdetail">
-                  <span className="ceremony__timeline-label">WHAT</span>
+                  <span className="ceremony__timeline-label">DETAILS</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">From 6:00 PM, we'll gather for an aperitivo to officially kick off the weekend.</span>
+                    <span className="ceremony__timeline-value">FROM 6:00 PM, WE'LL START WITH AN APERITVO TO OFFICIALLY START THE WEEKEND.</span>
                   </div>
                 </div>
               </div>
               <div className={`ceremony__timeline-detail ceremony__timeline-detail--day ${visibleSections.schedule.has(2) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">SATURDAY, JULY 4</span>
                 <div className="ceremony__timeline-subdetail">
-                  <span className="ceremony__timeline-label">WHO</span>
+                  <span className="ceremony__timeline-label">WHAT</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">The Big Day</span>
+                    <span className="ceremony__timeline-value">THE BIG DAY</span>
                   </div>
                 </div>
                 <div className="ceremony__timeline-subdetail">
                   <span className="ceremony__timeline-label">WHEN</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">Breakfast will be served from [time] to [time]. The ceremony begins at [time].</span>
+                    <span className="ceremony__timeline-value">- BREAKFAST IS SERVED FROM 9:00 TO 10:30. <br/> - THE CERIMONY WILL START AT 16 <br/> - DINNER STARTS BEING SERVED AT 19:00 </span>
                   </div>
                 </div>
                 <div className="ceremony__timeline-subdetail">
-                  <span className="ceremony__timeline-label">WHAT</span>
+                  <span className="ceremony__timeline-label">DETAILS</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">Followed by a toast, delicious food, drinks, and a festive dinner. Afterwards, we'll open the dance floor and celebrate late into the Tuscan night.</span>
+                    <span className="ceremony__timeline-value">THE CEREMONY IS FOLLOWED BY A TOAST, DELICIOUS FOOD, DRINKS AND THE DINNER. THEN, WE WILL OPEN THE DANCE FLOOR AND CELEBRATE LATE INTO THE NIGHT.</span>
                   </div>
                 </div>
               </div>
               <div className={`ceremony__timeline-detail ceremony__timeline-detail--day ${visibleSections.schedule.has(3) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">SUNDAY, JULY 5</span>
                 <div className="ceremony__timeline-subdetail">
-                  <span className="ceremony__timeline-label">WHO</span>
+                  <span className="ceremony__timeline-label">WHAT</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">Goodbye Breakfast</span>
+                    <span className="ceremony__timeline-value">GOODBYE BREAKFAST</span>
                   </div>
                 </div>
                 <div className="ceremony__timeline-subdetail">
                   <span className="ceremony__timeline-label">WHEN</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">At 10:00 AM, we'll have a farewell breakfast before checking out and saying our goodbyes.</span>
+                    <span className="ceremony__timeline-value">9:00 AM</span>
                   </div>
                 </div>
                 <div className="ceremony__timeline-subdetail">
-                  <span className="ceremony__timeline-label">WHAT</span>
+                  <span className="ceremony__timeline-label">DETAILS</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">One last coffee, croissant, and memory of an unforgettable weekend.</span>
+                    <span className="ceremony__timeline-value">WE'LL HAVE A FAREWELL BREAKFAST BEFORE CHECKING-OUT AND SAYING OUR GOODBYES.</span>
                   </div>
                 </div>
               </div>

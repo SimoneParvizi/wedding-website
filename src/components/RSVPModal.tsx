@@ -100,7 +100,7 @@ Many hugs,
 ${data.name}
       `.trim();
 
-    const mailtoLink = `mailto:parvizi.simone@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:simoneandvita@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     // Open email client
     window.location.href = mailtoLink;

@@ -8,36 +8,36 @@ export default function FAQ() {
 
   const quizCards = [
     {
-      question: 'WHERE DID WE MEET?',
-      answer: 'We met at Shelter in 2022, a techno club in Amsterdam.',
+      question: 'HOW DID VITA CALLED SIMONE IN THE FIRST PERIOD THEY WERE DATING?',
+      answer: 'Campari. Simone drinks a lot of Campari.',
     },
     {
-      question: "WHAT'S OUR FAVOURITE ITALIAN DISH?",
-      answer: 'Pizza Pizza Pizza!',
+      question: "WHAT'S OUR FAVOURITE COMEDY MOVIE?",
+      answer: 'Austin Powers.',
     },
     {
-      question: "WHAT'S OUR FAVOURITE DUTCH DISH?",
-      answer: 'Pizza Pizza Pizza!',
+      question: "",
+      answer: '',
     },
     {
       question: 'WHAT CAR DO WE DRIVE?',
-      answer: "SIKE! We don't have a car."
+      answer: "Depends on the Uber driver."
     },
     {
-      question: 'HOW MANY KIDS WOULD WE LIKE TO HAVE?',
-      answer: 'Five',
+      question: '',
+      answer: '',
     },
     {
-      question: 'WHAT WOULD BE OUR DREAM HOUSE?',
-      answer: 'A farm house in Italy',
+      question: '',
+      answer: '',
     },
     {
-      question: 'WHAT DO WE DO FOR JOBS?',
-      answer: 'Siem is a software engineer, and Vita is a Marketing Manager.',
+      question: '',
+      answer: '',
     },
     {
-      question: 'WHERE DID WE GET THIS AWESOME SITE?',
-      answer: 'Simone did it ;)',
+      question: '',
+      answer: '',
     },
   ];
 
