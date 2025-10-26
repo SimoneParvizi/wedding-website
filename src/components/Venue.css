@@ -84,17 +84,31 @@
 
 @media (max-width: 767px) {
   .venue {
-    padding: 80px 5px;
+    padding: 80px 10px;
   }
 
   .venue__title {
-    font-size: 90px;
-    letter-spacing: -0.03em;
+    font-size: 72px;
+    letter-spacing: -0.04em;
   }
 
   .venue__address {
     font-size: 18px;
     letter-spacing: -0.02em;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 767px) {
+  .venue__title {
+    font-size: 85px;
+    letter-spacing: -0.035em;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+  .venue__title {
+    font-size: 90px;
+    letter-spacing: -0.03em;
   }
 }
 
