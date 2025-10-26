@@ -262,6 +262,11 @@
   background-color: #FFFFFF;
 }
 
+/* Arriving by Plane - Hide bottom line on desktop */
+.ceremony__timeline-item--plane::after {
+  display: none;
+}
+
 /* Left Side - Title and Description */
 .ceremony__timeline-left {
   display: flex;

@@ -91,7 +91,7 @@ export default function Ceremony() {
           </div>
 
           {/* Reception */}
-          <div className="ceremony__timeline-item">
+          <div className="ceremony__timeline-item ceremony__timeline-item--plane">
             <div className="ceremony__timeline-schedule-title">
               <h3 className="ceremony__timeline-title">ARRIVING BY PLANE</h3>
               <p className="ceremony__timeline-description">
