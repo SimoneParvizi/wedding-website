@@ -82,6 +82,16 @@
   margin-left: 0.5em;
 }
 
+.hero__language-switcher {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  z-index: 10;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+  animation-delay: 0.8s;
+}
+
 .hero-spacer {
   height: 60vh;
   position: relative;
@@ -115,6 +125,11 @@
   .hero__title {
     font-size: 140px;
   }
+
+  .hero__language-switcher {
+    top: 40px;
+    right: 60px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -124,5 +139,10 @@
 
   .hero__title {
     font-size: 200px;
+  }
+
+  .hero__language-switcher {
+    top: 50px;
+    right: 80px;
   }
 }

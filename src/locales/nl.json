@@ -1,0 +1,91 @@
+{
+  "header": {
+    "names": "SIMONE & VITA",
+    "date": "03.07.2026"
+  },
+  "story": {
+    "heading": "LIEVE VRIENDEN EN FAMILIE",
+    "text": "JULLIE AANWEZIGHEID BIJ ONZE BRUILOFT IS HET GROOTSTE CADEAU. ER IS NIETS BETERS DAN GENIETEN VAN DE ITALIAANSE ZON, OMRINGD DOOR WIJNGAARDEN EN HET GEZELSCHAP VAN DEGENEN DIE ONS HET DIERBAARST ZIJN.",
+    "greatest": "GROOTSTE",
+    "dearest": "DIERBAARST"
+  },
+  "venue": {
+    "joinUs": "VIER MET ONS MEE",
+    "venueName": "PODERE MONTALE",
+    "from": "van",
+    "to": "tot",
+    "address": {
+      "line1": "SEGGIANO,",
+      "line2": "GROSSETO,",
+      "line3": "TOSCANE, ITALIË"
+    }
+  },
+  "ceremony": {
+    "accommodation": {
+      "title": "ACCOMMODATIE",
+      "description": "We zullen verblijven op Podere Montale, omringd door olijfbomen en wijngaarden. We hebben een plek gekozen die ons vertegenwoordigt, omdat we van de natuur houden en denken dat het ons in staat zal stellen de rest te vergeten en volledig te genieten van de trouwdag.",
+      "latestUpdate": "LAATSTE UPDATE",
+      "latestUpdateValue": "IN JUNI LATEN WE JULLIE WETEN HOE DE KAMERS VERDEELD ZIJN"
+    },
+    "plane": {
+      "title": "AANKOMEN PER VLIEGTUIG",
+      "description": "Voor wie besluit per vliegtuig te komen, vergoeden we graag <strong>€100 per persoon</strong> voor vluchten indien gewenst.",
+      "airportsTuscany": "LUCHTHAVENS IN TOSCANE",
+      "airportsTuscanyValue": " - FLORENCE, \"AMERIGO VESPUCCI\" \n - PISA, \"GALILEO GALILEI\"",
+      "airportsLazio": "LUCHTHAVENS IN LAZIO",
+      "airportsLazioValue": "- ROME FIUMICINO, \"LEONARDO DA VINCI\" \n- ROME CIAMPINO, \"G.B. PASTINE\"",
+      "voucher": "VOUCHER WAARDE",
+      "voucherValue": "100 EURO"
+    },
+    "transfer": {
+      "title": "VERVOER",
+      "description": "We zijn hier om je te helpen bij de locatie te komen. Kies tussen georganiseerd vervoer of de vrijheid van een roadtrip.",
+      "duration": "REISDUUR",
+      "durationValue": "- 2 UUR 50 MIN VANAF ROME FIUMICINO \n - 2 UUR 35 MIN VANAF ROME CIAMPINO\n - 2 UUR 15 MIN VANAF FLORENCE\n - 2 UUR 25 MIN VANAF PISA",
+      "bus": "BUS",
+      "busValue": "ER KAN EEN BUS BESCHIKBAAR WORDEN GESTELD VANUIT ZOWEL ROME ALS FLORENCE. LAAT HET ONS WETEN ALS JE HIERVAN GEBRUIK WILT MAKEN",
+      "car": "AUTO",
+      "carValue": "ALS JE ER LIEVER EEN LANGERE REIS VAN WILT MAKEN, RADEN WE AAN EEN AUTO TE HUREN EN DE OMGEVING TE VERKENNEN. BIJ DE LOCATIE IS ER VOLDOENDE PARKEERRUIMTE"
+    },
+    "schedule": {
+      "title": "WEEKENDPROGRAMMA",
+      "description": "Er zal het hele weekend door volop eten, snacks, drankjes en water beschikbaar zijn. Als je speciale verzoeken of dieetwensen hebt, laat het ons dan van tevoren weten zodat we hieraan kunnen voldoen.\n\nAls je zelf iets wilt ophalen, is de dichtstbijzijnde supermarkt in Castel del Pano, een klein dorp op ongeveer 12km van Podere Montale.",
+      "thursday": {
+        "date": "DONDERDAG 2 JULI",
+        "who": "WIE",
+        "whoValue": "INTIEME FAMILIE",
+        "when": "WANNEER",
+        "whenValue": "INCHECKEN VANAF 15:00",
+        "what": "WAT",
+        "whatValue": "LATER OP DE DAG ZULLEN WE GENIETEN VAN EEN WIJNPROEVERIJ"
+      },
+      "friday": {
+        "date": "VRIJDAG 3 JULI",
+        "who": "WIE",
+        "whoValue": "ALLE ANDERE GASTEN",
+        "when": "WANNEER",
+        "whenValue": "INCHECKEN VANAF 15:00",
+        "details": "DETAILS",
+        "detailsValue": "VANAF 18:00 HEBBEN WE EEN APERITIEF OM HET WEEKEND OFFICIEEL TE BEGINNEN"
+      },
+      "saturday": {
+        "date": "ZATERDAG 4 JULI",
+        "what": "WAT",
+        "whatValue": "DE GROTE DAG",
+        "when": "WANNEER",
+        "whenValue": "- ONTBIJT TIJD \"NOG TE BEPALEN\" \n- CEREMONIE TIJD \"NOG TE BEPALEN\" \n- DINER TIJD \"NOG TE BEPALEN\" ",
+        "details": "DETAILS",
+        "detailsValue": "DE CEREMONIE WORDT GEVOLGD DOOR EEN TOAST, HEERLIJK ETEN, DRANKJES EN HET DINER. DAARNA OPENEN WE DE DANSVLOER EN VIEREN WE TOT LAAT IN DE NACHT"
+      },
+      "sunday": {
+        "date": "ZONDAG 5 JULI",
+        "what": "WAT",
+        "whatValue": "AFSCHEIDSONTBIJT",
+        "when": "WANNEER",
+        "whenValue": "9:00",
+        "details": "DETAILS",
+        "detailsValue": "WE HEBBEN EEN AFSCHEIDSONTBIJT VOORDAT WE UITCHECKEN EN AFSCHEID NEMEN"
+      }
+    }
+  }
+}

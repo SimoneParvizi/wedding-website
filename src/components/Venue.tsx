@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './Venue.css';
 
 export default function Venue() {
+  const { t } = useTranslation();
   const venueRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -38,20 +40,20 @@ export default function Venue() {
         />
       </div>
       <div className={`venue__content ${isVisible ? 'venue__content--visible' : ''}`}>
-        <p className="venue__join">JOIN US</p>
+        <p className="venue__join">{t('venue.joinUs')}</p>
         <h2 className="venue__title">
           PODERE<br />
           MONTALE
-          <span className="venue__date-label--from-wrapper"><br /><span className="venue__date-label venue__date-label--from">from</span></span><br />
+          <span className="venue__date-label--from-wrapper"><br /><span className="venue__date-label venue__date-label--from">{t('venue.from')}</span></span><br />
           03.07.2026<br />
-          <span className="venue__date-label venue__date-label--to">to</span><br />
+          <span className="venue__date-label venue__date-label--to">{t('venue.to')}</span><br />
           05.07.2026
         </h2>
         <div className="venue__details">
           <p className="venue__address">
-            SEGGIANO,<br />
-            GROSSETO,<br />
-            TUSCANY, ITALY
+            {t('venue.address.line1')}<br />
+            {t('venue.address.line2')}<br />
+            {t('venue.address.line3')}
           </p>
         </div>
       </div>

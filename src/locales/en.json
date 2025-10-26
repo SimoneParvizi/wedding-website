@@ -1,0 +1,91 @@
+{
+  "header": {
+    "names": "SIMONE & VITA",
+    "date": "03.07.2026"
+  },
+  "story": {
+    "heading": "DEAR FRIENDS AND FAMILY",
+    "text": "YOU PRESENCE AT OUR WEDDING IS THE GREATEST GIFT OF ALL. THERE IS NOTHING BETTER THAN ENJOYING THE ITALIAN SUN, SURROUNDED BY VINEYARDS AND THE WONDERFUL COMPANY OF THOSE DEAREST TO US.",
+    "greatest": "GREATEST",
+    "dearest": "DEAREST"
+  },
+  "venue": {
+    "joinUs": "JOIN US",
+    "venueName": "PODERE MONTALE",
+    "from": "from",
+    "to": "to",
+    "address": {
+      "line1": "SEGGIANO,",
+      "line2": "GROSSETO,",
+      "line3": "TUSCANY, ITALY"
+    }
+  },
+  "ceremony": {
+    "accommodation": {
+      "title": "ACCOMMODATION",
+      "description": "We will be staying at Podere Montale, surrounded by olive trees and vineyards. We chose a place that represents us, since we love nature and we think will allow us to forgot about the rest and fully enjoy the wedding day.",
+      "latestUpdate": "LATEST UPDATE",
+      "latestUpdateValue": "IN JUNE WE WILL LET YOU KNOW THE DISPOSITIONS OF THE ROOMS"
+    },
+    "plane": {
+      "title": "ARRIVING BY PLANE",
+      "description": "For whoever decide to come by plane, we're happy to <strong>reimburse €100</strong> per person for flights if desired.",
+      "airportsTuscany": "AIRPORTS IN TUSCANY",
+      "airportsTuscanyValue": " - FLORENCE, \"AMERIGO VESPUCCI\" \n - PISA, \"GALILEO GALILEI\"",
+      "airportsLazio": "AIRPORTS IN LAZIO",
+      "airportsLazioValue": "- ROME FIUMICINO, \"LEONARDO DA VINCI\" \n- ROME CIAMPINO, \"G.B. PASTINE\"",
+      "voucher": "VOUCHER VALUE",
+      "voucherValue": "100 EUROS"
+    },
+    "transfer": {
+      "title": "TRANSFER",
+      "description": "We're here to help you get to the venue. Choose between organized transport or the freedom of a road trip.",
+      "duration": "TRIP DURATION",
+      "durationValue": "- 2 HRS 50 MIN FROM ROME FIUMICINO \n - 2 HRS 35 MIN FROM ROME CIAMPINO\n - 2 HRS 15 MIN FROM FLORENCE\n - 2 HRS 25 MIN FROM PISA",
+      "bus": "BUS",
+      "busValue": "A BUS CAN BE MADE AVAILABLE FROM BOTH ROME AND FLORENCE. PLEASE LET US KNOW IF YOU'D LIKE TO MAKE USE OF IT",
+      "car": "CAR",
+      "carValue": "IF YOU'D PREFER TO MAKE A LONGER TRIP OUT OF IT, WE RECOMMEND RENTING A CAR AND EXPLORING THE SURROUNDINGS. AT THE VENUE THERE IS ENOUGH PARKING SPACE"
+    },
+    "schedule": {
+      "title": "WEEKEND SCHEDULE",
+      "description": "There will be plenty of food, snacks, drinks, and water available throughout the weekend. If you have any special requests or dietary needs, please let us know in advance so we can accommodate them.\n\nIf you'd like to pick up something yourself, the nearest supermarket is in Castel del Pano, a small village about 12km from Podere Montale.",
+      "thursday": {
+        "date": "THURSDAY, JULY 2",
+        "who": "WHO",
+        "whoValue": "INTIMATE FAMILY",
+        "when": "WHEN",
+        "whenValue": "CHECK-IN FROM 3:00 PM",
+        "what": "WHAT",
+        "whatValue": "LATER IN THE DAY, WE'LL ENJOY A WINE TASTING"
+      },
+      "friday": {
+        "date": "FRIDAY, JULY 3",
+        "who": "WHO",
+        "whoValue": "ALL OTHER GUESTS",
+        "when": "WHEN",
+        "whenValue": "CHECK-IN OPENS FROM 3:00 PM",
+        "details": "DETAILS",
+        "detailsValue": "FROM 6:00 PM, WE'LL HAVE AN APERITVO TO OFFICIALLY START THE WEEKEND"
+      },
+      "saturday": {
+        "date": "SATURDAY, JULY 4",
+        "what": "WHAT",
+        "whatValue": "THE BIG DAY",
+        "when": "WHEN",
+        "whenValue": "- TIME BREAKFAST \"TBD\" \n- TIME CEREMONY \"TBD\" \n- TIME DINNER \"TBD\" ",
+        "details": "DETAILS",
+        "detailsValue": "THE CEREMONY IS FOLLOWED BY A TOAST, DELICIOUS FOOD, DRINKS AND THE DINNER. THEN, WE WILL OPEN THE DANCE FLOOR AND CELEBRATE LATE INTO THE NIGHT"
+      },
+      "sunday": {
+        "date": "SUNDAY, JULY 5",
+        "what": "WHAT",
+        "whatValue": "GOODBYE BREAKFAST",
+        "when": "WHEN",
+        "whenValue": "9:00 AM",
+        "details": "DETAILS",
+        "detailsValue": "WE'LL HAVE A FAREWELL BREAKFAST BEFORE CHECKING-OUT AND SAYING OUR GOODBYES"
+      }
+    }
+  }
+}

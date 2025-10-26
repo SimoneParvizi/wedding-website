@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './Story.css';
 
 export default function Story() {
+  const { t } = useTranslation();
   const storyRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -29,9 +31,23 @@ export default function Story() {
   return (
     <section className="story" ref={storyRef}>
       <div className={`story__container ${isVisible ? 'story__container--visible' : ''}`}>
-        <h2 className="story__heading">DEAR FRIENDS AND FAMILY</h2>
+        <h2 className="story__heading">{t('story.heading')}</h2>
         <p className="story__text">
-          YOU PRESENCE AT OUR WEDDING IS THE <span className="cursive">GREATEST</span> GIFT OF ALL. THERE IS NOTHING BETTER THAN ENJOYING THE ITALIAN SUN, SURROUNDED BY VINEYARDS AND THE WONDERFUL COMPANY OF THOSE <span className="cursive">DEAREST</span> TO US.
+          {t('story.text').split(t('story.greatest')).map((part, index, arr) => (
+            index === arr.length - 1 ? (
+              part.split(t('story.dearest')).map((subpart, subindex, subarr) => (
+                <span key={`sub-${subindex}`}>
+                  {subpart}
+                  {subindex < subarr.length - 1 && <span className="cursive">{t('story.dearest')}</span>}
+                </span>
+              ))
+            ) : (
+              <span key={index}>
+                {part}
+                <span className="cursive">{t('story.greatest')}</span>
+              </span>
+            )
+          ))}
         </p>
       </div>
     </section>

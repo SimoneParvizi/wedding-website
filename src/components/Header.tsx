@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './Header.css';
 
 export default function Header() {
+  const { t } = useTranslation();
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
@@ -106,8 +108,8 @@ export default function Header() {
   return (
     <header className={`header ${isDark ? 'header--dark' : ''}`}>
       <div className="header__content">
-        <div className="header__left">SIMONE & VITA</div>
-        <div className="header__right">03.07.2026</div>
+        <div className="header__left">{t('header.names')}</div>
+        <div className="header__right">{t('header.date')}</div>
       </div>
     </header>
   );

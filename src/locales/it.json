@@ -1,0 +1,91 @@
+{
+  "header": {
+    "names": "SIMONE & VITA",
+    "date": "03.07.2026"
+  },
+  "story": {
+    "heading": "CARI AMICI E FAMIGLIA",
+    "text": "LA VOSTRA PRESENZA AL NOSTRO MATRIMONIO È IL REGALO PIÙ BELLO. NON VEDIAMO L'ORA DI FESTEGGIARE INSIEME, SOTTO IL SOLE, TRA I VIGNETI E LE PERSONE A CUI VOGLIAMO PIÙ BENE.",
+    "greatest": "PIÙ GRANDE",
+    "dearest": "PIÙ CARI"
+  },
+  "venue": {
+    "joinUs": "UNISCITI A NOI",
+    "venueName": "PODERE MONTALE",
+    "from": "dal",
+    "to": "al",
+    "address": {
+      "line1": "SEGGIANO,",
+      "line2": "GROSSETO,",
+      "line3": "TOSCANA, ITALIA"
+    }
+  },
+  "ceremony": {
+    "accommodation": {
+      "title": "ALLOGGIO",
+      "description": "Passeremo i giorni a Podere Montale, immersi tra ulivi e vigneti. È un posto che sentiamo davvero nostro, amiamo la natura e ci sembra il luogo perfetto per staccarci da tutto e goderci il giorno del matrimonio.",
+      "latestUpdate": "PROSSIMO AGGIORNAMENTO",
+      "latestUpdateValue": "A GIUGNO VI FAREMO SAPERE LA DISPOSIZIONE DELLE CAMERE"
+    },
+    "plane": {
+      "title": "ARRIVO IN AEREO",
+      "description": "Per chi decidesse di venire in aereo, se desiderato, siamo felici di <strong>rimborsare €100</strong> a persona per i voli.",
+      "airportsTuscany": "AEROPORTI IN TOSCANA",
+      "airportsTuscanyValue": " - FIRENZE, \"AMERIGO VESPUCCI\" \n - PISA, \"GALILEO GALILEI\"",
+      "airportsLazio": "AEROPORTI NEL LAZIO",
+      "airportsLazioValue": "- ROMA FIUMICINO, \"LEONARDO DA VINCI\" \n- ROMA CIAMPINO, \"G.B. PASTINE\"",
+      "voucher": "VALORE VOUCHER",
+      "voucherValue": "100 EURO"
+    },
+    "transfer": {
+      "title": "TRASFERIMENTO",
+      "description": "Siamo qui per aiutarvi ad arrivare alla location. Scegliete tra il trasporto organizzato o la libertà di un viaggio su strada.",
+      "duration": "DURATA VIAGGIO",
+      "durationValue": "- 2 ORE 50 MIN DA ROMA FIUMICINO \n - 2 ORE 35 MIN DA ROMA CIAMPINO\n - 2 ORE 15 MIN DA FIRENZE\n - 2 ORE 25 MIN DA PISA",
+      "bus": "AUTOBUS",
+      "busValue": "UN AUTOBUS PUÒ ESSERE RESO DISPONIBILE SIA DA ROMA CHE DA FIRENZE. PER FAVORE FATECI SAPERE SE NE AVETE BISOGNO",
+      "car": "AUTO",
+      "carValue": "SE VOLETE APPROFITTARNE PER FARE UN GIRO PIÙ LUNGO, VI CONSIGLIAMO DI AFFITTARE UN'AUTO PER ESPLORARE LA ZONA. ALLA LOCATION C'È SPAZIO A SUFFICIENZA PER PARCHEGGIARE"
+    },
+    "schedule": {
+      "title": "PROGRAMMA DEL WEEKEND",
+      "description": "Durante il weekend non mancheranno cibo, snack, bevande e acqua. Se avete esigenze alimentari o preferenze particolari, scriveteci pure in anticipo così possiamo organizzarci.\n\nSe vi serve qualcosa, il supermercato più vicino è a Castel del Piano, circa 12km da Podere Montale.",
+      "thursday": {
+        "date": "GIOVEDÌ 2 LUGLIO",
+        "who": "CHI",
+        "whoValue": "FAMIGLIA INTIMA",
+        "when": "QUANDO",
+        "whenValue": "CHECK-IN DALLE 15:00",
+        "what": "COSA",
+        "whatValue": "PIÙ TARDI NELLA GIORNATA, CI SARÀ UNA DEGUSTAZIONE DI VINI"
+      },
+      "friday": {
+        "date": "VENERDÌ 3 LUGLIO",
+        "who": "CHI",
+        "whoValue": "TUTTI GLI ALTRI OSPITI",
+        "when": "QUANDO",
+        "whenValue": "CHECK-IN APERTO DALLE 15:00",
+        "details": "DETTAGLI",
+        "detailsValue": "DALLE 18:00, INIZIEREMO IL WEEKEND CON UN APERITIVO INSIEME"
+      },
+      "saturday": {
+        "date": "SABATO 4 LUGLIO",
+        "what": "COSA",
+        "whatValue": "IL GRANDE GIORNO",
+        "when": "QUANDO",
+        "whenValue": "- ORA COLAZIONE \"DA DEFINIRE\" \n- ORA CERIMONIA \"DA DEFINIRE\" \n- ORA CENA \"DA DEFINIRE\" ",
+        "details": "DETTAGLI",
+        "detailsValue": "DOPO LA CERIMONIA CI ASPETTA UN BRINDISI, BUON CIBO, BEVANDE ED INFINE LA CENA. POI, SI BALLA FINO A TARDI"
+      },
+      "sunday": {
+        "date": "DOMENICA 5 LUGLIO",
+        "what": "COSA",
+        "whatValue": "COLAZIONE D'ADDIO",
+        "when": "QUANDO",
+        "whenValue": "9:00",
+        "details": "DETTAGLI",
+        "detailsValue": "PRIMA DEL CHECK-OUT, CI SARÀ UNA COLAZIONE DI SALUTO PER STARE ANCORA UN PO' INSIEME"
+      }
+    }
+  }
+}
