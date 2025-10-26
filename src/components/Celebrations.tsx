@@ -24,12 +24,41 @@ export default function Celebrations() {
     if (!scrollContainer) return;
 
     const track = scrollContainer.querySelector('.celebrations__track') as HTMLElement;
-    if (track) {
-      // Force animation restart to pick up new duration
-      track.style.animation = 'none';
-      void track.offsetHeight; // Trigger reflow
-      track.style.animation = '';
-    }
+    if (!track) return;
+
+    // Force animation restart to pick up new duration
+    track.style.animation = 'none';
+    void track.offsetHeight; // Trigger reflow
+    track.style.animation = '';
+
+    let interactionTimeout: NodeJS.Timeout;
+
+    const handleInteractionStart = () => {
+      track.style.animationPlayState = 'paused';
+      clearTimeout(interactionTimeout);
+    };
+
+    const handleInteractionEnd = () => {
+      clearTimeout(interactionTimeout);
+      interactionTimeout = setTimeout(() => {
+        track.style.animationPlayState = 'running';
+      }, 1000);
+    };
+
+    scrollContainer.addEventListener('touchstart', handleInteractionStart);
+    scrollContainer.addEventListener('mousedown', handleInteractionStart);
+    scrollContainer.addEventListener('touchend', handleInteractionEnd);
+    scrollContainer.addEventListener('mouseup', handleInteractionEnd);
+    scrollContainer.addEventListener('scroll', handleInteractionStart);
+
+    return () => {
+      scrollContainer.removeEventListener('touchstart', handleInteractionStart);
+      scrollContainer.removeEventListener('mousedown', handleInteractionStart);
+      scrollContainer.removeEventListener('touchend', handleInteractionEnd);
+      scrollContainer.removeEventListener('mouseup', handleInteractionEnd);
+      scrollContainer.removeEventListener('scroll', handleInteractionStart);
+      clearTimeout(interactionTimeout);
+    };
   }, []);
 
   return (

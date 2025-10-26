@@ -14,21 +14,21 @@
 }
 
 .celebrations__slides {
-  overflow-x: hidden;
+  overflow-x: auto;
   overflow-y: hidden;
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="20" viewBox="0 0 80 20"><text x="0" y="15" font-family="Arial" font-size="14" fill="black">&lt; scroll &gt;</text></svg>') 40 10, auto;
+  cursor: grab;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
   scroll-behavior: auto;
 }
 
-.celebrations__slides::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+.celebrations__slides:active {
+  cursor: grabbing;
 }
 
-.celebrations__slides:active {
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="20" viewBox="0 0 80 20"><text x="0" y="15" font-family="Arial" font-size="14" fill="black">&lt; scroll &gt;</text></svg>') 40 10, auto;
+.celebrations__slides::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 .celebrations__track {
