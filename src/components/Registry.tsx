@@ -19,7 +19,7 @@ export default function Registry() {
     <>
       <section className="registry">
         <div className="registry__container">
-          <p className="registry__label">PLEASE CLICK HERE BELOW AND LET US KNOW <br /> IF WE'LL TO SEE YOU THERE THE 03.07.2026</p>
+          <p className="registry__label">PLEASE CLICK HERE BELOW AND LET US KNOW <br /> IF WE'LL SEE YOU THERE ON 03.07.2026</p>
           <div className="registry__image">
             <img src="/assets/sketch-podere.png" alt="Podere Montale sketch" />
           </div>

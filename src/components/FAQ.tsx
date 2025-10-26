@@ -8,11 +8,11 @@ export default function FAQ() {
 
   const quizCards = [
     {
-      question: 'HOW DID VITA CALLED SIMONE IN THE FIRST PERIOD THEY WERE DATING?',
+      question: 'WHAT NICKNAME DID VITA USE FOR SIMONE AT THE BEGINNING OF THEIR RELATIONSHIP?',
       answer: 'Campari. Simone drinks a lot of Campari.',
     },
     {
-      question: "WHAT'S OUR FAVOURITE COMEDY MOVIE?",
+      question: "WHAT'S THEIR FAVOURITE COMEDY MOVIE?",
       answer: 'Austin Powers.',
     },
     {
@@ -20,7 +20,7 @@ export default function FAQ() {
       answer: "In the basem of A'DAM tower in Amsterdam: club Shelter",
     },
     {
-      question: 'WHAT CAR DO WE DRIVE?',
+      question: 'WHAT CAR DO THEY DRIVE?',
       answer: "Depends on the Uber driver."
     },
     {
