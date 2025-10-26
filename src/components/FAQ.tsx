@@ -83,7 +83,7 @@ export default function FAQ() {
             there's <span className="cursive">plenty of shade</span> and activities to keep them happy and comfortable.
           </h2>
           <div className="gifting__image">
-            <img src="/assets/ywllow-flowers.JPG" alt="Background illustration" />
+            <img src="/assets/ywllow-flowers.jpg" alt="Background illustration" />
           </div>
         </div>
       </section>
