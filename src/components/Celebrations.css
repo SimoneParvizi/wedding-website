@@ -34,7 +34,7 @@
 .celebrations__track {
   display: flex;
   align-items: center;
-  animation: slide 60s linear infinite;
+  animation: slide 180s linear infinite;
 }
 
 @keyframes slide {
@@ -60,12 +60,14 @@
   display: block;
 }
 
+@media (max-width: 767px) {
+  .celebrations__track {
+    animation: slide 60s linear infinite !important;
+  }
+}
+
 @media (min-width: 768px) {
   .celebrations {
     padding: 160px 40px 160px;
-  }
-
-  .celebrations__track {
-    animation: slide 50s linear infinite !important;
   }
 }
