@@ -71,6 +71,17 @@
   margin-bottom: 40px;
 }
 
+.venue__date-label {
+  font-family: 'Publica Sans Ultra Light', sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: block;
+  margin-top: -01px;
+  margin-bottom: -70px;
+}
+
 .venue__details {
   margin-top: 40px;
 }
@@ -120,6 +131,22 @@
 
   .venue__join {
     font-size: 16px;
+  }
+
+  .venue__date-label {
+    font-size: 40px;
+    line-height: 1.1;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  .venue__date-label--from-wrapper {
+    display: none;
+  }
+
+  .venue__date-label--to {
+    display: block;
+    margin-bottom: -160px;
   }
 
   .venue__title {

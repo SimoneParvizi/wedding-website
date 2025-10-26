@@ -1,7 +1,7 @@
 .story {
   position: relative;
   z-index: 10;
-  padding: 200px 20px 150px;
+  padding: 200px 20px 1px;
   background-color: var(--color-white);
 }
 

@@ -41,8 +41,11 @@ export default function Venue() {
         <p className="venue__join">JOIN US</p>
         <h2 className="venue__title">
           PODERE<br />
-          MONTALE<br />
-          03.07.2026
+          MONTALE
+          <span className="venue__date-label--from-wrapper"><br /><span className="venue__date-label venue__date-label--from">from</span></span><br />
+          03.07.2026<br />
+          <span className="venue__date-label venue__date-label--to">to</span><br />
+          05.07.2026
         </h2>
         <div className="venue__details">
           <p className="venue__address">
