@@ -494,4 +494,9 @@
   .ceremony__timeline-value {
     font-size: 16px;
   }
+
+  /* Show line below plane section on mobile */
+  .ceremony__timeline-item--plane::after {
+    display: block !important;
+  }
 }

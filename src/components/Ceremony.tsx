@@ -84,7 +84,7 @@ export default function Ceremony() {
               <div className={`ceremony__timeline-detail ${visibleSections.meal.has(3) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">LATEST UPDATE</span>
                 <span className="ceremony__timeline-value">
-                  WE WILL LATE YOU KNOW IN JUNE THE DISPOSITIONS OF THE ROOMS
+                  IN JUNE WE WILL LET YOU KNOW THE DISPOSITIONS OF THE ROOMS
                 </span>
               </div>
             </div>
