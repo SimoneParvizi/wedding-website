@@ -14,11 +14,12 @@
 }
 
 .photo-gallery__slides {
-  overflow-x: scroll;
+  overflow-x: hidden;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   cursor: grab;
+  scroll-behavior: auto;
 }
 
 .photo-gallery__slides::-webkit-scrollbar {
@@ -32,7 +33,7 @@
 .photo-gallery__track {
   display: flex;
   align-items: center;
-  animation: slide 40s linear infinite;
+  animation: slide 20s linear infinite;
 }
 
 @keyframes slide {
@@ -78,13 +79,17 @@
   }
 
   .photo-gallery__track {
-    animation: slide 30s linear infinite;
+    animation: slide 5s linear infinite !important;
   }
 }
 
 @media (min-width: 768px) {
   .photo-gallery {
     padding: 0 40px 160px;
+  }
+
+  .photo-gallery__track {
+    animation: slide 10s linear infinite !important;
   }
 
   .photo-gallery__arrow {

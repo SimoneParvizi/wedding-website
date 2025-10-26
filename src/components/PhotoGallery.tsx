@@ -22,30 +22,10 @@ export default function PhotoGallery() {
     const track = trackRef.current;
     if (!track) return;
 
-    let isScrolling = false;
-    let scrollTimeout: NodeJS.Timeout;
-
-    const handleInteraction = () => {
-      isScrolling = true;
-      track.style.animationPlayState = 'paused';
-
-      clearTimeout(scrollTimeout);
-      scrollTimeout = setTimeout(() => {
-        isScrolling = false;
-        track.style.animationPlayState = 'running';
-      }, 1000);
-    };
-
-    track.addEventListener('mousedown', handleInteraction);
-    track.addEventListener('touchstart', handleInteraction);
-    track.addEventListener('wheel', handleInteraction);
-
-    return () => {
-      track.removeEventListener('mousedown', handleInteraction);
-      track.removeEventListener('touchstart', handleInteraction);
-      track.removeEventListener('wheel', handleInteraction);
-      clearTimeout(scrollTimeout);
-    };
+    // Force animation restart to pick up new duration
+    track.style.animation = 'none';
+    void track.offsetHeight; // Trigger reflow
+    track.style.animation = '';
   }, []);
 
   return (

@@ -23,23 +23,13 @@ export default function Celebrations() {
     const scrollContainer = scrollRef.current;
     if (!scrollContainer) return;
 
-    const handleScroll = () => {
-      const scrollWidth = scrollContainer.scrollWidth / 3;
-      const scrollLeft = scrollContainer.scrollLeft;
-
-      // Reset scroll position when reaching the end or beginning
-      if (scrollLeft >= scrollWidth * 2) {
-        scrollContainer.scrollLeft = scrollWidth;
-      } else if (scrollLeft === 0) {
-        scrollContainer.scrollLeft = scrollWidth;
-      }
-    };
-
-    // Set initial scroll position to middle section
-    scrollContainer.scrollLeft = scrollContainer.scrollWidth / 3;
-
-    scrollContainer.addEventListener('scroll', handleScroll);
-    return () => scrollContainer.removeEventListener('scroll', handleScroll);
+    const track = scrollContainer.querySelector('.celebrations__track') as HTMLElement;
+    if (track) {
+      // Force animation restart to pick up new duration
+      track.style.animation = 'none';
+      void track.offsetHeight; // Trigger reflow
+      track.style.animation = '';
+    }
   }, []);
 
   return (

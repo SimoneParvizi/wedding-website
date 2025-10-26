@@ -14,12 +14,13 @@
 }
 
 .celebrations__slides {
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="20" viewBox="0 0 80 20"><text x="0" y="15" font-family="Arial" font-size="14" fill="black">&lt; scroll &gt;</text></svg>') 40 10, auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE and Edge */
+  scroll-behavior: auto;
 }
 
 .celebrations__slides::-webkit-scrollbar {
@@ -33,7 +34,7 @@
 .celebrations__track {
   display: flex;
   align-items: center;
-  animation: slide 20s linear infinite;
+  animation: slide 60s linear infinite;
 }
 
 @keyframes slide {
@@ -41,7 +42,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-180%);
   }
 }
 
@@ -62,5 +63,9 @@
 @media (min-width: 768px) {
   .celebrations {
     padding: 160px 40px 160px;
+  }
+
+  .celebrations__track {
+    animation: slide 50s linear infinite !important;
   }
 }

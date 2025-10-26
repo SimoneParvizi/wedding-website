@@ -34,7 +34,7 @@ export default function Venue() {
           alt="Venue background"
           className="venue__bg-image"
           loading="eager"
-          fetchPriority="high"
+          fetchpriority="high"
         />
       </div>
       <div className={`venue__content ${isVisible ? 'venue__content--visible' : ''}`}>
