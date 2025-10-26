@@ -107,7 +107,7 @@ export default function Ceremony() {
               <div className={`ceremony__timeline-detail ${visibleSections.ceremony.has(2) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">CAR</span>
                 <span className="ceremony__timeline-value">
-                  IF YOU'D PREFER TO MAKE A LONGER TRIP OUT OF IT, WE RECOMMEND RENTING A CAR AND EXPLORING THE SURROUNDINGS. AT THE VENUE THERE ARE PARKING SLOTS AVAILABLE
+                  IF YOU'D PREFER TO MAKE A LONGER TRIP OUT OF IT, WE RECOMMEND RENTING A CAR AND EXPLORING THE SURROUNDINGS. AT THE VENUE THERE IS ENOUGH PARKING SPACE
                 </span>
               </div>
             </div>

@@ -59,6 +59,7 @@ export default function RSVPModal({ isOpen, onClose, type }: RSVPModalProps) {
       adults: formData.get('adults'),
       kids: formData.get('kids'),
       dietary: formData.get('dietary'),
+      travelOption: formData.get('travelOption'),
       message: formData.get('message'),
     };
 
@@ -75,12 +76,21 @@ export default function RSVPModal({ isOpen, onClose, type }: RSVPModalProps) {
       ? `${adultsCount} ${adultsCount === 1 ? 'adult' : 'adults'} and ${kidsCount} ${kidsCount === 1 ? 'kid' : 'kids'}`
       : `${adultsCount} ${adultsCount === 1 ? 'adult' : 'adults'}`;
 
+    const travelText = data.travelOption === 'plane-with-voucher'
+      ? `I'm coming by plane, and your 100 € travel voucher would really help`
+      : data.travelOption === 'plane-no-voucher'
+      ? `I'm coming by plane, but I won't need the travel voucher. I truly appreciate the offer!`
+      : data.travelOption === 'not-plane'
+      ? `I'm not coming by plane`
+      : '';
+
     const body = type === 'yes'
       ? `
 Hey Simone & Vita!
 
 ${data.name} here. We're so excited to celebrate with you! We'll be there with ${totalGuests} ${guestsText} total (${guestBreakdown}).
 
+${travelText ? `${travelText}\n` : ''}
 ${data.dietary ? `Just a heads up on dietary needs: ${data.dietary}\n` : ''}
 ${data.message ? `${data.message}\n` : ''}
 Can't wait for the big day!
@@ -191,6 +201,47 @@ ${data.name}
                   placeholder="Any allergies or dietary requirements?"
                   rows={3}
                 />
+              </div>
+
+              <div className="rsvp-modal__form-group">
+                <label className="rsvp-modal__label-text">
+                  TRAVEL ARRANGEMENTS
+                </label>
+                <div className="rsvp-modal__radio-group">
+                  <label className="rsvp-modal__radio-label">
+                    <input
+                      type="radio"
+                      name="travelOption"
+                      value="plane-with-voucher"
+                      className="rsvp-modal__radio"
+                    />
+                    <span className="rsvp-modal__radio-text">
+                      I'm coming by plane, and your 100 € travel voucher would really help
+                    </span>
+                  </label>
+                  <label className="rsvp-modal__radio-label">
+                    <input
+                      type="radio"
+                      name="travelOption"
+                      value="plane-no-voucher"
+                      className="rsvp-modal__radio"
+                    />
+                    <span className="rsvp-modal__radio-text">
+                      I'm coming by plane, but I won't need the travel voucher. I truly appreciate the offer!
+                    </span>
+                  </label>
+                  <label className="rsvp-modal__radio-label">
+                    <input
+                      type="radio"
+                      name="travelOption"
+                      value="not-plane"
+                      className="rsvp-modal__radio"
+                    />
+                    <span className="rsvp-modal__radio-text">
+                      I'm not coming by plane
+                    </span>
+                  </label>
+                </div>
               </div>
             </>
           )}
