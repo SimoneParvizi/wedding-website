@@ -63,58 +63,8 @@ export default function Ceremony() {
       {/* Timeline Section */}
       <div className="ceremony__timeline-section">
         <div className="ceremony__container">
-          {/* Reception */}
-          <div className="ceremony__timeline-item ceremony__timeline-item--reception">
-            <div className="ceremony__timeline-schedule-title">
-              <h3 className="ceremony__timeline-title">ARRIVING BY PLANE</h3>
-              <p className="ceremony__timeline-description">
-              For whoever decide to come by plane, we're happy to <strong>reimburse €100</strong> per person for flights if desired.
-              </p>
-            </div>
-            <div className="ceremony__timeline-right" ref={receptionRef}>
-              <div className={`ceremony__timeline-detail ${visibleSections.reception.has(0) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">AIRPORTS IN TUSCANY</span>
-                <span className="ceremony__timeline-value"> - FLORENCE  AIRPORT "AMERIGO VESPUCCI" <br /> - PISA AIRPORT "GALILEO GALILEI"</span>
-              </div>
-              <div className={`ceremony__timeline-detail ${visibleSections.reception.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">AIRPORTS IN LAZIO</span>
-                <span className="ceremony__timeline-value">- ROME FIUMICINO AIRPORT "LEONARDO DA VINCI" <br />- ROME CIAMPINO AIRPORT "G.B. PASTINE"</span>
-              </div>
-              <div className={`ceremony__timeline-detail ${visibleSections.reception.has(2) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">VOUCHER VALUE</span>
-                <span className="ceremony__timeline-value">100 EUROS</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Ceremony */}
-          <div className="ceremony__timeline-item">
-            <div className="ceremony__timeline-schedule-title">
-              <h3 className="ceremony__timeline-title">TRANSFER</h3>
-              <p className="ceremony__timeline-description">
-                We're here to help you get to the venue. Choose between organized transport or the freedom of a road trip.
-              </p>
-            </div>
-            <div className="ceremony__timeline-right" ref={ceremonyRef}>
-              <div className={`ceremony__timeline-detail ${visibleSections.ceremony.has(0) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">TRIP DURATION</span>
-                <span className="ceremony__timeline-value">- 2 HRS 50 MIN FROM ROME FIUMICINO <br/> - 2 HRS 35 MIN FROM ROME CIAMPINO<br/> - 2 HRS 15 MIN FROM FLORENCE<br/> - 2 HRS 25 MIN FROM PISA</span>
-              </div>
-              <div className={`ceremony__timeline-detail ${visibleSections.ceremony.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">BUS</span>
-                <span className="ceremony__timeline-value">A BUS CAN BE MADE AVAILABLE FROM BOTH ROME AND FLORENCE. PLEASE LET US KNOW IF YOU'D LIKE TO MAKE USE OF IT</span>
-              </div>
-              <div className={`ceremony__timeline-detail ${visibleSections.ceremony.has(2) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">CAR</span>
-                <span className="ceremony__timeline-value">
-                  IF YOU'D PREFER TO MAKE A LONGER TRIP OUT OF IT, WE RECOMMEND RENTING A CAR AND EXPLORING THE SURROUNDINGS. AT THE VENUE THERE IS ENOUGH PARKING SPACE
-                </span>
-              </div>
-            </div>
-          </div>
-
           {/* Meal */}
-          <div className="ceremony__timeline-item">
+          <div className="ceremony__timeline-item ceremony__timeline-item--accommodation">
             <div className="ceremony__timeline-schedule-title">
               <h3 className="ceremony__timeline-title">ACCOMMODATION</h3>
               <p className="ceremony__timeline-description">
@@ -135,6 +85,56 @@ export default function Ceremony() {
                 <span className="ceremony__timeline-label">LATEST UPDATE</span>
                 <span className="ceremony__timeline-value">
                   WE WILL LATE YOU KNOW IN JUNE THE DISPOSITIONS OF THE ROOMS
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Reception */}
+          <div className="ceremony__timeline-item">
+            <div className="ceremony__timeline-schedule-title">
+              <h3 className="ceremony__timeline-title">ARRIVING BY PLANE</h3>
+              <p className="ceremony__timeline-description">
+              For whoever decide to come by plane, we're happy to <strong>reimburse €100</strong> per person for flights if desired.
+              </p>
+            </div>
+            <div className="ceremony__timeline-right" ref={receptionRef}>
+              <div className={`ceremony__timeline-detail ${visibleSections.reception.has(0) ? 'ceremony__timeline-detail--visible' : ''}`}>
+                <span className="ceremony__timeline-label">AIRPORTS IN TUSCANY</span>
+                <span className="ceremony__timeline-value"> - FLORENCE, "AMERIGO VESPUCCI" <br /> - PISA, "GALILEO GALILEI"</span>
+              </div>
+              <div className={`ceremony__timeline-detail ${visibleSections.reception.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>
+                <span className="ceremony__timeline-label">AIRPORTS IN LAZIO</span>
+                <span className="ceremony__timeline-value">- ROME FIUMICINO, "LEONARDO DA VINCI" <br />- ROME CIAMPINO,no "G.B. PASTINE"</span>
+              </div>
+              <div className={`ceremony__timeline-detail ${visibleSections.reception.has(2) ? 'ceremony__timeline-detail--visible' : ''}`}>
+                <span className="ceremony__timeline-label">VOUCHER VALUE</span>
+                <span className="ceremony__timeline-value">100 EUROS</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Ceremony */}
+          <div className="ceremony__timeline-item ceremony__timeline-item--transfer">
+            <div className="ceremony__timeline-schedule-title">
+              <h3 className="ceremony__timeline-title">TRANSFER</h3>
+              <p className="ceremony__timeline-description">
+                We're here to help you get to the venue. Choose between organized transport or the freedom of a road trip.
+              </p>
+            </div>
+            <div className="ceremony__timeline-right" ref={ceremonyRef}>
+              <div className={`ceremony__timeline-detail ${visibleSections.ceremony.has(0) ? 'ceremony__timeline-detail--visible' : ''}`}>
+                <span className="ceremony__timeline-label">TRIP DURATION</span>
+                <span className="ceremony__timeline-value">- 2 HRS 50 MIN FROM ROME FIUMICINO <br/> - 2 HRS 35 MIN FROM ROME CIAMPINO<br/> - 2 HRS 15 MIN FROM FLORENCE<br/> - 2 HRS 25 MIN FROM PISA</span>
+              </div>
+              <div className={`ceremony__timeline-detail ${visibleSections.ceremony.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>
+                <span className="ceremony__timeline-label">BUS</span>
+                <span className="ceremony__timeline-value">A BUS CAN BE MADE AVAILABLE FROM BOTH ROME AND FLORENCE. PLEASE LET US KNOW IF YOU'D LIKE TO MAKE USE OF IT</span>
+              </div>
+              <div className={`ceremony__timeline-detail ${visibleSections.ceremony.has(2) ? 'ceremony__timeline-detail--visible' : ''}`}>
+                <span className="ceremony__timeline-label">CAR</span>
+                <span className="ceremony__timeline-value">
+                  IF YOU'D PREFER TO MAKE A LONGER TRIP OUT OF IT, WE RECOMMEND RENTING A CAR AND EXPLORING THE SURROUNDINGS. AT THE VENUE THERE IS ENOUGH PARKING SPACE
                 </span>
               </div>
             </div>

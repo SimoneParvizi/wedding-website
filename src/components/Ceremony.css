@@ -186,6 +186,82 @@
   background-color: #FFFFFF;
 }
 
+/* Accommodation - Black Background */
+.ceremony__timeline-item--accommodation {
+  position: relative;
+  z-index: 1;
+}
+
+.ceremony__timeline-item--accommodation::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: calc(100% + 80px);
+  background-color: #000000;
+  z-index: -1;
+}
+
+.ceremony__timeline-item--accommodation .ceremony__timeline-title {
+  color: #FFFFFF;
+}
+
+.ceremony__timeline-item--accommodation .ceremony__timeline-description {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.ceremony__timeline-item--accommodation .ceremony__timeline-label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ceremony__timeline-item--accommodation .ceremony__timeline-value {
+  color: #FFFFFF;
+}
+
+.ceremony__timeline-item--accommodation::after {
+  background-color: #FFFFFF;
+}
+
+/* Transfer - Black Background */
+.ceremony__timeline-item--transfer {
+  position: relative;
+  z-index: 1;
+}
+
+.ceremony__timeline-item--transfer::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: calc(100% + 80px);
+  background-color: #000000;
+  z-index: -1;
+}
+
+.ceremony__timeline-item--transfer .ceremony__timeline-title {
+  color: #FFFFFF;
+}
+
+.ceremony__timeline-item--transfer .ceremony__timeline-description {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.ceremony__timeline-item--transfer .ceremony__timeline-label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ceremony__timeline-item--transfer .ceremony__timeline-value {
+  color: #FFFFFF;
+}
+
+.ceremony__timeline-item--transfer::after {
+  background-color: #FFFFFF;
+}
+
 /* Left Side - Title and Description */
 .ceremony__timeline-left {
   display: flex;
