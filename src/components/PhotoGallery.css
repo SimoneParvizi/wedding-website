@@ -79,7 +79,7 @@
   }
 
   .photo-gallery__track {
-    animation: slide 5s linear infinite !important;
+    animation: slide 60s linear infinite !important;
   }
 }
 

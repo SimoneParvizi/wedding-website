@@ -16,8 +16,8 @@ export default function Celebrations() {
     '/assets/slides/9.png',
   ];
 
-  // Triple photos for seamless infinite loop
-  const triplicatedPhotos = [...photos, ...photos, ...photos];
+  // Duplicate photos many times for very long seamless loop
+  const triplicatedPhotos = Array(20).fill(photos).flat();
 
   useEffect(() => {
     const scrollContainer = scrollRef.current;

@@ -15,8 +15,8 @@ export default function PhotoGallery() {
     '/assets/slides-us/africa-car.jpg',
   ];
 
-  // Duplicate photos many times for truly seamless infinite loop
-  const duplicatedPhotos = [...photos, ...photos, ...photos, ...photos, ...photos, ...photos];
+  // Duplicate photos many times for very long seamless loop
+  const duplicatedPhotos = Array(40).fill(photos).flat();
 
   useEffect(() => {
     const track = trackRef.current;
