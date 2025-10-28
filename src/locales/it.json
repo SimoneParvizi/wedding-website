@@ -5,9 +5,9 @@
   },
   "story": {
     "heading": "CARI AMICI E FAMIGLIA",
-    "text": "LA VOSTRA PRESENZA AL NOSTRO MATRIMONIO È IL REGALO PIÙ BELLO. NON VEDIAMO L'ORA DI FESTEGGIARE INSIEME, SOTTO IL SOLE, TRA I VIGNETI E LE PERSONE A CUI VOGLIAMO PIÙ BENE.",
-    "greatest": "PIÙ GRANDE",
-    "dearest": "PIÙ CARI"
+    "text": "LA VOSTRA PRESENZA AL NOSTRO MATRIMONIO È IL REGALO PIÙ BELLO. NON VEDIAMO L'ORA DI FESTEGGIARE INSIEME, SOTTO IL SOLE, TRA I VIGNETI E LE PERSONE A NOI PIÙ CARE.",
+    "greatest": "BELLO",
+    "dearest": "CARE"
   },
   "venue": {
     "joinUs": "TI ASPETTIAMO A",
@@ -102,7 +102,7 @@
     "plentyOfShade": "molta ombra"
   },
   "quiz": {
-    "label": "QUIZ SU DI NOI",
+    "label": "FUN FACT QUIZ",
     "title": "QUANTO CONOSCI<br />SIMONE E VITA?",
     "questions": [
       {
@@ -115,11 +115,11 @@
       },
       {
         "question": "DOVE SI SONO INCONTRATI?",
-        "answer": "Nel seminterrato della torre A'DAM ad Amsterdam: il club Shelter"
+        "answer": "Nel seminterrato della torre A'DAM ad Amsterdam: al club Shelter"
       },
       {
         "question": "CHE MACCHINA GUIDANO?",
-        "answer": "Dipende dall'autista Uber."
+        "answer": "Dipende dall'Uber."
       },
       {
         "question": "COSA HANNO MANGIATO LA PRIMA SERA DOPO AVER PRESO LE CHIAVI DEL LORO APPARTAMENTO ATTUALE?",
@@ -127,15 +127,15 @@
       },
       {
         "question": "QUAL È UN LORO RITUALE ALLA FINE DELL'ESTATE?",
-        "answer": "Celebrano la nascita e il funerale dell'estate."
+        "answer": "Celebrano il funerale dell'estate."
       },
       {
-        "question": "QUANTE VOLTE SIMONE INTERROMPE UN FILM/CONVERSAZIONE PER SPUTARE UN FATTO CASUALE SU COSE ANTICHE/SCIENTIFICHE?",
+        "question": "QUANTE VOLTE SIMONE INTERROMPE UN FILM/CONVERSAZIONE PER SPUTARE UN FATTO A CASO SU COSE ANTICHE CIVILTÀ/SCIENZA?",
         "answer": "Vita ha perso il conto...."
       },
       {
         "question": "COS'È L'\"ANTIKYTHERA\"?",
-        "answer": "È un antico manufatto greco, spesso chiamato il primo computer al mondo, usato per prevedere posizioni astronomiche ed eclissi."
+        "answer": "È un antico artefatto greco, spesso chiamato il primo computer al mondo, usato per prevedere posizioni astronomiche ed eclissi."
       }
     ]
   },
@@ -186,7 +186,7 @@
       "kids": "bambini",
       "bodyYesIntro": "Ciao! Siamo felicissimi di festeggiare con voi! Saremo lì in",
       "bodyYesTotal": "totale",
-      "bodyYesDietary": "Solo per farvi sapere delle esigenze alimentari:",
+      "bodyYesDietary": "Riguardo le esigenze alimentari:",
       "bodyYesClosing": "Non vediamo l'ora!\n\nTanti abbracci,",
       "bodyNoIntro": "Mi dispiace tanto ma non riuscirò a venire al vostro matrimonio. Vorrei davvero tanto essere lì con voi!",
       "bodyNoClosing": "Vi auguro tutta la felicità del mondo nel vostro giorno speciale e oltre.\n\nTanti abbracci,"
