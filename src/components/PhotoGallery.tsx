@@ -31,32 +31,46 @@ export default function PhotoGallery() {
     track.style.animation = '';
 
     let interactionTimeout: NodeJS.Timeout;
+    let scrollTimeout: NodeJS.Timeout;
 
     const handleInteractionStart = () => {
       track.style.animationPlayState = 'paused';
       clearTimeout(interactionTimeout);
+      clearTimeout(scrollTimeout);
     };
 
     const handleInteractionEnd = () => {
       clearTimeout(interactionTimeout);
+      clearTimeout(scrollTimeout);
       interactionTimeout = setTimeout(() => {
         track.style.animationPlayState = 'running';
       }, 1000);
+    };
+
+    const handleScroll = () => {
+      track.style.animationPlayState = 'paused';
+      clearTimeout(scrollTimeout);
+
+      // Resume animation immediately after scrolling stops
+      scrollTimeout = setTimeout(() => {
+        track.style.animationPlayState = 'running';
+      }, 100);
     };
 
     scrollContainer.addEventListener('touchstart', handleInteractionStart);
     scrollContainer.addEventListener('mousedown', handleInteractionStart);
     scrollContainer.addEventListener('touchend', handleInteractionEnd);
     scrollContainer.addEventListener('mouseup', handleInteractionEnd);
-    scrollContainer.addEventListener('scroll', handleInteractionStart);
+    scrollContainer.addEventListener('scroll', handleScroll);
 
     return () => {
       scrollContainer.removeEventListener('touchstart', handleInteractionStart);
       scrollContainer.removeEventListener('mousedown', handleInteractionStart);
       scrollContainer.removeEventListener('touchend', handleInteractionEnd);
       scrollContainer.removeEventListener('mouseup', handleInteractionEnd);
-      scrollContainer.removeEventListener('scroll', handleInteractionStart);
+      scrollContainer.removeEventListener('scroll', handleScroll);
       clearTimeout(interactionTimeout);
+      clearTimeout(scrollTimeout);
     };
   }, []);
 
