@@ -4,37 +4,3 @@
   width: 100%;
   min-height: 100vh;
 }
-
-.app__language-switcher {
-  position: fixed;
-  top: 30px;
-  right: 15px;
-  z-index: 1001;
-  pointer-events: auto;
-  opacity: 0;
-  animation: fadeInLanguageSwitcher 1.5s ease-in forwards;
-  animation-delay: 0.8s;
-}
-
-@keyframes fadeInLanguageSwitcher {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@media (min-width: 768px) {
-  .app__language-switcher {
-    top: 40px;
-    right: 20px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .app__language-switcher {
-    top: 50px;
-    right: 30px;
-  }
-}

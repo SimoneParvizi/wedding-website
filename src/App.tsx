@@ -1,6 +1,5 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
-import LanguageSwitcher from './components/LanguageSwitcher';
 import Story from './components/Story';
 import PhotoGallery from './components/PhotoGallery';
 import Venue from './components/Venue';
@@ -15,9 +14,6 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <div className="app__language-switcher">
-        <LanguageSwitcher />
-      </div>
       <Hero />
       <Story />
       <PhotoGallery />

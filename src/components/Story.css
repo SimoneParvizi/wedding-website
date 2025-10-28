@@ -18,6 +18,12 @@
   opacity: 1;
 }
 
+.story__language-switcher {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
 .story__heading {
   font-family: 'Publica Sans Round', sans-serif;
   font-size: 18px;

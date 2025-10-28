@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 import './Story.css';
 
 export default function Story() {
@@ -31,6 +32,9 @@ export default function Story() {
   return (
     <section className="story" ref={storyRef}>
       <div className={`story__container ${isVisible ? 'story__container--visible' : ''}`}>
+        <div className="story__language-switcher">
+          <LanguageSwitcher />
+        </div>
         <h2 className="story__heading">{t('story.heading')}</h2>
         <p className="story__text">
           {t('story.text').split(t('story.greatest')).map((part, index, arr) => (

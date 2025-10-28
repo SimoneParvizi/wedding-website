@@ -1,10 +1,9 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, forwardRef } from 'react';
 import './Hero.css';
 
-export default function Hero() {
+const Hero = forwardRef<HTMLDivElement>((props, ref) => {
   const contentRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
-  const heroRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // Use matchMedia to match the CSS media query exactly
@@ -48,7 +47,7 @@ export default function Hero() {
 
   return (
     <>
-      <section className="hero" ref={heroRef}>
+      <section className="hero" ref={ref}>
         <div className="hero__image-container" ref={imageRef}>
           <img
             src="/assets/hero.jpg"
@@ -65,4 +64,8 @@ export default function Hero() {
       <div className="hero-spacer" />
     </>
   );
-}
+});
+
+Hero.displayName = 'Hero';
+
+export default Hero;
