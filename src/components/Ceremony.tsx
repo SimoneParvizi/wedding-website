@@ -142,95 +142,91 @@ export default function Ceremony() {
           {/* Weekend Schedule */}
           <div className="ceremony__timeline-item ceremony__timeline-item--schedule">
             <div className="ceremony__timeline-schedule-title">
-              <h3 className="ceremony__timeline-title">WEEKEND SCHEDULE</h3>
-              <p className="ceremony__timeline-description">
-                There will be plenty of food, snacks, drinks, and water available throughout the weekend. If you have any special requests or dietary needs, please let us know in advance so we can accommodate them.<br />
-                <br />
-                If you'd like to pick up something yourself, the nearest supermarket is in Castel del Pano, a small village about 12km from Podere Montale.
-              </p>
+              <h3 className="ceremony__timeline-title" dangerouslySetInnerHTML={{ __html: t('ceremony.schedule.title') }} />
+              <p className="ceremony__timeline-description" dangerouslySetInnerHTML={{ __html: t('ceremony.schedule.description').replace(/\n/g, '<br />') }} />
             </div>
             <div className="ceremony__timeline-schedule-content" ref={scheduleRef}>
               <div className={`ceremony__timeline-detail ceremony__timeline-detail--day ${visibleSections.schedule.has(0) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">THURSDAY, JULY 2</span>
+                <span className="ceremony__timeline-label">{t('ceremony.schedule.thursday.date')}</span>
                 <div className="ceremony__timeline-subdetail">
-                  <span className="ceremony__timeline-label">WHO</span>
+                  <span className="ceremony__timeline-label">{t('ceremony.schedule.thursday.who')}</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">INTIMATE FAMILY</span>
+                    <span className="ceremony__timeline-value">{t('ceremony.schedule.thursday.whoValue')}</span>
                   </div>
                 </div>
                 <div className="ceremony__timeline-subdetail">
-                  <span className="ceremony__timeline-label">WHEN</span>
+                  <span className="ceremony__timeline-label">{t('ceremony.schedule.thursday.when')}</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">CHECK-IN FROM 3:00 PM</span>
+                    <span className="ceremony__timeline-value">{t('ceremony.schedule.thursday.whenValue')}</span>
                   </div>
                 </div>
                 <div className="ceremony__timeline-subdetail">
-                  <span className="ceremony__timeline-label">WHAT</span>
+                  <span className="ceremony__timeline-label">{t('ceremony.schedule.thursday.what')}</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">LATER IN THE DAY, WE'LL ENJOY A WINE TASTING</span>
+                    <span className="ceremony__timeline-value">{t('ceremony.schedule.thursday.whatValue')}</span>
                   </div>
                 </div>
               </div>
               <div className={`ceremony__timeline-detail ceremony__timeline-detail--day ${visibleSections.schedule.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">FRIDAY, JULY 3</span>
+                <span className="ceremony__timeline-label">{t('ceremony.schedule.friday.date')}</span>
                 <div className="ceremony__timeline-subdetail">
-                  <span className="ceremony__timeline-label">WHO</span>
+                  <span className="ceremony__timeline-label">{t('ceremony.schedule.friday.who')}</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">ALL OTHER GUESTS</span>
+                    <span className="ceremony__timeline-value">{t('ceremony.schedule.friday.whoValue')}</span>
                   </div>
                 </div>
                 <div className="ceremony__timeline-subdetail">
-                  <span className="ceremony__timeline-label">WHEN</span>
+                  <span className="ceremony__timeline-label">{t('ceremony.schedule.friday.when')}</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">CHECK-IN OPENS FROM 3:00 PM</span>
+                    <span className="ceremony__timeline-value">{t('ceremony.schedule.friday.whenValue')}</span>
                   </div>
                 </div>
                 <div className="ceremony__timeline-subdetail">
-                  <span className="ceremony__timeline-label">DETAILS</span>
+                  <span className="ceremony__timeline-label">{t('ceremony.schedule.friday.details')}</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">FROM 6:00 PM, WE'LL HAVE AN APERITVO TO OFFICIALLY START THE WEEKEND</span>
+                    <span className="ceremony__timeline-value">{t('ceremony.schedule.friday.detailsValue')}</span>
                   </div>
                 </div>
               </div>
               <div className={`ceremony__timeline-detail ceremony__timeline-detail--day ${visibleSections.schedule.has(2) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">SATURDAY, JULY 4</span>
+                <span className="ceremony__timeline-label">{t('ceremony.schedule.saturday.date')}</span>
                 <div className="ceremony__timeline-subdetail">
-                  <span className="ceremony__timeline-label">WHAT</span>
+                  <span className="ceremony__timeline-label">{t('ceremony.schedule.saturday.what')}</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">THE BIG DAY</span>
+                    <span className="ceremony__timeline-value">{t('ceremony.schedule.saturday.whatValue')}</span>
                   </div>
                 </div>
                 <div className="ceremony__timeline-subdetail">
-                  <span className="ceremony__timeline-label">WHEN</span>
+                  <span className="ceremony__timeline-label">{t('ceremony.schedule.saturday.when')}</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">- TIME BREAKFAST "TBD" <br/> - TIME CEREMONY "TBD" <br/> - TIME DINNER "TBD" </span>
+                    <span className="ceremony__timeline-value" dangerouslySetInnerHTML={{ __html: t('ceremony.schedule.saturday.whenValue').replace(/\n/g, '<br/>') }} />
                   </div>
                 </div>
                 <div className="ceremony__timeline-subdetail">
-                  <span className="ceremony__timeline-label">DETAILS</span>
+                  <span className="ceremony__timeline-label">{t('ceremony.schedule.saturday.details')}</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">THE CEREMONY IS FOLLOWED BY A TOAST, DELICIOUS FOOD, DRINKS AND THE DINNER. THEN, WE WILL OPEN THE DANCE FLOOR AND CELEBRATE LATE INTO THE NIGHT</span>
+                    <span className="ceremony__timeline-value">{t('ceremony.schedule.saturday.detailsValue')}</span>
                   </div>
                 </div>
               </div>
               <div className={`ceremony__timeline-detail ceremony__timeline-detail--day ${visibleSections.schedule.has(3) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                <span className="ceremony__timeline-label">SUNDAY, JULY 5</span>
+                <span className="ceremony__timeline-label">{t('ceremony.schedule.sunday.date')}</span>
                 <div className="ceremony__timeline-subdetail">
-                  <span className="ceremony__timeline-label">WHAT</span>
+                  <span className="ceremony__timeline-label">{t('ceremony.schedule.sunday.what')}</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">GOODBYE BREAKFAST</span>
+                    <span className="ceremony__timeline-value">{t('ceremony.schedule.sunday.whatValue')}</span>
                   </div>
                 </div>
                 <div className="ceremony__timeline-subdetail">
-                  <span className="ceremony__timeline-label">WHEN</span>
+                  <span className="ceremony__timeline-label">{t('ceremony.schedule.sunday.when')}</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">9:00 AM</span>
+                    <span className="ceremony__timeline-value">{t('ceremony.schedule.sunday.whenValue')}</span>
                   </div>
                 </div>
                 <div className="ceremony__timeline-subdetail">
-                  <span className="ceremony__timeline-label">DETAILS</span>
+                  <span className="ceremony__timeline-label">{t('ceremony.schedule.sunday.details')}</span>
                   <div className="ceremony__timeline-value-container">
-                    <span className="ceremony__timeline-value">WE'LL HAVE A FAREWELL BREAKFAST BEFORE CHECKING-OUT AND SAYING OUR GOODBYES</span>
+                    <span className="ceremony__timeline-value">{t('ceremony.schedule.sunday.detailsValue')}</span>
                   </div>
                 </div>
               </div>

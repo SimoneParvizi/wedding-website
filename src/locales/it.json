@@ -48,8 +48,8 @@
       "carValue": "SE VOLETE APPROFITTARNE PER FARE UN GIRO PIÙ LUNGO, VI CONSIGLIAMO DI AFFITTARE UN'AUTO PER ESPLORARE LA ZONA. ALLA LOCATION C'È SPAZIO A SUFFICIENZA PER PARCHEGGIARE"
     },
     "schedule": {
-      "title": "PROGRAMMA DEL WEEKEND",
-      "description": "Durante il weekend non mancheranno cibo, snack, bevande e acqua. Se avete esigenze alimentari o preferenze particolari, scriveteci pure in anticipo così possiamo organizzarci.\n\nSe vi serve qualcosa, il supermercato più vicino è a Castel del Piano, circa 12km da Podere Montale.",
+      "title": "PROGRAMMA<br />DEL WEEKEND",
+      "description": "Ci sarà di tutto: cibo, snack, bevande e acqua per tutto il weekend! Se avete intolleranze o preferenze particolari, ditecelo prima così pensiamo a tutto noi.\n \nSe vi serve qualcosa, il supermercato più vicino è a Castel del Piano, circa 12 km da Podere Montale.",
       "thursday": {
         "date": "GIOVEDÌ 2 LUGLIO",
         "who": "CHI",
@@ -57,7 +57,7 @@
         "when": "QUANDO",
         "whenValue": "CHECK-IN DALLE 15:00",
         "what": "COSA",
-        "whatValue": "PIÙ TARDI NELLA GIORNATA, CI SARÀ UNA DEGUSTAZIONE DI VINI"
+        "whatValue": "PIÙ TARDI NEL POMERIGGIO, CI SARÀ UNA DEGUSTAZIONE DI VINI PER GODERSI L'ATMOSFERA"
       },
       "friday": {
         "date": "VENERDÌ 3 LUGLIO",
@@ -66,7 +66,7 @@
         "when": "QUANDO",
         "whenValue": "CHECK-IN APERTO DALLE 15:00",
         "details": "DETTAGLI",
-        "detailsValue": "DALLE 18:00, INIZIEREMO IL WEEKEND CON UN APERITIVO INSIEME"
+        "detailsValue": "DALLE 18:00, INIZIEREMO IL WEEKEND CON UN APERITIVO TUTTI INSIEME"
       },
       "saturday": {
         "date": "SABATO 4 LUGLIO",
@@ -84,7 +84,7 @@
         "when": "QUANDO",
         "whenValue": "9:00",
         "details": "DETTAGLI",
-        "detailsValue": "PRIMA DEL CHECK-OUT, CI SARÀ UNA COLAZIONE DI SALUTO PER STARE ANCORA UN PO' INSIEME"
+        "detailsValue": "PRIMA DI RIPARTIRE, CI SARÀ UNA COLAZIONE PER CONDIVIDERE ANCORA QUALCHE MOMENTO INSIEME"
       }
     }
   }
