@@ -5,6 +5,7 @@
   right: 0;
   z-index: 1000;
   padding: 10px 15px;
+  pointer-events: none;
 }
 
 .header__content {
@@ -23,6 +24,7 @@
   color: #FFFFFF;
   text-transform: uppercase;
   mix-blend-mode: difference;
+  pointer-events: auto;
 }
 
 .header--dark .header__left,

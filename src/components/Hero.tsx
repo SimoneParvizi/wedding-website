@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-import LanguageSwitcher from './LanguageSwitcher';
 import './Hero.css';
 
 export default function Hero() {
@@ -56,9 +55,6 @@ export default function Hero() {
             alt="Simone & Vita"
             className="hero__image"
           />
-        </div>
-        <div className="hero__language-switcher">
-          <LanguageSwitcher />
         </div>
         <div className="hero__content" ref={contentRef}>
           <h1 className="hero__title">
