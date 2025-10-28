@@ -85,7 +85,7 @@
 .hero__language-switcher {
   position: absolute;
   top: 30px;
-  right: 40px;
+  right: 15px;
   z-index: 10;
   opacity: 0;
   animation: fadeIn 1.5s ease-in forwards;
@@ -128,7 +128,7 @@
 
   .hero__language-switcher {
     top: 40px;
-    right: 60px;
+    right: 20px;
   }
 }
 
@@ -143,6 +143,6 @@
 
   .hero__language-switcher {
     top: 50px;
-    right: 80px;
+    right: 30px;
   }
 }
