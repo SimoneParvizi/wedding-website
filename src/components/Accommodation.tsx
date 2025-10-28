@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './Accommodation.css';
 
 export default function Accommodation() {
+  const { t } = useTranslation();
   const accommodationRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [currentPoolIndex, setCurrentPoolIndex] = useState(0);
@@ -59,9 +61,23 @@ export default function Accommodation() {
   return (
     <section className="accommodation" ref={accommodationRef}>
       <div className={`accommodation__container ${isVisible ? 'accommodation__container--visible' : ''}`}>
-        <h2 className="accommodation__heading">PERKS</h2>
+        <h2 className="accommodation__heading">{t('perks.heading')}</h2>
         <p className="accommodation__text">
-          THE VENUE HAS A BEAUTIFUL <span className="cursive">POOL</span> AND <span className="cursive">WINERY</span> FOR ALL GUESTS TO ENJOY.
+          {t('perks.text').split(t('perks.pool')).map((part, index, arr) => (
+            index === arr.length - 1 ? (
+              part.split(t('perks.winery')).map((subpart, subindex, subarr) => (
+                <span key={`sub-${subindex}`}>
+                  {subpart}
+                  {subindex < subarr.length - 1 && <span className="cursive">{t('perks.winery')}</span>}
+                </span>
+              ))
+            ) : (
+              <span key={index}>
+                {part}
+                <span className="cursive">{t('perks.pool')}</span>
+              </span>
+            )
+          ))}
         </p>
       </div>
       <div className="accommodation__features">
@@ -82,7 +98,7 @@ export default function Accommodation() {
               </svg>
             </button>
           </div>
-          <p className="accommodation__feature-name">POOL</p>
+          <p className="accommodation__feature-name">{t('perks.pool')}</p>
         </div>
 
         {/* Winery */}
@@ -94,7 +110,7 @@ export default function Accommodation() {
               </svg>
             </button>
             <div className="accommodation__feature-image">
-              <img src={wineryImages[currentWineryIndex]} alt="WINERY" />
+              <img src={wineryImages[currentWineryIndex]} alt={t('perks.winery')} />
             </div>
             <button className="accommodation__arrow accommodation__arrow--right" onClick={nextWineryImage}>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -102,7 +118,7 @@ export default function Accommodation() {
               </svg>
             </button>
           </div>
-          <p className="accommodation__feature-name">WINERY</p>
+          <p className="accommodation__feature-name">{t('perks.winery')}</p>
         </div>
       </div>
     </section>

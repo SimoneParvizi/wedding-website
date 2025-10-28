@@ -87,5 +87,109 @@
         "detailsValue": "PRIMA DI RIPARTIRE, CI SARÀ UNA COLAZIONE PER CONDIVIDERE ANCORA QUALCHE MOMENTO INSIEME"
       }
     }
+  },
+  "perks": {
+    "heading": "IN PIÙ",
+    "text": "LA LOCATION HA UNA BELLISSIMA PISCINA E UNA CANTINA DI VINI CHE TUTTI GLI OSPITI POSSONO USARE.",
+    "pool": "PISCINA",
+    "winery": "CANTINA"
+  },
+  "dontForget": {
+    "label": "NON DIMENTICARTI DI PORTARE",
+    "text": "Crema solare, Repellente per zanzare, Costume da bagno e asciugamano, Un maglioncino o una sciarpa leggera per le serate.",
+    "kids": "Assicuratevi di portare tutto quello che potrebbe servire ai vostri bambini, a luglio può fare caldo. Ci assicureremo che ci sia molta ombra e attività per tenerli felici e a loro agio.",
+    "everything": "tutto",
+    "plentyOfShade": "molta ombra"
+  },
+  "quiz": {
+    "label": "QUIZ SU DI NOI",
+    "title": "QUANTO CONOSCI<br />SIMONE E VITA?",
+    "questions": [
+      {
+        "question": "QUALE SOPRANNOME USAVA VITA PER SIMONE ALL'INIZIO DELLA LORO RELAZIONE?",
+        "answer": "Campari. Simone beve molto Campari."
+      },
+      {
+        "question": "QUAL È IL LORO FILM COMICO PREFERITO?",
+        "answer": "Austin Powers."
+      },
+      {
+        "question": "DOVE SI SONO INCONTRATI?",
+        "answer": "Nel seminterrato della torre A'DAM ad Amsterdam: il club Shelter"
+      },
+      {
+        "question": "CHE MACCHINA GUIDANO?",
+        "answer": "Dipende dall'autista Uber."
+      },
+      {
+        "question": "COSA HANNO MANGIATO LA PRIMA SERA DOPO AVER PRESO LE CHIAVI DEL LORO APPARTAMENTO ATTUALE?",
+        "answer": "Hanno improvvisato una carbonara e l'hanno mangiata seduti per terra (dato che non c'erano mobili)."
+      },
+      {
+        "question": "QUAL È UN LORO RITUALE ALLA FINE DELL'ESTATE?",
+        "answer": "Celebrano la nascita e il funerale dell'estate."
+      },
+      {
+        "question": "QUANTE VOLTE SIMONE INTERROMPE UN FILM/CONVERSAZIONE PER SPUTARE UN FATTO CASUALE SU COSE ANTICHE/SCIENTIFICHE?",
+        "answer": "Vita ha perso il conto...."
+      },
+      {
+        "question": "COS'È L'\"ANTIKYTHERA\"?",
+        "answer": "È un antico manufatto greco, spesso chiamato il primo computer al mondo, usato per prevedere posizioni astronomiche ed eclissi."
+      }
+    ]
+  },
+  "registry": {
+    "label": "CLICCA QUI SOTTO E FACCI SAPERE <br /> SE CI SARAI IL 03.07.2026",
+    "buttonYes": "Ci sarò sicuramente",
+    "buttonNo": "Purtroppo non posso venire",
+    "email": "Per qualsiasi altra domanda potete scriverci a"
+  },
+  "rsvp": {
+    "yes": {
+      "label": "SIAMO FELICISSIMI!",
+      "title": "NON VEDIAMO L'ORA DI FESTEGGIARE CON TE"
+    },
+    "no": {
+      "label": "CI MANCHERAI",
+      "title": "GRAZIE PER AVERCELO FATTO SAPERE"
+    },
+    "form": {
+      "name": "IL TUO NOME",
+      "namePlaceholder": "Inserisci il tuo nome completo",
+      "adults": "NUMERO DI ADULTI",
+      "adultsPlaceholder": "Quanti adulti?",
+      "kids": "NUMERO DI BAMBINI",
+      "kidsPlaceholder": "Quanti bambini?",
+      "dietary": "RESTRIZIONI ALIMENTARI",
+      "dietaryPlaceholder": "Allergie o esigenze alimentari?",
+      "travel": "VIAGGIO",
+      "travelPlaneVoucher": "Vengo in aereo e il vostro voucher di 100€ mi farebbe comodo",
+      "travelPlaneNoVoucher": "Vengo in aereo, ma non ho bisogno del voucher. Apprezzo molto l'offerta!",
+      "travelNotPlane": "Non vengo in aereo",
+      "message": "MESSAGGIO",
+      "messageOptional": "(facoltativo)",
+      "messagePlaceholder": "Lasciaci un messaggio...",
+      "submitYes": "CONFERMA PARTECIPAZIONE",
+      "submitNo": "INVIA RISPOSTA",
+      "submitting": "INVIO...",
+      "sent": "INVIATO!"
+    },
+    "email": {
+      "subjectYes": "Ci siamo! Saremo presenti!",
+      "subjectNo": "Purtroppo non possiamo venire.",
+      "person": "persona",
+      "people": "persone",
+      "adult": "adulto",
+      "adults": "adulti",
+      "kid": "bambino",
+      "kids": "bambini",
+      "bodyYesIntro": "Ciao! Siamo felicissimi di festeggiare con voi! Saremo lì in",
+      "bodyYesTotal": "totale",
+      "bodyYesDietary": "Solo per farvi sapere delle esigenze alimentari:",
+      "bodyYesClosing": "Non vediamo l'ora!\n\nTanti abbracci,",
+      "bodyNoIntro": "Mi dispiace tanto ma non riuscirò a venire al vostro matrimonio. Vorrei davvero tanto essere lì con voi!",
+      "bodyNoClosing": "Vi auguro tutta la felicità del mondo nel vostro giorno speciale e oltre.\n\nTanti abbracci,"
+    }
   }
 }

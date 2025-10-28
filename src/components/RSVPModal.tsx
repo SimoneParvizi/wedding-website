@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './RSVPModal.css';
 
 interface RSVPModalProps {
@@ -8,6 +9,7 @@ interface RSVPModalProps {
 }
 
 export default function RSVPModal({ isOpen, onClose, type }: RSVPModalProps) {
+  const { t } = useTranslation();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
@@ -65,48 +67,44 @@ export default function RSVPModal({ isOpen, onClose, type }: RSVPModalProps) {
 
     // Create mailto link with form data
     const subject = type === 'yes'
-      ? `We are Coming! Count Us In for the Big Day!`
-      : `Sadly can't make it.`;
+      ? t('rsvp.email.subjectYes')
+      : t('rsvp.email.subjectNo');
 
     const totalGuests = (parseInt(data.adults as string) || 0) + (parseInt(data.kids as string) || 0);
-    const guestsText = totalGuests === 1 ? 'person' : 'people';
+    const guestsText = totalGuests === 1 ? t('rsvp.email.person') : t('rsvp.email.people');
     const adultsCount = parseInt(data.adults as string) || 0;
     const kidsCount = parseInt(data.kids as string) || 0;
     const guestBreakdown = kidsCount > 0
-      ? `${adultsCount} ${adultsCount === 1 ? 'adult' : 'adults'} and ${kidsCount} ${kidsCount === 1 ? 'kid' : 'kids'}`
-      : `${adultsCount} ${adultsCount === 1 ? 'adult' : 'adults'}`;
+      ? `${adultsCount} ${adultsCount === 1 ? t('rsvp.email.adult') : t('rsvp.email.adults')} and ${kidsCount} ${kidsCount === 1 ? t('rsvp.email.kid') : t('rsvp.email.kids')}`
+      : `${adultsCount} ${adultsCount === 1 ? t('rsvp.email.adult') : t('rsvp.email.adults')}`;
 
     const travelText = data.travelOption === 'plane-with-voucher'
-      ? `I'm coming by plane, and your 100 € travel voucher would really help`
+      ? t('rsvp.form.travelPlaneVoucher')
       : data.travelOption === 'plane-no-voucher'
-      ? `I'm coming by plane, but I won't need the travel voucher. I truly appreciate the offer!`
+      ? t('rsvp.form.travelPlaneNoVoucher')
       : data.travelOption === 'not-plane'
-      ? `I'm not coming by plane`
+      ? t('rsvp.form.travelNotPlane')
       : '';
 
     const body = type === 'yes'
       ? `
 Hey Simone & Vita!
 
-${data.name} here. We're so excited to celebrate with you! We'll be there with ${totalGuests} ${guestsText} total (${guestBreakdown}).
+${data.name} ${t('rsvp.email.bodyYesIntro')} ${totalGuests} ${guestsText} ${t('rsvp.email.bodyYesTotal')} (${guestBreakdown}).
 
 ${travelText ? `${travelText}\n` : ''}
-${data.dietary ? `Just a heads up on dietary needs: ${data.dietary}\n` : ''}
+${data.dietary ? `${t('rsvp.email.bodyYesDietary')} ${data.dietary}\n` : ''}
 ${data.message ? `${data.message}\n` : ''}
-Can't wait for the big day!
-
-Many hugs,
+${t('rsvp.email.bodyYesClosing')}
 ${data.name}
       `.trim()
       : `
 Hey Simone & Vita,
 
-It's ${data.name}. I'm so sorry but I won't be able to make it to your wedding. I really wish I could be there to celebrate with you both!
+It's ${data.name}. ${t('rsvp.email.bodyNoIntro')}
 
 ${data.message ? `${data.message}\n` : ''}
-Wishing you all the happiness in the world on your special day and beyond.
-
-Many hugs,
+${t('rsvp.email.bodyNoClosing')}
 ${data.name}
       `.trim();
 
@@ -134,26 +132,24 @@ ${data.name}
 
         <div className="rsvp-modal__header">
           <p className="rsvp-modal__label">
-            {type === 'yes' ? 'WE ARE SO EXCITED!' : 'WE WILL MISS YOU'}
+            {type === 'yes' ? t('rsvp.yes.label') : t('rsvp.no.label')}
           </p>
           <h2 className="rsvp-modal__title">
-            {type === 'yes'
-              ? "CAN'T WAIT TO CELEBRATE WITH YOU"
-              : 'THANK YOU FOR LETTING US KNOW'}
+            {type === 'yes' ? t('rsvp.yes.title') : t('rsvp.no.title')}
           </h2>
         </div>
 
         <form className="rsvp-modal__form" onSubmit={handleSubmit}>
           <div className="rsvp-modal__form-group">
             <label htmlFor="name" className="rsvp-modal__label-text">
-              YOUR NAME
+              {t('rsvp.form.name')}
             </label>
             <input
               type="text"
               id="name"
               name="name"
               className="rsvp-modal__input"
-              placeholder="Enter your full name"
+              placeholder={t('rsvp.form.namePlaceholder')}
               required
             />
           </div>
@@ -162,14 +158,14 @@ ${data.name}
             <>
               <div className="rsvp-modal__form-group">
                 <label htmlFor="adults" className="rsvp-modal__label-text">
-                  NUMBER OF ADULTS
+                  {t('rsvp.form.adults')}
                 </label>
                 <input
                   type="number"
                   id="adults"
                   name="adults"
                   className="rsvp-modal__input"
-                  placeholder="How many adults?"
+                  placeholder={t('rsvp.form.adultsPlaceholder')}
                   min="1"
                   required
                 />
@@ -177,14 +173,14 @@ ${data.name}
 
               <div className="rsvp-modal__form-group">
                 <label htmlFor="kids" className="rsvp-modal__label-text">
-                  NUMBER OF KIDS
+                  {t('rsvp.form.kids')}
                 </label>
                 <input
                   type="number"
                   id="kids"
                   name="kids"
                   className="rsvp-modal__input"
-                  placeholder="How many kids?"
+                  placeholder={t('rsvp.form.kidsPlaceholder')}
                   min="0"
                   defaultValue="0"
                 />
@@ -192,20 +188,20 @@ ${data.name}
 
               <div className="rsvp-modal__form-group">
                 <label htmlFor="dietary" className="rsvp-modal__label-text">
-                  DIETARY RESTRICTIONS
+                  {t('rsvp.form.dietary')}
                 </label>
                 <textarea
                   id="dietary"
                   name="dietary"
                   className="rsvp-modal__textarea"
-                  placeholder="Any allergies or dietary requirements?"
+                  placeholder={t('rsvp.form.dietaryPlaceholder')}
                   rows={3}
                 />
               </div>
 
               <div className="rsvp-modal__form-group">
                 <label className="rsvp-modal__label-text">
-                  TRAVEL ARRANGEMENTS
+                  {t('rsvp.form.travel')}
                 </label>
                 <div className="rsvp-modal__radio-group">
                   <label className="rsvp-modal__radio-label">
@@ -216,7 +212,7 @@ ${data.name}
                       className="rsvp-modal__radio"
                     />
                     <span className="rsvp-modal__radio-text">
-                      I'm coming by plane, and your 100 € travel voucher would really help
+                      {t('rsvp.form.travelPlaneVoucher')}
                     </span>
                   </label>
                   <label className="rsvp-modal__radio-label">
@@ -227,7 +223,7 @@ ${data.name}
                       className="rsvp-modal__radio"
                     />
                     <span className="rsvp-modal__radio-text">
-                      I'm coming by plane, but I won't need the travel voucher. I truly appreciate the offer!
+                      {t('rsvp.form.travelPlaneNoVoucher')}
                     </span>
                   </label>
                   <label className="rsvp-modal__radio-label">
@@ -238,7 +234,7 @@ ${data.name}
                       className="rsvp-modal__radio"
                     />
                     <span className="rsvp-modal__radio-text">
-                      I'm not coming by plane
+                      {t('rsvp.form.travelNotPlane')}
                     </span>
                   </label>
                 </div>
@@ -248,13 +244,13 @@ ${data.name}
 
           <div className="rsvp-modal__form-group">
             <label htmlFor="message" className="rsvp-modal__label-text">
-              MESSAGE <span className="cursive">(optional)</span>
+              {t('rsvp.form.message')} <span className="cursive">{t('rsvp.form.messageOptional')}</span>
             </label>
             <textarea
               id="message"
               name="message"
               className="rsvp-modal__textarea"
-              placeholder="Leave us a message..."
+              placeholder={t('rsvp.form.messagePlaceholder')}
               rows={4}
             />
           </div>
@@ -265,12 +261,12 @@ ${data.name}
             disabled={isSubmitting}
           >
             {isSubmitting
-              ? 'SENDING...'
+              ? t('rsvp.form.submitting')
               : submitStatus === 'success'
-              ? 'SENT!'
+              ? t('rsvp.form.sent')
               : type === 'yes'
-              ? 'CONFIRM ATTENDANCE'
-              : 'SEND RESPONSE'}
+              ? t('rsvp.form.submitYes')
+              : t('rsvp.form.submitNo')}
           </button>
         </form>
       </div>

@@ -87,5 +87,109 @@
         "detailsValue": "WE'LL HAVE A FAREWELL BREAKFAST BEFORE CHECKING-OUT AND SAYING OUR GOODBYES"
       }
     }
+  },
+  "perks": {
+    "heading": "PERKS",
+    "text": "THE VENUE HAS A BEAUTIFUL POOL AND WINERY FOR ALL GUESTS TO ENJOY.",
+    "pool": "POOL",
+    "winery": "WINERY"
+  },
+  "dontForget": {
+    "label": "DON'T FORGET TO BRING",
+    "text": "Sunscreen, Mosquito repellent, Swimwear and towel, A light sweater or scarf for the evenings.",
+    "kids": "Make sure to bring everything your kids might need, it can get quite warm in July. We'll make sure there's plenty of shade and activities to keep them happy and comfortable.",
+    "everything": "everything",
+    "plentyOfShade": "plenty of shade"
+  },
+  "quiz": {
+    "label": "FUN FACT QUIZ",
+    "title": "HOW MUCH DO YOU KNOW<br />ABOUT SIMONE AND VITA?",
+    "questions": [
+      {
+        "question": "WHAT NICKNAME DID VITA USE FOR SIMONE AT THE BEGINNING OF THEIR RELATIONSHIP?",
+        "answer": "Campari. Simone drinks a lot of Campari."
+      },
+      {
+        "question": "WHAT'S THEIR FAVOURITE COMEDY MOVIE?",
+        "answer": "Austin Powers."
+      },
+      {
+        "question": "WHERE DID THEY MEET?",
+        "answer": "In the basem of A'DAM tower in Amsterdam: club Shelter"
+      },
+      {
+        "question": "WHAT CAR DO THEY DRIVE?",
+        "answer": "Depends on the Uber driver."
+      },
+      {
+        "question": "WHAT DID THEY EAT THE FIRST NIGHT AFTER GETTING THE KEYS OF THEIR CURRENT APARTMENT?",
+        "answer": "They improvised a carbonara, and eat it while seating on the floor (since there was no furniture at all)."
+      },
+      {
+        "question": "WHAT'S ONE RITUAL THAT THEY HAVE AT THE END OF SUMMER?",
+        "answer": "They celebrate the birth and funeral of it."
+      },
+      {
+        "question": "HOW MANY TIMES DOES SIMONE INTERRUPT A MOVIE/CONVERSATION TO SPIT A RANDOM FACT ABOUT ANCIENT/SCIENTIFIC THINGS?",
+        "answer": "Vita lost count...."
+      },
+      {
+        "question": "WHAT IS THE \"ANTIKYTHERA\"?",
+        "answer": "It's an ancient Greek artifact, often called the world's first computer, used to predict astronomical positions and eclipses."
+      }
+    ]
+  },
+  "registry": {
+    "label": "PLEASE CLICK HERE BELOW AND LET US KNOW <br /> IF WE'LL SEE YOU THERE ON 03.07.2026",
+    "buttonYes": "I'm definitely going to be there",
+    "buttonNo": "Unfortunately, I have to miss it",
+    "email": "For any further question you can email us anytime at"
+  },
+  "rsvp": {
+    "yes": {
+      "label": "WE ARE SO EXCITED!",
+      "title": "CAN'T WAIT TO CELEBRATE WITH YOU"
+    },
+    "no": {
+      "label": "WE WILL MISS YOU",
+      "title": "THANK YOU FOR LETTING US KNOW"
+    },
+    "form": {
+      "name": "YOUR NAME",
+      "namePlaceholder": "Enter your full name",
+      "adults": "NUMBER OF ADULTS",
+      "adultsPlaceholder": "How many adults?",
+      "kids": "NUMBER OF KIDS",
+      "kidsPlaceholder": "How many kids?",
+      "dietary": "DIETARY RESTRICTIONS",
+      "dietaryPlaceholder": "Any allergies or dietary requirements?",
+      "travel": "TRAVEL ARRANGEMENTS",
+      "travelPlaneVoucher": "I'm coming by plane, and your 100 € travel voucher would really help",
+      "travelPlaneNoVoucher": "I'm coming by plane, but I won't need the travel voucher. I truly appreciate the offer!",
+      "travelNotPlane": "I'm not coming by plane",
+      "message": "MESSAGE",
+      "messageOptional": "(optional)",
+      "messagePlaceholder": "Leave us a message...",
+      "submitYes": "CONFIRM ATTENDANCE",
+      "submitNo": "SEND RESPONSE",
+      "submitting": "SENDING...",
+      "sent": "SENT!"
+    },
+    "email": {
+      "subjectYes": "We are Coming! Count Us In for the Big Day!",
+      "subjectNo": "Sadly can't make it.",
+      "person": "person",
+      "people": "people",
+      "adult": "adult",
+      "adults": "adults",
+      "kid": "kid",
+      "kids": "kids",
+      "bodyYesIntro": "here. We're so excited to celebrate with you! We'll be there with",
+      "bodyYesTotal": "total",
+      "bodyYesDietary": "Just a heads up on dietary needs:",
+      "bodyYesClosing": "Can't wait for the big day!\n\nMany hugs,",
+      "bodyNoIntro": "I'm so sorry but I won't be able to make it to your wedding. I really wish I could be there to celebrate with you both!",
+      "bodyNoClosing": "Wishing you all the happiness in the world on your special day and beyond.\n\nMany hugs,"
+    }
   }
 }

@@ -87,5 +87,109 @@
         "detailsValue": "WE HEBBEN EEN AFSCHEIDSONTBIJT VOORDAT WE UITCHECKEN EN AFSCHEID NEMEN"
       }
     }
+  },
+  "perks": {
+    "heading": "VOORDELEN",
+    "text": "DE LOCATIE HEEFT EEN PRACHTIG ZWEMBAD EN WIJNMAKERIJ WAAR ALLE GASTEN VAN KUNNEN GENIETEN.",
+    "pool": "ZWEMBAD",
+    "winery": "WIJNMAKERIJ"
+  },
+  "dontForget": {
+    "label": "VERGEET NIET OM MEE TE NEMEN",
+    "text": "Zonnebrandcrème, Muggenspray, Zwemkleding en handdoek, Een licht vestje of sjaal voor de avonden.",
+    "kids": "Zorg ervoor dat je alles meeneemt wat je kinderen nodig hebben, het kan behoorlijk warm worden in juli. We zorgen ervoor dat er genoeg schaduw en activiteiten zijn om ze gelukkig en comfortabel te houden.",
+    "everything": "alles",
+    "plentyOfShade": "genoeg schaduw"
+  },
+  "quiz": {
+    "label": "LEUKE FEITJES QUIZ",
+    "title": "HOEVEEL WEET JIJ<br />OVER SIMONE EN VITA?",
+    "questions": [
+      {
+        "question": "WELKE BIJNAAM GEBRUIKTE VITA VOOR SIMONE AAN HET BEGIN VAN HUN RELATIE?",
+        "answer": "Campari. Simone drinkt veel Campari."
+      },
+      {
+        "question": "WAT IS HUN FAVORIETE KOMEDIE FILM?",
+        "answer": "Austin Powers."
+      },
+      {
+        "question": "WAAR HEBBEN ZE ELKAAR ONTMOET?",
+        "answer": "In de kelder van de A'DAM toren in Amsterdam: club Shelter"
+      },
+      {
+        "question": "WELKE AUTO RIJDEN ZE?",
+        "answer": "Hangt af van de Uber chauffeur."
+      },
+      {
+        "question": "WAT ATEN ZE DE EERSTE AVOND NA HET KRIJGEN VAN DE SLEUTELS VAN HUN HUIDIGE APPARTEMENT?",
+        "answer": "Ze improviseerden een carbonara en aten die zittend op de vloer (omdat er nog geen meubilair was)."
+      },
+      {
+        "question": "WAT IS EEN RITUEEL DAT ZE AAN HET EINDE VAN DE ZOMER HEBBEN?",
+        "answer": "Ze vieren de geboorte en begrafenis van de zomer."
+      },
+      {
+        "question": "HOE VAAK ONDERBREEKT SIMONE EEN FILM/GESPREK OM EEN WILLEKEURIG FEIT OVER OUDE/WETENSCHAPPELIJKE DINGEN TE VERTELLEN?",
+        "answer": "Vita is de tel kwijtgeraakt...."
+      },
+      {
+        "question": "WAT IS DE \"ANTIKYTHERA\"?",
+        "answer": "Het is een oud Grieks artefact, vaak de eerste computer ter wereld genoemd, gebruikt om astronomische posities en eclipsen te voorspellen."
+      }
+    ]
+  },
+  "registry": {
+    "label": "KLIK HIER BENEDEN EN LAAT ONS WETEN <br /> OF WE JE DAAR ZIEN OP 03.07.2026",
+    "buttonYes": "Ik ben er zeker bij",
+    "buttonNo": "Helaas moet ik het missen",
+    "email": "Voor verdere vragen kun je ons altijd mailen op"
+  },
+  "rsvp": {
+    "yes": {
+      "label": "WE ZIJN ZO BLIJ!",
+      "title": "KUNNEN NIET WACHTEN OM MET JE TE VIEREN"
+    },
+    "no": {
+      "label": "WE ZULLEN JE MISSEN",
+      "title": "BEDANKT DAT JE HET ONS LAAT WETEN"
+    },
+    "form": {
+      "name": "JOUW NAAM",
+      "namePlaceholder": "Vul je volledige naam in",
+      "adults": "AANTAL VOLWASSENEN",
+      "adultsPlaceholder": "Hoeveel volwassenen?",
+      "kids": "AANTAL KINDEREN",
+      "kidsPlaceholder": "Hoeveel kinderen?",
+      "dietary": "DIEETWENSEN",
+      "dietaryPlaceholder": "Allergieën of dieetwensen?",
+      "travel": "REISARRANGEMENTEN",
+      "travelPlaneVoucher": "Ik kom met het vliegtuig en jullie reisbon van €100 zou echt helpen",
+      "travelPlaneNoVoucher": "Ik kom met het vliegtuig, maar ik heb de reisbon niet nodig. Ik waardeer het aanbod enorm!",
+      "travelNotPlane": "Ik kom niet met het vliegtuig",
+      "message": "BERICHT",
+      "messageOptional": "(optioneel)",
+      "messagePlaceholder": "Laat ons een bericht achter...",
+      "submitYes": "BEVESTIG AANWEZIGHEID",
+      "submitNo": "VERSTUUR ANTWOORD",
+      "submitting": "VERSTUREN...",
+      "sent": "VERSTUURD!"
+    },
+    "email": {
+      "subjectYes": "We komen! Reken maar op ons!",
+      "subjectNo": "Helaas kunnen we niet komen.",
+      "person": "persoon",
+      "people": "mensen",
+      "adult": "volwassene",
+      "adults": "volwassenen",
+      "kid": "kind",
+      "kids": "kinderen",
+      "bodyYesIntro": "hier. We zijn zo blij om met jullie te vieren! We komen met",
+      "bodyYesTotal": "totaal",
+      "bodyYesDietary": "Even een heads-up over dieetwensen:",
+      "bodyYesClosing": "Kunnen niet wachten op de grote dag!\n\nVeel liefs,",
+      "bodyNoIntro": "Het spijt me zo maar ik kan niet bij jullie bruiloft zijn. Ik had er echt graag bij willen zijn!",
+      "bodyNoClosing": "Ik wens jullie alle geluk van de wereld op jullie speciale dag en daarna.\n\nVeel liefs,"
+    }
   }
 }

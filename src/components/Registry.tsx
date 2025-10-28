@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './Registry.css';
 import RSVPModal from './RSVPModal';
 
 export default function Registry() {
+  const { t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalType, setModalType] = useState<'yes' | 'no'>('yes');
 
@@ -19,7 +21,7 @@ export default function Registry() {
     <>
       <section className="registry">
         <div className="registry__container">
-          <p className="registry__label">PLEASE CLICK HERE BELOW AND LET US KNOW <br /> IF WE'LL SEE YOU THERE ON 03.07.2026</p>
+          <p className="registry__label" dangerouslySetInnerHTML={{ __html: t('registry.label') }} />
           <div className="registry__image">
             <img src="/assets/sketch-podere.png" alt="Podere Montale sketch" />
           </div>
@@ -28,16 +30,16 @@ export default function Registry() {
               className="registry__button registry__button--yes"
               onClick={() => handleOpenModal('yes')}
             >
-              I'm definitely going to be there
+              {t('registry.buttonYes')}
             </button>
             <button
               className="registry__button registry__button--no"
               onClick={() => handleOpenModal('no')}
             >
-              Unfortunately, I have to miss it
+              {t('registry.buttonNo')}
             </button>
           </div>
-          <p className="registry__email">For any further question you can email us anytime at <a href="mailto:simoneandvita@gmail.com">simoneandvita@gmail.com</a></p>
+          <p className="registry__email">{t('registry.email')} <a href="mailto:simoneandvita@gmail.com">simoneandvita@gmail.com</a></p>
         </div>
       </section>
 

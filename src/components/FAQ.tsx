@@ -1,45 +1,14 @@
 import { useState, useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import './FAQ.css';
 
 export default function FAQ() {
+  const { t } = useTranslation();
   const [openCard, setOpenCard] = useState<number | null>(null); // No card open by default
   const [visibleCards, setVisibleCards] = useState<Set<number>>(new Set());
   const sectionRef = useRef<HTMLDivElement>(null);
 
-  const quizCards = [
-    {
-      question: 'WHAT NICKNAME DID VITA USE FOR SIMONE AT THE BEGINNING OF THEIR RELATIONSHIP?',
-      answer: 'Campari. Simone drinks a lot of Campari.',
-    },
-    {
-      question: "WHAT'S THEIR FAVOURITE COMEDY MOVIE?",
-      answer: 'Austin Powers.',
-    },
-    {
-      question: "WHERE DID THEY MEET?",
-      answer: "In the basem of A'DAM tower in Amsterdam: club Shelter",
-    },
-    {
-      question: 'WHAT CAR DO THEY DRIVE?',
-      answer: "Depends on the Uber driver."
-    },
-    {
-      question: 'WHAT DID THEY EAT THE FIRST NIGHT AFTER GETTING THE KEYS OF THEIR CURRENT APARTMENT?',
-      answer: 'They improvised a carbonara, and eat it while seating on the floor (since there was no furniture at all).',
-    },
-    {
-      question: "WHAT'S ONE RITUAL THAT THEY HAVE AT THE END OF SUMMER?",
-      answer: 'They celebrate the birth and funeral of it.',
-    },
-    {
-      question: "HOW MANY TIMES DOES SIMONE INTERRUPT A MOVIE/CONVERSATION TO SPIT A RANDOM FACT ABOUT ANCIENT/SCIENTIFIC THINGS?",
-      answer: 'Vita lost count....',
-    },
-    {
-      question: 'WHAT IS THE "ANTIKYTHERA"?',
-      answer: "It's an ancient Greek artifact, often called the world's first computer, used to predict astronomical positions and eclipses.",
-    },
-  ];
+  const quizCards = t('quiz.questions', { returnObjects: true }) as Array<{question: string; answer: string}>;
 
   const toggleCard = (index: number) => {
     setOpenCard(openCard === index ? null : index);
@@ -76,11 +45,24 @@ export default function FAQ() {
     <>
       <section className="gifting">
         <div className="gifting__container">
-          <p className="gifting__label">DON'T FORGET TO BRING</p>
+          <p className="gifting__label">{t('dontForget.label')}</p>
           <h2 className="gifting__text">
-            Sunscreen, Mosquito repellent, Swimwear and towel, A light sweater or scarf for the evenings. <br /> <br /> Make
-            sure to bring <span className="cursive">everything</span> your kids might need, it can get quite warm in July. We'll make sure
-            there's <span className="cursive">plenty of shade</span> and activities to keep them happy and comfortable.
+            {t('dontForget.text')} <br /> <br />
+            {t('dontForget.kids').split(t('dontForget.everything')).map((part, index, arr) => (
+              index === arr.length - 1 ? (
+                part.split(t('dontForget.plentyOfShade')).map((subpart, subindex, subarr) => (
+                  <span key={`sub-${subindex}`}>
+                    {subpart}
+                    {subindex < subarr.length - 1 && <span className="cursive">{t('dontForget.plentyOfShade')}</span>}
+                  </span>
+                ))
+              ) : (
+                <span key={index}>
+                  {part}
+                  <span className="cursive">{t('dontForget.everything')}</span>
+                </span>
+              )
+            ))}
           </h2>
           <div className="gifting__image">
             <img src="/assets/ywllow-flowers.jpg" alt="Background illustration" />
@@ -89,11 +71,8 @@ export default function FAQ() {
       </section>
       <section className="faq" ref={sectionRef}>
         <div className="faq__container">
-          <p className="faq__label">FUN FACT QUIZ</p>
-        <h2 className="faq__title">
-          HOW MUCH DO YOU KNOW<br />
-          ABOUT SIMONE AND VITA?
-        </h2>
+          <p className="faq__label">{t('quiz.label')}</p>
+        <h2 className="faq__title" dangerouslySetInnerHTML={{ __html: t('quiz.title') }} />
         <div className="faq__grid">
           {quizCards.map((card, index) => (
             <div
