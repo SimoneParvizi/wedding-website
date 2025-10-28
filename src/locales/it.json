@@ -10,7 +10,7 @@
     "dearest": "PIÙ CARI"
   },
   "venue": {
-    "joinUs": "UNISCITI A NOI",
+    "joinUs": "TI ASPETTIAMO A",
     "venueName": "PODERE MONTALE",
     "from": "dal",
     "to": "al",
@@ -39,7 +39,7 @@
     },
     "transfer": {
       "title": "TRASFERIMENTO",
-      "description": "Siamo qui per aiutarvi ad arrivare alla location. Scegliete tra il trasporto organizzato o la libertà di un viaggio su strada.",
+      "description": "Vogliamo rendere semplice il vostro arrivo alla location. Potete scegliere per il trasporto organizzato oppure godervi la libertà di un viaggio in auto.",
       "duration": "DURATA VIAGGIO",
       "durationValue": "- 2 ORE 50 MIN DA ROMA FIUMICINO \n - 2 ORE 35 MIN DA ROMA CIAMPINO\n - 2 ORE 15 MIN DA FIRENZE\n - 2 ORE 25 MIN DA PISA",
       "bus": "AUTOBUS",
