@@ -74,22 +74,31 @@ export default function FAQ() {
           <p className="faq__label">{t('quiz.label')}</p>
         <h2 className="faq__title" dangerouslySetInnerHTML={{ __html: t('quiz.title') }} />
         <div className="faq__grid">
-          {quizCards.map((card, index) => (
-            <div
-              key={index}
-              className={`faq__card ${openCard === index ? 'faq__card--open' : ''} ${
-                visibleCards.has(index) ? 'faq__card--visible' : ''
-              }`}
-              onClick={() => toggleCard(index)}
-            >
-              <h3 className="faq__card-question">{card.question}</h3>
-              <p className="faq__card-answer">{card.answer}</p>
-              <div className="faq__card-icon">
-                <span className="faq__card-icon-line faq__card-icon-line--horizontal" />
-                <span className="faq__card-icon-line faq__card-icon-line--vertical" />
+          {quizCards.map((card, index) => {
+            const isImageAnswer = card.answer.startsWith('/assets/');
+            return (
+              <div
+                key={index}
+                className={`faq__card ${openCard === index ? 'faq__card--open' : ''} ${
+                  visibleCards.has(index) ? 'faq__card--visible' : ''
+                }`}
+                onClick={() => toggleCard(index)}
+              >
+                <h3 className="faq__card-question">{card.question}</h3>
+                {isImageAnswer ? (
+                  <div className="faq__card-answer faq__card-answer--image">
+                    <img src={card.answer} alt="Answer" />
+                  </div>
+                ) : (
+                  <p className="faq__card-answer">{card.answer}</p>
+                )}
+                <div className="faq__card-icon">
+                  <span className="faq__card-icon-line faq__card-icon-line--horizontal" />
+                  <span className="faq__card-icon-line faq__card-icon-line--vertical" />
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

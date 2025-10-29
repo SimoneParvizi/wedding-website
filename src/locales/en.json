@@ -25,7 +25,7 @@
       "title": "ACCOMMODATION",
       "description": "We will be staying at Podere Montale, surrounded by olive trees and vineyards. We chose a place that represents us, since we love nature and we think will allow us to forgot about the rest and fully enjoy the wedding day.",
       "latestUpdate": "LATEST UPDATE",
-      "latestUpdateValue": "IN JUNE WE WILL LET YOU KNOW THE DISPOSITIONS OF THE ROOMS"
+      "latestUpdateValue": "### IN JUNE WE WILL LET YOU KNOW THE DISPOSITIONS OF THE ROOMS"
     },
     "plane": {
       "title": "ARRIVING BY PLANE",
@@ -38,25 +38,25 @@
       "voucherValue": "100 EUROS"
     },
     "transfer": {
-      "title": "TRANSFER",
+      "title": "HOW TO GET THERE",
       "description": "We're here to help you get to the venue. Choose between organized transport or the freedom of a road trip.",
       "duration": "TRIP DURATION",
       "durationValue": "- 2 HRS 50 MIN FROM ROME FIUMICINO \n - 2 HRS 35 MIN FROM ROME CIAMPINO\n - 2 HRS 15 MIN FROM FLORENCE\n - 2 HRS 25 MIN FROM PISA",
       "bus": "BUS",
-      "busValue": "A BUS CAN BE MADE AVAILABLE FROM BOTH ROME AND FLORENCE. PLEASE LET US KNOW IF YOU'D LIKE TO MAKE USE OF IT",
+      "busValue": "A TRANSFER CAN BE MADE AVAILABLE FROM BOTH ROME AND FLORENCE BASED ON THE AMOUNT OF PEOPLE THAT NEED IT. PLEASE LET US KNOW IF YOU'D LIKE TO MAKE USE OF IT",
       "car": "CAR",
       "carValue": "IF YOU'D PREFER TO MAKE A LONGER TRIP OUT OF IT, WE RECOMMEND RENTING A CAR AND EXPLORING THE SURROUNDINGS. AT THE VENUE THERE IS ENOUGH PARKING SPACE"
     },
     "schedule": {
       "title": "WEEKEND SCHEDULE",
-      "description": "There will be plenty of food, snacks, drinks, and water available throughout the weekend. If you have any special requests or dietary needs, please let us know in advance so we can accommodate them.\n\nIf you'd like to pick up something yourself, the nearest supermarket is in Castel del Pano, a small village about 12km from Podere Montale.",
+      "description": "There will be plenty of food, snacks, drinks, and water available throughout the weekend. If you have any special requests or dietary needs, please let us know in advance so we can arrange them.\n\nIf you'd like to pick up something yourself, the nearest supermarket is in Castel del Piano, a small village about 12km from Podere Montale.",
       "thursday": {
         "date": "THURSDAY, JULY 2",
         "who": "WHO",
         "whoValue": "INTIMATE FAMILY",
         "when": "WHEN",
         "whenValue": "CHECK-IN FROM 3:00 PM",
-        "what": "WHAT",
+        "what": "DETAILS",
         "whatValue": "LATER IN THE DAY, WE'LL ENJOY A WINE TASTING"
       },
       "friday": {
@@ -73,9 +73,9 @@
         "what": "WHAT",
         "whatValue": "THE BIG DAY",
         "when": "WHEN",
-        "whenValue": "- TIME BREAKFAST \"TBD\" \n- TIME CEREMONY \"TBD\" \n- TIME DINNER \"TBD\" ",
+        "whenValue": "- TIME BREAKFAST \"TBD\" \n- TIME LUNCH \"TBD\" \n- TIME CEREMONY \"TBD\" \n- TIME DINNER \"TBD\" ",
         "details": "DETAILS",
-        "detailsValue": "THE CEREMONY IS FOLLOWED BY A TOAST, DELICIOUS FOOD, DRINKS AND THE DINNER. THEN, WE WILL OPEN THE DANCE FLOOR AND CELEBRATE LATE INTO THE NIGHT"
+        "detailsValue": "ONCE THE CEREMONY ENDS, WE'LL RAISE A GLASS (OR TWO), ENJOY A LOVELY DINNER, AND DANCE INTO THE NIGHT."
       },
       "sunday": {
         "date": "SUNDAY, JULY 5",
@@ -90,13 +90,13 @@
   },
   "perks": {
     "heading": "PERKS",
-    "text": "THE VENUE HAS A BEAUTIFUL POOL AND WINERY FOR ALL GUESTS TO ENJOY.",
+    "text": "WE CAN ALSO ENJOY THE BEAUTIFUL POOL AND THE WINERY DURING THE WEEKEND.",
     "pool": "POOL",
     "winery": "WINERY"
   },
   "dontForget": {
     "label": "DON'T FORGET TO BRING",
-    "text": "Sunscreen, Mosquito repellent, Swimwear and towel, A light sweater or scarf for the evenings.",
+    "text": "Sunscreen, Mosquito repellent, Swimwear and towels, A light sweater or scarf for the evenings.",
     "kids": "Make sure to bring everything your kids might need, it can get quite warm in July. We'll make sure there's plenty of shade and activities to keep them happy and comfortable.",
     "everything": "everything",
     "plentyOfShade": "plenty of shade"
@@ -111,11 +111,11 @@
       },
       {
         "question": "WHAT'S THEIR FAVOURITE COMEDY MOVIE?",
-        "answer": "Austin Powers."
+        "answer": "/assets/austin-powers.png"
       },
       {
         "question": "WHERE DID THEY MEET?",
-        "answer": "In the basem of A'DAM tower in Amsterdam: club Shelter"
+        "answer": "In the basement of A'DAM tower in Amsterdam: club Shelter"
       },
       {
         "question": "WHAT CAR DO THEY DRIVE?",
@@ -155,13 +155,13 @@
       "title": "THANK YOU FOR LETTING US KNOW"
     },
     "form": {
-      "name": "YOUR NAME",
-      "namePlaceholder": "Enter your full name",
+      "name": "NAMES OF ATTENDEES",
+      "namePlaceholder": "Enter everybody's name",
       "adults": "NUMBER OF ADULTS",
       "adultsPlaceholder": "How many adults?",
       "kids": "NUMBER OF KIDS",
       "kidsPlaceholder": "How many kids?",
-      "dietary": "DIETARY RESTRICTIONS",
+      "dietary": "DIETARY",
       "dietaryPlaceholder": "Any allergies or dietary requirements?",
       "travel": "TRAVEL ARRANGEMENTS",
       "travelPlaneVoucher": "I'm coming by plane, and your 100 € travel voucher would really help",

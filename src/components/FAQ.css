@@ -175,6 +175,26 @@
   flex-grow: 1;
 }
 
+/* Card Answer - Image */
+.faq__card-answer--image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.faq__card-answer--image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Card Icon (Plus/Minus) */
 .faq__card-icon {
   position: absolute;
