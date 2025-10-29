@@ -23,9 +23,9 @@
   "ceremony": {
     "accommodation": {
       "title": "ACCOMMODATION",
-      "description": "We will be staying at Podere Montale, surrounded by olive trees and vineyards. We chose a place that represents us, since we love nature and we think will allow us to forgot about the rest and fully enjoy the wedding day.",
-      "latestUpdate": "LATEST UPDATE",
-      "latestUpdateValue": "YOU'LL FIND OUT ABOUT THE ROOM ARRANGEMENTS WHEN YOU ARRIVE"
+      "description": "You'll find out about the room arrangements when you arrive.",
+      "latestUpdate": "WHERE",
+      "latestUpdateValue": "WE WILL BE STAYING AT PODERE MONTALE, SURROUNDED BY OLIVE TREES AND VINEYARDS. WE CHOSE A PLACE THAT REPRESENTS US, SINCE WE LOVE NATURE AND WE THINK WILL ALLOW US TO FORGOT ABOUT THE REST AND FULLY ENJOY THE WEDDING DAY"
     },
     "plane": {
       "title": "ARRIVING BY PLANE",

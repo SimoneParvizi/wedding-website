@@ -74,7 +74,7 @@ const PasswordGate = ({ onAuthenticated }: PasswordGateProps) => {
             <h1 className="password-gate__title">
               SIMONE <span className="password-gate__ampersand">&</span> VITA'S WEDDING
             </h1>
-            {!isSuccess ? (
+            {!isSuccess && (
               <>
                 <div className={`password-gate__form-container ${isShaking ? 'shake' : ''}`}>
                   <form onSubmit={handleSubmit}>
@@ -99,10 +99,6 @@ const PasswordGate = ({ onAuthenticated }: PasswordGateProps) => {
                   Please enter the password from your invitation
                 </p>
               </>
-            ) : (
-              <p className="password-gate__success-message cursive">
-                Welcome
-              </p>
             )}
           </div>
         </div>
