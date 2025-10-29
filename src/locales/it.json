@@ -177,7 +177,7 @@
     },
     "email": {
       "subjectYes": "Ci siamo! Saremo presenti!",
-      "subjectNo": "Purtroppo non possiamo venire.",
+      "subjectNo": "Purtroppo non riusciamo a venire.",
       "person": "persona",
       "people": "persone",
       "adult": "adulto",
@@ -189,7 +189,7 @@
       "bodyYesDietary": "Riguardo le esigenze alimentari:",
       "bodyYesClosing": "Non vediamo l'ora!\n\nTanti abbracci,",
       "bodyNoIntro": "Mi dispiace tanto ma non riuscirò a venire al vostro matrimonio. Vorrei davvero tanto essere lì con voi!",
-      "bodyNoClosing": "Vi auguro tutta la felicità del mondo nel vostro giorno speciale e oltre.\n\nTanti abbracci,"
+      "bodyNoClosing": "Vi auguro tutta la felicità del mondo.\n\nTanti abbracci,"
     }
   }
 }
