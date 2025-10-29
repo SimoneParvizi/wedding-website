@@ -1,7 +1,7 @@
 import { useEffect, useRef, forwardRef } from 'react';
 import './Hero.css';
 
-const Hero = forwardRef<HTMLDivElement>((props, ref) => {
+const Hero = forwardRef<HTMLDivElement>((_props, ref) => {
   const contentRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
 

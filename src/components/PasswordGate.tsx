@@ -15,7 +15,7 @@ const PasswordGate = ({ onAuthenticated }: PasswordGateProps) => {
   const [fadeWipe, setFadeWipe] = useState(false);
   const [hideGate, setHideGate] = useState(false);
 
-  const correctPassword = import.meta.env.VITE_ACCESS_PASSWORD || 'wedding2025';
+  const correctPassword = 'wedding2025';
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
@@ -72,11 +72,8 @@ const PasswordGate = ({ onAuthenticated }: PasswordGateProps) => {
         <div className={`password-gate__content ${isSuccess ? 'active' : ''}`}>
           <div className={`password-gate__container ${isSuccess ? 'success' : ''}`}>
             <h1 className="password-gate__title">
-              SIMONE<br /><span className="password-gate__ampersand">&</span> VITA
+              SIMONE <span className="password-gate__ampersand">&</span> VITA'S WEDDING
             </h1>
-            <p className="password-gate__subtitle cursive">
-              Our Wedding
-            </p>
             {!isSuccess ? (
               <>
                 <div className={`password-gate__form-container ${isShaking ? 'shake' : ''}`}>
@@ -86,7 +83,7 @@ const PasswordGate = ({ onAuthenticated }: PasswordGateProps) => {
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                       onKeyPress={handleKeyPress}
-                      placeholder="Enter password"
+                      placeholder="PASSWORD"
                       className={`password-gate__input ${error ? 'error' : ''}`}
                       autoFocus
                     />
