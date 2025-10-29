@@ -1,4 +1,4 @@
-import { useState, FormEvent, KeyboardEvent } from 'react';
+import { useState, useEffect, FormEvent, KeyboardEvent } from 'react';
 import './PasswordGate.css';
 
 interface PasswordGateProps {
@@ -15,7 +15,13 @@ const PasswordGate = ({ onAuthenticated }: PasswordGateProps) => {
   const [fadeWipe, setFadeWipe] = useState(false);
   const [hideGate, setHideGate] = useState(false);
 
-  const correctPassword = 'wedding2025';
+  const correctPassword = "vald'orcia";
+
+  // Preload hero image while password gate is displayed
+  useEffect(() => {
+    const heroImage = new Image();
+    heroImage.src = '/assets/hero.jpg';
+  }, []);
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
