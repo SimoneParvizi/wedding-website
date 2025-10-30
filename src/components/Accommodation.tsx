@@ -2,12 +2,33 @@ import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './Accommodation.css';
 
+const poolImages = [
+  '/assets/pool/pool-1.jpg',
+  '/assets/pool/pool-2.png',
+  '/assets/pool/pool-3.jpg',
+];
+
+const wineryImages = [
+  '/assets/winery/winery-1.png',
+  '/assets/winery/winery-2.png',
+  '/assets/winery/winery-3.png',
+];
+
 export default function Accommodation() {
   const { t } = useTranslation();
   const accommodationRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [currentPoolIndex, setCurrentPoolIndex] = useState(0);
   const [currentWineryIndex, setCurrentWineryIndex] = useState(0);
+
+  // Preload all carousel images on component mount
+  useEffect(() => {
+    const imagesToPreload = [...poolImages, ...wineryImages];
+    imagesToPreload.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -29,18 +50,6 @@ export default function Accommodation() {
       }
     };
   }, []);
-
-  const poolImages = [
-    '/assets/pool/pool-1.jpg',
-    '/assets/pool/pool-2.png',
-    '/assets/pool/pool-3.jpg',
-  ];
-
-  const wineryImages = [
-    '/assets/winery/winery-1.png',
-    '/assets/winery/winery-2.png',
-    '/assets/winery/winery-3.png',
-  ];
 
   const nextPoolImage = () => {
     setCurrentPoolIndex((prev) => (prev + 1) % poolImages.length);
