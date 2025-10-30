@@ -17,15 +17,17 @@ const Hero = forwardRef<HTMLDivElement>((_props, ref) => {
       if (contentRef.current) {
         // On mobile, text scrolls away faster (normal scroll speed)
         // On desktop, text scrolls away slower (0.8x speed)
-        const textOffset = isMobile ? scrolled * 1 : scrolled * 0.8;
-        contentRef.current.style.transform = `translateY(${textOffset}px)`;
+        const textOffset = isMobile ? scrolled : scrolled * 0.8;
+        // Use translate3d for GPU acceleration
+        contentRef.current.style.transform = `translate3d(0, ${textOffset}px, 0)`;
       }
 
       if (imageRef.current) {
         // Background image stays fixed (no parallax on mobile)
         // On desktop, background scrolls up (parallax effect)
         const imageOffset = isMobile ? 0 : scrolled * -0.3;
-        imageRef.current.style.transform = `translateY(${imageOffset}px)`;
+        // Use translate3d for GPU acceleration
+        imageRef.current.style.transform = `translate3d(0, ${imageOffset}px, 0)`;
       }
 
       ticking = false;
