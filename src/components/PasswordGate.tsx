@@ -78,7 +78,7 @@ const PasswordGate = ({ onAuthenticated }: PasswordGateProps) => {
         <div className={`password-gate__content ${isSuccess ? 'active' : ''}`}>
           <div className={`password-gate__container ${isSuccess ? 'success' : ''}`}>
             <h1 className="password-gate__title">
-              <span className="password-gate__title-line1">SIMONE <span className="password-gate__ampersand">&</span> VITA'S</span><br className="password-gate__title-break" />WEDDING
+              <span className="password-gate__title-line1">SIMONE <span className="password-gate__ampersand">&</span> VITA'S </span><br className="password-gate__title-break" />WEDDING
             </h1>
             {!isSuccess && (
               <>
