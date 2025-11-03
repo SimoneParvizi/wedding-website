@@ -5,12 +5,12 @@
   },
   "story": {
     "heading": "LIEVE VRIENDEN EN FAMILIE",
-    "text": "JULLIE AANWEZIGHEID BIJ ONZE BRUILOFT IS HET GROOTSTE CADEAU. ER IS NIETS BETERS DAN GENIETEN VAN DE ITALIAANSE ZON, OMRINGD DOOR WIJNGAARDEN EN HET GEZELSCHAP VAN DEGENEN DIE ONS HET DIERBAARST ZIJN.",
+    "text": "JULLIE AANWEZIGHEID OP ONZE BRUILOFT IS HET GROOTSTE GESCHENK. WE KIJKEN ERNAAR UIT OM TE GENIETEN VAN DE ITALIAANSE ZON, OMRINGD DOOR DE MENSEN DIE ONS HET MEEST DIERBAAR ZIJN.",
     "greatest": "GROOTSTE",
     "dearest": "DIERBAARST"
   },
   "venue": {
-    "joinUs": "VIER MET ONS MEE",
+    "joinUs": "VIER MET ONS",
     "venueName": "PODERE MONTALE",
     "from": "van",
     "to": "tot",
@@ -23,13 +23,13 @@
   "ceremony": {
     "accommodation": {
       "title": "ACCOMMODATIE",
-      "description": "We zullen verblijven op Podere Montale, omringd door olijfbomen en wijngaarden. We hebben een plek gekozen die ons vertegenwoordigt, omdat we van de natuur houden en denken dat het ons in staat zal stellen de rest te vergeten en volledig te genieten van de trouwdag.",
+      "description": "Omringd door olijfbomen en wijngaarden zullen we verblijven op Podere Montale. Deze plek, die ons weerspiegelt, geeft ons de kans om te ontspannen en volledig te genieten van onze trouwdag.",
       "latestUpdate": "LAATSTE UPDATE",
       "latestUpdateValue": "IN JUNI LATEN WE JULLIE WETEN HOE DE KAMERS VERDEELD ZIJN"
     },
     "plane": {
       "title": "AANKOMEN PER VLIEGTUIG",
-      "description": "Voor wie besluit per vliegtuig te komen, vergoeden we graag <strong>€100 per persoon</strong> voor vluchten indien gewenst.",
+      "description": "Voor wie besluit met vliegtuig te komen, bieden een tegemoetkoming van €100 per persoon voor je vlucht, mocht je dat willen.",
       "airportsTuscany": "LUCHTHAVENS IN TOSCANE",
       "airportsTuscanyValue": " - FLORENCE, \"AMERIGO VESPUCCI\" \n - PISA, \"GALILEO GALILEI\"",
       "airportsLazio": "LUCHTHAVENS IN LAZIO",
@@ -39,13 +39,13 @@
     },
     "transfer": {
       "title": "VERVOER",
-      "description": "We zijn hier om je te helpen bij de locatie te komen. Kies tussen georganiseerd vervoer of de vrijheid van een roadtrip.",
+      "description": "We helpen je graag om moeiteloos op de locatie te komen. Kies voor georganiseerd vervoer óf geniet van de vrijheid van een eigen roadtrip.",
       "duration": "REISDUUR",
       "durationValue": "- 2 UUR 50 MIN VANAF ROME FIUMICINO \n - 2 UUR 35 MIN VANAF ROME CIAMPINO\n - 2 UUR 15 MIN VANAF FLORENCE\n - 2 UUR 25 MIN VANAF PISA",
       "bus": "BUS",
-      "busValue": "ER KAN EEN BUS BESCHIKBAAR WORDEN GESTELD VANUIT ZOWEL ROME ALS FLORENCE. LAAT HET ONS WETEN ALS JE HIERVAN GEBRUIK WILT MAKEN",
+      "busValue": "ER KAN EEN GEORGANISEERDE BUS WORDEN INGEZET VANUIT ZOWEL ROME ALS FLORENCE. LAAT ONS WETEN ALS JE HIER GRAAG GEBRUIK VAN WILT MAKEN",
       "car": "AUTO",
-      "carValue": "ALS JE ER LIEVER EEN LANGERE REIS VAN WILT MAKEN, RADEN WE AAN EEN AUTO TE HUREN EN DE OMGEVING TE VERKENNEN. BIJ DE LOCATIE IS ER VOLDOENDE PARKEERRUIMTE"
+      "carValue": "WIL JE ER LIEVER EEN LEUKE ROADTRIP VAN MAKEN? HUUR DAN EEN AUTO EN ONTDEK DE PRACHTIGE OMGEVING IN JE EIGEN TEMPO. OP DE LOCATIE IS ER RUIM VOLDOENDE PARKEERGELEGENHEID"
     },
     "schedule": {
       "title": "WEEKENDPROGRAMMA",

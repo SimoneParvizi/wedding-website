@@ -23,9 +23,9 @@
   "ceremony": {
     "accommodation": {
       "title": "ALLOGGIO",
-      "description": "Passeremo i giorni a Podere Montale, immersi tra ulivi e vigneti. È un posto che sentiamo davvero nostro, amiamo la natura e ci sembra il luogo perfetto per staccarci da tutto e goderci il giorno del matrimonio.",
-      "latestUpdate": "PROSSIMO AGGIORNAMENTO",
-      "latestUpdateValue": "A GIUGNO VI FAREMO SAPERE LA DISPOSIZIONE DELLE CAMERE"
+      "description": "All'arrivo verrano date tutte le informazioni sulla sistemazione delle camere.",
+      "latestUpdate": "DOVE",
+      "latestUpdateValue": "PASSEREMO I GIORNI A PODERE MONTALE, TRA GLI ULIVI ED I VIGNETI. È UN POSTO CHE SENTIAMO DAVVERO NOSTRO, AMIOMO LA NATURA E CI  SEMBRA IL LUOGO PERFETTO STACCARCI DA TUTTO E GODERCI IL GIORNO DEL MATRIMONIO"
     },
     "plane": {
       "title": "ARRIVO IN AEREO",
@@ -38,12 +38,12 @@
       "voucherValue": "100 EURO"
     },
     "transfer": {
-      "title": "TRASFERIMENTO",
+      "title": "COME ARRIVARE",
       "description": "Vogliamo rendere semplice il vostro arrivo alla location. Potete scegliere per il trasporto organizzato oppure godervi la libertà di un viaggio in auto.",
       "duration": "DURATA VIAGGIO",
       "durationValue": "- 2 ORE 50 MIN DA ROMA FIUMICINO \n - 2 ORE 35 MIN DA ROMA CIAMPINO\n - 2 ORE 15 MIN DA FIRENZE\n - 2 ORE 25 MIN DA PISA",
       "bus": "AUTOBUS",
-      "busValue": "UN AUTOBUS PUÒ ESSERE RESO DISPONIBILE SIA DA ROMA CHE DA FIRENZE. PER FAVORE FATECI SAPERE SE NE AVETE BISOGNO",
+      "busValue": "UN TRASPORTO PUÒ ESSERE RESO DISPONIBILE SIA DA ROMA CHE DA FIRENZE IN BASE AL NUMERO DI PERSONE CHE NE HANNO BISOGNO. PER FAVORE FATECI SAPERE SE NE AVETE BISOGNO",
       "car": "AUTO",
       "carValue": "SE VOLETE APPROFITTARNE PER FARE UN GIRO PIÙ LUNGO, VI CONSIGLIAMO DI AFFITTARE UN'AUTO PER ESPLORARE LA ZONA. ALLA LOCATION C'È SPAZIO A SUFFICIENZA PER PARCHEGGIARE"
     },
@@ -75,7 +75,7 @@
         "when": "QUANDO",
         "whenValue": "- ORA COLAZIONE \"DA DEFINIRE\" \n- ORA CERIMONIA \"DA DEFINIRE\" \n- ORA CENA \"DA DEFINIRE\" ",
         "details": "DETTAGLI",
-        "detailsValue": "DOPO LA CERIMONIA CI ASPETTA UN BRINDISI, BUON CIBO, BEVANDE ED INFINE LA CENA. POI, SI BALLA FINO A TARDI"
+        "detailsValue": "COME LA CERIMONIA FINISCE, FACCIAMO UN BRIDISI (O DUE), CI GODIAMO LA CENA, E BALLIAMO FINO A TARDI"
       },
       "sunday": {
         "date": "DOMENICA 5 LUGLIO",
@@ -84,12 +84,12 @@
         "when": "QUANDO",
         "whenValue": "9:00",
         "details": "DETTAGLI",
-        "detailsValue": "PRIMA DI RIPARTIREnmh now, CI SARÀ UNA COLAZIONE PER CONDIVIDERE ANCORA QUALCHE MOMENTO INSIEME"
+        "detailsValue": "PRIMA DI RIPARTIRE, CI SARÀ UNA COLAZIONE PER CONDIVIDERE ANCORA QUALCHE MOMENTO INSIEME"
       }
     }
   },
   "perks": {
-    "heading": "IN PIÙ",
+    "heading": "INOLTRE",
     "text": "LA LOCATION HA UNA BELLISSIMA PISCINA E UNA CANTINA DI VINI CHE TUTTI GLI OSPITI POSSONO USARE.",
     "pool": "PISCINA",
     "winery": "CANTINA"
