@@ -7,7 +7,7 @@
     "heading": "LIEVE VRIENDEN EN FAMILIE",
     "text": "JULLIE AANWEZIGHEID OP ONZE BRUILOFT IS HET GROOTSTE GESCHENK. WE KIJKEN ERNAAR UIT OM TE GENIETEN VAN DE ITALIAANSE ZON, OMRINGD DOOR DE MENSEN DIE ONS HET MEEST DIERBAAR ZIJN.",
     "greatest": "GROOTSTE",
-    "dearest": "DIERBAARST"
+    "dearest": "DIERBAAR"
   },
   "venue": {
     "joinUs": "VIER MET ONS",
@@ -23,12 +23,12 @@
   "ceremony": {
     "accommodation": {
       "title": "ACCOMMODATIE",
-      "description": "Omringd door olijfbomen en wijngaarden zullen we verblijven op Podere Montale. Deze plek, die ons weerspiegelt, geeft ons de kans om te ontspannen en volledig te genieten van onze trouwdag.",
-      "latestUpdate": "LAATSTE UPDATE",
-      "latestUpdateValue": "IN JUNI LATEN WE JULLIE WETEN HOE DE KAMERS VERDEELD ZIJN"
+      "description": "Bij aankomst vertellen we hoe de kamers zijn ingedeeld. We hebben gelet op de samenstelling van de families.",
+      "latestUpdate": "WAAR",
+      "latestUpdateValue": "OMRINGD DOOR OLIJBOMEN EN WIJNGAARDEN ZULLEN WE VERBLIJEN OP PODERE MONTALE. DEZE PLEK, DIE ONS WEERSPIEGELT, GEEFT ONS DE KANS OM TE ONTSPANNEN EN VOLLEDIG TE GENIETEN VAN ONZE TROUWDAG"
     },
     "plane": {
-      "title": "AANKOMEN PER VLIEGTUIG",
+      "title": "AANKOMST PER VLIEGTUIG",
       "description": "Voor wie besluit met vliegtuig te komen, bieden een tegemoetkoming van €100 per persoon voor je vlucht, mocht je dat willen.",
       "airportsTuscany": "LUCHTHAVENS IN TOSCANE",
       "airportsTuscanyValue": " - FLORENCE, \"AMERIGO VESPUCCI\" \n - PISA, \"GALILEO GALILEI\"",
@@ -38,7 +38,7 @@
       "voucherValue": "100 EURO"
     },
     "transfer": {
-      "title": "VERVOER",
+      "title": "HOW TO GET THERE",
       "description": "We helpen je graag om moeiteloos op de locatie te komen. Kies voor georganiseerd vervoer óf geniet van de vrijheid van een eigen roadtrip.",
       "duration": "REISDUUR",
       "durationValue": "- 2 UUR 50 MIN VANAF ROME FIUMICINO \n - 2 UUR 35 MIN VANAF ROME CIAMPINO\n - 2 UUR 15 MIN VANAF FLORENCE\n - 2 UUR 25 MIN VANAF PISA",
@@ -49,57 +49,57 @@
     },
     "schedule": {
       "title": "WEEKENDPROGRAMMA",
-      "description": "Er zal het hele weekend door volop eten, snacks, drankjes en water beschikbaar zijn. Als je speciale verzoeken of dieetwensen hebt, laat het ons dan van tevoren weten zodat we hieraan kunnen voldoen.\n\nAls je zelf iets wilt ophalen, is de dichtstbijzijnde supermarkt in Castel del Pano, een klein dorp op ongeveer 12km van Podere Montale.",
+      "description": "Het hele weekend door is er volop eten, snacks, drankjes en water beschikbaar. Heb je speciale verzoeken of dieetwensen? Laat het ons even van tevoren weten, dan zorgen we dat er rekening mee wordt gehouden.\n\nWil je zelf iets inslaan? De dichtstbijzijnde supermarkt vind je in Castel del Piano, een charmant dorpje op ongeveer 12 km van Podere Montale.",
       "thursday": {
         "date": "DONDERDAG 2 JULI",
         "who": "WIE",
         "whoValue": "INTIEME FAMILIE",
-        "when": "WANNEER",
+        "when": "TIJD",
         "whenValue": "INCHECKEN VANAF 15:00",
         "what": "WAT",
-        "whatValue": "LATER OP DE DAG ZULLEN WE GENIETEN VAN EEN WIJNPROEVERIJ"
+        "whatValue": "LATER OP DE DAG ZULLEN WE GENIETEN VAN EEN GEZELLIGE WIJNPROEVERIJ"
       },
       "friday": {
         "date": "VRIJDAG 3 JULI",
         "who": "WIE",
         "whoValue": "ALLE ANDERE GASTEN",
-        "when": "WANNEER",
+        "when": "TIJD",
         "whenValue": "INCHECKEN VANAF 15:00",
         "details": "DETAILS",
-        "detailsValue": "VANAF 18:00 HEBBEN WE EEN APERITIEF OM HET WEEKEND OFFICIEEL TE BEGINNEN"
+        "detailsValue": "VANAF 18:00 STARTEN DE APERETIVO OM HET WEEKEND OFFICIEEL TE BEGINNEN"
       },
       "saturday": {
         "date": "ZATERDAG 4 JULI",
         "what": "WAT",
         "whatValue": "DE GROTE DAG",
-        "when": "WANNEER",
+        "when": "TIJD",
         "whenValue": "- ONTBIJT TIJD \"NOG TE BEPALEN\" \n- CEREMONIE TIJD \"NOG TE BEPALEN\" \n- DINER TIJD \"NOG TE BEPALEN\" ",
         "details": "DETAILS",
-        "detailsValue": "DE CEREMONIE WORDT GEVOLGD DOOR EEN TOAST, HEERLIJK ETEN, DRANKJES EN HET DINER. DAARNA OPENEN WE DE DANSVLOER EN VIEREN WE TOT LAAT IN DE NACHT"
+        "detailsValue": "DE CEREMONIE WORDT GEVOLGD DOOR EEN TOAST, HEERLIJK ETEN EN DRANKJES, EN HET DINER. AANSLUITEND OPENEN WE DE DANSVLOER EN DANSEN WE TOT IN LAAT IN DE NACHT"
       },
       "sunday": {
         "date": "ZONDAG 5 JULI",
         "what": "WAT",
         "whatValue": "AFSCHEIDSONTBIJT",
-        "when": "WANNEER",
+        "when": "TIJD",
         "whenValue": "9:00",
         "details": "DETAILS",
-        "detailsValue": "WE HEBBEN EEN AFSCHEIDSONTBIJT VOORDAT WE UITCHECKEN EN AFSCHEID NEMEN"
+        "detailsValue": "WE SLUITEN HET WEEKEND AF MET EEN GEZELLIG ONTBIJT VOORDAT AFSCHEID NEMEN"
       }
     }
   },
   "perks": {
-    "heading": "VOORDELEN",
-    "text": "DE LOCATIE HEEFT EEN PRACHTIG ZWEMBAD EN WIJNMAKERIJ WAAR ALLE GASTEN VAN KUNNEN GENIETEN.",
+    "heading": "GENIETEN",
+    "text": "PODERE MONTALE HEEFT EEN PRACHTIG ZWEMBAD EN WIJNHUIS WAAR ALLE GASTEN VAN KUNNEN GENIETEN.",
     "pool": "ZWEMBAD",
-    "winery": "WIJNMAKERIJ"
+    "winery": "WIJNHUIS"
   },
   "dontForget": {
     "label": "VERGEET NIET OM MEE TE NEMEN",
-    "text": "Zonnebrandcrème, Muggenspray, Zwemkleding en handdoek, Een licht vestje of sjaal voor de avonden.",
-    "kids": "Zorg ervoor dat je alles meeneemt wat je kinderen nodig hebben, het kan behoorlijk warm worden in juli. We zorgen ervoor dat er genoeg schaduw en activiteiten zijn om ze gelukkig en comfortabel te houden.",
-    "everything": "alles",
-    "plentyOfShade": "genoeg schaduw"
+    "text": "ZONNEBRANDCRÈME, MUGGENSPRAY, ZWEMKLEDING EN HANDDOEK, EEN LICHT VESTJE OF SJAALTJE VOOR DE AVOND.",
+    "kids": "NEEM ALLES MEE WAT JE KINDEREN NODIG HEBBEN, WANT IN JULI KAN HET LEKKER WARM WORDEN. GEEN ZORGEN, ER IS GENOEG SCHADUW EN ER ZIJN LEUKE ACTIVITEITEN OM ZE TE VERMAKEN",
+    "everything": "ALLES",
+    "plentyOfShade": "SCHADUW"
   },
   "quiz": {
     "label": "LEUKE FEITJES QUIZ",
@@ -140,7 +140,7 @@
     ]
   },
   "registry": {
-    "label": "KLIK HIER BENEDEN EN LAAT ONS WETEN <br /> OF WE JE DAAR ZIEN OP 03.07.2026",
+    "label": "MAAK DE KEUZE HIERONDER EN LAAT ONS WETEN <br /> OF JULLIE ER BIJ ZIJN OP <br /> 03.07.2026-05.07.2026",
     "buttonYes": "Ik ben er zeker bij",
     "buttonNo": "Helaas moet ik het missen",
     "email": "Voor verdere vragen kun je ons altijd mailen op"
@@ -155,8 +155,8 @@
       "title": "BEDANKT DAT JE HET ONS LAAT WETEN"
     },
     "form": {
-      "name": "JOUW NAAM",
-      "namePlaceholder": "Vul je volledige naam in",
+      "name": "NAMEN VAN AANWEZIGEN",
+      "namePlaceholder": "Vul volledige namen in",
       "adults": "AANTAL VOLWASSENEN",
       "adultsPlaceholder": "Hoeveel volwassenen?",
       "kids": "AANTAL KINDEREN",
@@ -166,7 +166,6 @@
       "travel": "REISARRANGEMENTEN",
       "travelPlaneVoucher": "Ik kom met het vliegtuig en jullie reisbon van €100 zou echt helpen",
       "travelPlaneNoVoucher": "Ik kom met het vliegtuig, maar ik heb de reisbon niet nodig. Ik waardeer het aanbod enorm!",
-      "travelNotPlane": "Ik kom niet met het vliegtuig",
       "message": "BERICHT",
       "messageOptional": "(optioneel)",
       "messagePlaceholder": "Laat ons een bericht achter...",
