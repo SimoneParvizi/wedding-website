@@ -15,7 +15,7 @@ const PasswordGate = ({ onAuthenticated }: PasswordGateProps) => {
   const [fadeWipe, setFadeWipe] = useState(false);
   const [hideGate, setHideGate] = useState(false);
 
-  const correctPassword = "vald'orcia";
+  const correctPassword = "toscana";
 
   // Preload hero image while password gate is displayed
   useEffect(() => {
