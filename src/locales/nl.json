@@ -166,6 +166,7 @@
       "travel": "REISARRANGEMENTEN",
       "travelPlaneVoucher": "Ik kom met het vliegtuig en jullie reisbon van €100 zou echt helpen",
       "travelPlaneNoVoucher": "Ik kom met het vliegtuig, maar ik heb de reisbon niet nodig. Ik waardeer het aanbod enorm!",
+      "travelNotPlane": "Ik kom niet met het vliegtuig",
       "message": "BERICHT",
       "messageOptional": "(optioneel)",
       "messagePlaceholder": "Laat ons een bericht achter...",

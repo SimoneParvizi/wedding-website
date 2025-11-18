@@ -25,7 +25,7 @@
       "title": "ACCOMMODATION",
       "description": "You'll find out about the room arrangements when you arrive.",
       "latestUpdate": "WHERE",
-      "latestUpdateValue": "WE WILL BE STAYING AT PODERE MONTALE, SURROUNDED BY OLIVE TREES AND VINEYARDS. WE CHOSE A PLACE THAT REPRESENTS US, SINCE WE LOVE NATURE AND WE THINK WILL ALLOW US TO FORGOT ABOUT THE REST AND FULLY ENJOY THE WEDDING DAY"
+      "latestUpdateValue": "WE WILL BE STAYING AT PODERE MONTALE, SURROUNDED BY OLIVE TREES AND VINEYARDS. WE CHOSE A PLACE THAT REPRESENTS US, SINCE WE LOVE NATURE AND WE THINK WILL ALLOW US TO FORGET ABOUT THE REST AND FULLY ENJOY THE WEDDING DAY"
     },
     "plane": {
       "title": "ARRIVING BY PLANE",
@@ -166,6 +166,7 @@
       "travel": "TRAVEL ARRANGEMENTS",
       "travelPlaneVoucher": "I'm coming by plane, and your 100€ travel voucher would really help",
       "travelPlaneNoVoucher": "I'm coming by plane, but I won't need the travel voucher. I truly appreciate the offer!",
+      "travelNotPlane": "I'm not coming by plane",
       "message": "MESSAGE",
       "messageOptional": "(optional)",
       "messagePlaceholder": "Leave us a message...",

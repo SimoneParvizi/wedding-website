@@ -166,6 +166,7 @@
       "travel": "VIAGGIO",
       "travelPlaneVoucher": "Vengo in aereo e il vostro voucher di 100€ mi farebbe comodo",
       "travelPlaneNoVoucher": "Vengo in aereo, ma non ho bisogno del voucher. Apprezzo molto l'offerta!",
+      "travelNotPlane": "Non vengo in aereo",
       "message": "MESSAGGIO",
       "messageOptional": "(facoltativo)",
       "messagePlaceholder": "Lasciaci un messaggio...",
