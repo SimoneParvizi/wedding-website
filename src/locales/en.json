@@ -86,6 +86,24 @@
         "details": "DETAILS",
         "detailsValue": "WE'LL HAVE A FAREWELL BREAKFAST BEFORE CHECKING-OUT AND SAYING OUR GOODBYES"
       }
+    },
+    "dressCode": {
+      "title": "DRESS CODE",
+      "description": "Many of you asked us about the dress code, so here are a few more details for the weekend.",
+      "friday": "FRIDAY",
+      "fridayValue": "COCKTAIL CHIQUE",
+      "saturday": "SATURDAY",
+      "saturdayValue": "WEDDING ATTIRE",
+      "shoes": "MORE DETAILS",
+      "shoesValue": "WEAR WHAT YOU LIKE. THERE IS NO SPECIFIC COLOUR PALETTE FOR THE WEEKEND. MUCH OF THE CELEBRATION WILL TAKE PLACE OUTDOORS."
+    },
+    "gift": {
+      "title": "WEDDING GIFT",
+      "description": "We won’t have a wedding list.",
+      "optional": "MORE DETAILS",
+      "optionalValue": "THIS YEAR, ALONGSIDE OUR WEDDING, WE ALSO BOUGHT A HOUSE. SO IF YOU WOULD LIKE TO GIVE US A GIFT, WE WOULD REALLY APPRECIATE A MONETARY GIFT RATHER THAN A TRADITIONAL PRESENT.",
+      "thanks": "THANK YOU",
+      "thanksValue": "WE FEEL VERY LUCKY TO CELEBRATE THIS WEEKEND WITH OUR CLOSEST FRIENDS AND FAMILY."
     }
   },
   "perks": {

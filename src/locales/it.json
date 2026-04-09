@@ -86,6 +86,24 @@
         "details": "DETTAGLI",
         "detailsValue": "PRIMA DI RIPARTIRE, CI SARÀ UNA COLAZIONE PER CONDIVIDERE ANCORA QUALCHE MOMENTO INSIEME"
       }
+    },
+    "dressCode": {
+      "title": "DRESS CODE",
+      "description": "Molti di voi ci hanno chiesto qualche informazione in più sul dress code, quindi ecco alcuni dettagli per il weekend.",
+      "friday": "VENERDÌ",
+      "fridayValue": "COCKTAIL CHIC",
+      "saturday": "SABATO",
+      "saturdayValue": "ABITO DA CERIMONIA",
+      "shoes": "MAGGIORI DETTAGLI",
+      "shoesValue": "INDOSSATE QUELLO CHE VI FA SENTIRE A VOSTRO AGIO. NON C'È UNA PALETTE DI COLORI SPECIFICA PER IL WEEKEND. GRAN PARTE DELLA FESTA SI SVOLGERÀ ALL'APERTO."
+    },
+    "gift": {
+      "title": "REGALO DI NOZZE",
+      "description": "Non avremo una lista nozze.",
+      "optional": "MAGGIORI DETTAGLI",
+      "optionalValue": "QUEST'ANNO, INSIEME AL MATRIMONIO, ABBIAMO ANCHE COMPRATO CASA. SE VI FA PIACERE FARCI UN REGALO, APPREZZEREMMO MOLTO UN REGALO IN CONTANTI PIUTTOSTO CHE UN REGALO DALLA LISTA NOZZE.",
+      "thanks": "GRAZIE",
+      "thanksValue": "CI SENTIAMO DAVVERO FORTUNATI A POTER FESTEGGIARE QUESTO WEEKEND CON AMICI E FAMILIARI PIÙ CARI."
     }
   },
   "perks": {

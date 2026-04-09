@@ -1,7 +1,7 @@
 .celebrations {
   position: relative;
   z-index: 10;
-  padding: 120px 20px 120px;
+  padding: 160px 20px 120px;
   background-color: var(--color-white);
   overflow: hidden;
 }
@@ -68,6 +68,6 @@
 
 @media (min-width: 768px) {
   .celebrations {
-    padding: 160px 40px 160px;
+    padding: 210px 40px 160px;
   }
 }

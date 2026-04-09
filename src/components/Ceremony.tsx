@@ -8,15 +8,17 @@ export default function Ceremony() {
     reception: new Set(),
     ceremony: new Set(),
     meal: new Set(),
-    celebrations: new Set(),
     schedule: new Set(),
+    dressCode: new Set(),
+    gift: new Set(),
   });
 
   const receptionRef = useRef<HTMLDivElement>(null);
   const ceremonyRef = useRef<HTMLDivElement>(null);
   const mealRef = useRef<HTMLDivElement>(null);
-  const celebrationsRef = useRef<HTMLDivElement>(null);
   const scheduleRef = useRef<HTMLDivElement>(null);
+  const dressCodeRef = useRef<HTMLDivElement>(null);
+  const giftRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const createObserver = (ref: React.RefObject<HTMLDivElement>, sectionName: string, detailCount: number) => {
@@ -53,8 +55,9 @@ export default function Ceremony() {
       createObserver(receptionRef, 'reception', 3),
       createObserver(ceremonyRef, 'ceremony', 4),
       createObserver(mealRef, 'meal', 1),
-      createObserver(celebrationsRef, 'celebrations', 5),
       createObserver(scheduleRef, 'schedule', 4),
+      createObserver(dressCodeRef, 'dressCode', 3),
+      createObserver(giftRef, 'gift', 2),
     ];
 
     return () => observers.forEach((observer) => observer.disconnect());
@@ -221,6 +224,46 @@ export default function Ceremony() {
                     <span className="ceremony__timeline-value">{t('ceremony.schedule.sunday.detailsValue')}</span>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Dress Code */}
+          <div className="ceremony__timeline-item ceremony__timeline-item--dress-code">
+            <div className="ceremony__timeline-schedule-title">
+              <h3 className="ceremony__timeline-title">{t('ceremony.dressCode.title')}</h3>
+              <p className="ceremony__timeline-description">{t('ceremony.dressCode.description')}</p>
+            </div>
+            <div className="ceremony__timeline-right" ref={dressCodeRef}>
+              <div className={`ceremony__timeline-detail ${visibleSections.dressCode.has(0) ? 'ceremony__timeline-detail--visible' : ''}`}>
+                <span className="ceremony__timeline-label">{t('ceremony.dressCode.friday')}</span>
+                <span className="ceremony__timeline-value">{t('ceremony.dressCode.fridayValue')}</span>
+              </div>
+              <div className={`ceremony__timeline-detail ${visibleSections.dressCode.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>
+                <span className="ceremony__timeline-label">{t('ceremony.dressCode.saturday')}</span>
+                <span className="ceremony__timeline-value">{t('ceremony.dressCode.saturdayValue')}</span>
+              </div>
+              <div className={`ceremony__timeline-detail ${visibleSections.dressCode.has(2) ? 'ceremony__timeline-detail--visible' : ''}`}>
+                <span className="ceremony__timeline-label">{t('ceremony.dressCode.shoes')}</span>
+                <span className="ceremony__timeline-value">{t('ceremony.dressCode.shoesValue')}</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Wedding Gift */}
+          <div className="ceremony__timeline-item">
+            <div className="ceremony__timeline-schedule-title">
+              <h3 className="ceremony__timeline-title">{t('ceremony.gift.title')}</h3>
+              <p className="ceremony__timeline-description">{t('ceremony.gift.description')}</p>
+            </div>
+            <div className="ceremony__timeline-right" ref={giftRef}>
+              <div className={`ceremony__timeline-detail ${visibleSections.gift.has(0) ? 'ceremony__timeline-detail--visible' : ''}`}>
+                <span className="ceremony__timeline-label">{t('ceremony.gift.optional')}</span>
+                <span className="ceremony__timeline-value">{t('ceremony.gift.optionalValue')}</span>
+              </div>
+              <div className={`ceremony__timeline-detail ${visibleSections.gift.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>
+                <span className="ceremony__timeline-label">{t('ceremony.gift.thanks')}</span>
+                <span className="ceremony__timeline-value">{t('ceremony.gift.thanksValue')}</span>
               </div>
             </div>
           </div>

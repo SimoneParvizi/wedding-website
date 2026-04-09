@@ -86,6 +86,24 @@
         "details": "DETAILS",
         "detailsValue": "WE SLUITEN HET WEEKEND AF MET EEN GEZELLIG ONTBIJT VOORDAT WE AFSCHEID NEMEN"
       }
+    },
+    "dressCode": {
+      "title": "DRESS CODE",
+      "description": "Velen van jullie vroegen naar de dresscode, dus hier zijn nog een paar extra details voor het weekend.",
+      "friday": "VRIJDAG",
+      "fridayValue": "COCKTAIL CHIQUE",
+      "saturday": "ZATERDAG",
+      "saturdayValue": "WEDDING ATTIRE",
+      "shoes": "MEER DETAILS",
+      "shoesValue": "DRAAG WAT JE LEUK VINDT. ER IS GEEN SPECIFIEK KLEURENPALET VOOR HET WEEKEND. EEN GROOT DEEL VAN DE BRUITLOFT VINDT BUITEN PLAATS."
+    },
+    "gift": {
+      "title": "HUWELIJKSCADEAU",
+      "description": "We hebben geen cadeaulijst.",
+      "optional": "MEER DETAILS",
+      "optionalValue": "DIT JAAR HEBBEN WE NAAST ONS HUWELIJK OOK EEN HUIS GEKOCHT. ALS JE ONS GRAAG EEN CADEAU WILT GEVEN, ZOUDEN WE EEN GELDBEDRAG MEER WAARDEREN DAN EEN TRADITIONEEL CADEAU.",
+      "thanks": "DANK JE",
+      "thanksValue": "WE VOELEN ONS ENORM GELUKKIG DAT WE DIT WEEKEND MET ONZE DIERBAARSTE VRIENDEN EN FAMILIE MOGEN VIEREN."
     }
   },
   "perks": {

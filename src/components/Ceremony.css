@@ -262,6 +262,48 @@
   background-color: #FFFFFF;
 }
 
+/* Dress Code - Black Background */
+.ceremony__timeline-item--dress-code {
+  position: relative;
+  z-index: 1;
+}
+
+.ceremony__timeline-item--dress-code::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: calc(100% + 80px);
+  background-color: #000000;
+  z-index: -1;
+}
+
+.ceremony__timeline-item--dress-code .ceremony__timeline-title {
+  color: #FFFFFF;
+}
+
+.ceremony__timeline-item--dress-code .ceremony__timeline-description {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+
+.ceremony__timeline-item--dress-code .ceremony__timeline-label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ceremony__timeline-item--dress-code .ceremony__timeline-value {
+  color: #FFFFFF;
+}
+
+.ceremony__timeline-item--dress-code::after {
+  background-color: #FFFFFF;
+}
+
 /* Arriving by Plane - Hide bottom line on desktop */
 .ceremony__timeline-item--plane::after {
   display: none;
@@ -382,6 +424,10 @@
   position: relative;
 }
 
+.ceremony__timeline-item--schedule::after {
+  display: none;
+}
+
 .ceremony__timeline-schedule-title {
   position: absolute;
   left: calc(-50vw + 650px);
@@ -492,6 +538,10 @@
   }
 
   .ceremony__timeline-value {
+    font-size: 16px;
+  }
+
+  .ceremony__timeline-item--dress-code .ceremony__timeline-description {
     font-size: 16px;
   }
 
