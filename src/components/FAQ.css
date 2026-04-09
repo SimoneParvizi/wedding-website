@@ -27,7 +27,7 @@
 }
 
 .gifting__text {
-  font-family: 'Satoshi', var(--font-medium), sans-serif;
+  font-family: 'Publica Sans Light', sans-serif;
   font-size: 48px;
   font-weight: 500;
   line-height: 57.6px;
@@ -87,7 +87,7 @@
 }
 
 .faq__title {
-  font-family: 'Satoshi', var(--font-medium), sans-serif;
+  font-family: 'Publica Sans Light', sans-serif;
   font-size: 48px;
   font-weight: 500;
   line-height: 57.6px;
@@ -152,7 +152,7 @@
 
 /* Card Question */
 .faq__card-question {
-  font-family: 'Satoshi', var(--font-medium), sans-serif;
+  font-family: 'Publica Sans Light', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 22.4px;
@@ -164,7 +164,7 @@
 
 /* Card Answer */
 .faq__card-answer {
-  font-family: 'Satoshi', var(--font-medium), sans-serif;
+  font-family: 'Publica Sans Light', sans-serif;
   font-size: 17.6px;
   font-weight: 500;
   line-height: 28.8px;

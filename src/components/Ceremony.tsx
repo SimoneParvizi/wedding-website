@@ -52,7 +52,7 @@ export default function Ceremony() {
     const observers = [
       createObserver(receptionRef, 'reception', 3),
       createObserver(ceremonyRef, 'ceremony', 4),
-      createObserver(mealRef, 'meal', 4),
+      createObserver(mealRef, 'meal', 1),
       createObserver(celebrationsRef, 'celebrations', 5),
       createObserver(scheduleRef, 'schedule', 4),
     ];
@@ -75,14 +75,6 @@ export default function Ceremony() {
             </div>
             <div className="ceremony__timeline-right" ref={mealRef}>
               <div className={`ceremony__timeline-detail ${visibleSections.meal.has(0) ? 'ceremony__timeline-detail--visible' : ''}`}>
-                {/*<span className="ceremony__timeline-label">NUMBER OF ROOMS</span>*/}
-                {/*<span className="ceremony__timeline-value">THERE ARE IN TOTAL xx ROOMS</span>*/}
-              </div>
-              {/*<div className={`ceremony__timeline-detail ${visibleSections.meal.has(1) ? 'ceremony__timeline-detail--visible' : ''}`}>*/}
-              {/*  <span className="ceremony__timeline-label">WHERE</span>*/}
-              {/*  <span className="ceremony__timeline-value">DREWSFIELD RESTAURANT</span>*/}
-              {/*</div>*/}
-              <div className={`ceremony__timeline-detail ${visibleSections.meal.has(3) ? 'ceremony__timeline-detail--visible' : ''}`}>
                 <span className="ceremony__timeline-label">{t('ceremony.accommodation.latestUpdate')}</span>
                 <span className="ceremony__timeline-value">
                   {t('ceremony.accommodation.latestUpdateValue')}

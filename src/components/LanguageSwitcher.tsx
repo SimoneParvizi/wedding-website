@@ -38,7 +38,10 @@ export default function LanguageSwitcher() {
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Change language"
       >
-        <span className="language-switcher__flag">{currentLanguage.flag}</span>
+        <span className="language-switcher__label">LANGUAGE:</span>
+        <span className="language-switcher__icon">
+          <span className="language-switcher__current-flag">{currentLanguage.flag}</span>
+        </span>
       </button>
 
       {isOpen && (
@@ -51,7 +54,7 @@ export default function LanguageSwitcher() {
               }`}
               onClick={() => changeLanguage(lang.code)}
             >
-              <span className="language-switcher__flag">{lang.flag}</span>
+              <span className="language-switcher__option-flag">{lang.flag}</span>
               <span className="language-switcher__name">{lang.name}</span>
             </button>
           ))}

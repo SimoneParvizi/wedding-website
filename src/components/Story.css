@@ -22,6 +22,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  transform: translateY(-10px);
 }
 
 .story__heading {
@@ -31,6 +32,7 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--color-black);
+  margin-top: 18px;
   margin-bottom: 25px;
 }
 

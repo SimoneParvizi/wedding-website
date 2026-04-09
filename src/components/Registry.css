@@ -86,7 +86,7 @@
 }
 
 .registry__title {
-  font-family: 'Satoshi', var(--font-medium), sans-serif;
+  font-family: 'Publica Sans Light', sans-serif;
   font-size: 48px;
   font-weight: 500;
   line-height: 57.6px;
@@ -115,7 +115,7 @@
 }
 
 .registry__button {
-  font-family: 'Satoshi', var(--font-medium), sans-serif;
+  font-family: 'Publica Sans Light', sans-serif;
   font-size: 16px;
   font-weight: 500;
   padding: 18px 40px;

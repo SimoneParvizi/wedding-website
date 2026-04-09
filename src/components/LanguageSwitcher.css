@@ -6,26 +6,50 @@
 .language-switcher__button {
   position: relative;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 0;
-  padding: 6px;
+  background: transparent;
+  border: none;
+  border-radius: 999px;
+  padding: 0;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 14px;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   pointer-events: auto;
 }
 
 .language-switcher__button:hover {
-  background: rgba(255, 255, 255, 1);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  opacity: 1;
 }
 
-.language-switcher__flag {
+.language-switcher__label {
+  font-family: 'Publica Sans Round', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.language-switcher__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.14);
+}
+
+.language-switcher__current-flag {
+  font-size: 28px;
+  line-height: 1;
+  display: block;
+}
+
+.language-switcher__option-flag {
   font-size: 20px;
   line-height: 1;
   display: block;
@@ -34,7 +58,9 @@
 .language-switcher__dropdown {
   position: absolute;
   top: calc(100% + 8px);
-  right: 0;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
   background: rgba(255, 255, 255, 0.98);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0;
@@ -75,11 +101,20 @@
 
 @media (max-width: 768px) {
   .language-switcher__button {
-    padding: 5px;
+    gap: 10px;
   }
 
-  .language-switcher__flag {
-    font-size: 18px;
+  .language-switcher__label {
+    font-size: 12px;
+  }
+
+  .language-switcher__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .language-switcher__current-flag {
+    font-size: 24px;
   }
 
   .language-switcher__dropdown {
